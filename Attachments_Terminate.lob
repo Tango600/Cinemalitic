@@ -1,0 +1,2 @@
+ExecQuery=delete from MON$ATTACHMENTS where MON$ATTACHMENT_ID=:MON$ATTACHMENT_ID;
+ReFresh;

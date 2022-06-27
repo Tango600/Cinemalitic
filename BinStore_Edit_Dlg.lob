@@ -1,0 +1,12 @@
+Caption=Хранилище двоичных данных Редактирование;
+Style=0;
+Navigator=1;Buttons=Post,Cancel;
+DBImage=FieldName=TEMPL_DATA;
+[Fields]
+3
+Ид.;ReadOnly=1;
+TEID
+Имя
+TEMPL_NAME
+Данные
+TEMPL_DATA

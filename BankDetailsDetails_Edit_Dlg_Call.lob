@@ -1,0 +1,3 @@
+Declare=T_Bank_ID=:BANK_ID;
+Declare=BD_DETAIL_ID=:ID;
+Dialog=BankDetailsDetails_Edit_Dlg;

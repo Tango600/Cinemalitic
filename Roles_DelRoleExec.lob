@@ -1,0 +1,3 @@
+ExecQuery=execute procedure DEL_ROLE_MENU(&RoleIDDel);
+Dispose=RoleIDDel;
+ReOpen;

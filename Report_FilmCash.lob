@@ -1,0 +1,1 @@
+ReportOfficeSheet=FileName=CashFilms.ods;SQL=select f.pu_num, f.film_name, d.distr_name, sum(s.cash) cash, sum(s.watchers) watchers from shows s left join films f on s.film_id_s=f.id_film left join distributor d on f.distr=d.code where s.show_date between '&SBegDate' and '&SEndDate' group by f.pu_num, f.film_name, d.distr_name;

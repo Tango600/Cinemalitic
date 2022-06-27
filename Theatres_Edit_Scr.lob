@@ -1,0 +1,3 @@
+ExecQuery=update THEATERS set CINEMA_NAME='&CINEMA_NAME', MAX_SEATS=&MAX_SEATS, CITY_ID=&CITY_ID where CINEMA_ID=&CINEMA_ID;
+CloseDialog;
+Refresh;

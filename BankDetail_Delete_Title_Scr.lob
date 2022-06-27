@@ -1,0 +1,5 @@
+Message=Удалить реквизиты?;VariableName=DeleteAnswResult;Flags=YesNo;
+if &DeleteAnswResult=1 then
+ExecQuery=update BANK_DETAILS set IS_DELETE=1 where ID=:ID;
+Refresh;
+EndIf

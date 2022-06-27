@@ -1,0 +1,10 @@
+Caption=Удаление меню роли;
+Navigator=0
+Style=0
+Modal=1
+FormHeight=200
+CommandButton=Label=Удалить;CommandName=Roles_DelRoleExec;
+[Fields]
+1
+Роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=RoleIDDel;NoDataField=1;QueryLookup=select * from DCL_Roles order by LongRoleName;
+ROLEID

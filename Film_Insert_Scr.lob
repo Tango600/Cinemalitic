@@ -1,0 +1,3 @@
+ExecQuery=insert into FILMS(PU_NUM, FILM_NAME, DISTR, LIMIT, DOMESTIC, UNF, NO_COMERCE, RELEASE_DATE) values(trim('&PU_NUM'), trim('&FILM_NAME'), '&DISTR', &LIMIT, &DOMESTIC, &UNF, &NO_COMERCE, '&RELEASE_DATE');
+CloseDialog;
+Refresh;

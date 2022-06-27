@@ -1,0 +1,30 @@
+Caption=Сеансы;
+Navigator=1;Buttons=First,Last,Refresh;
+Declare=SBegDate;
+Declare=SEndDate;
+SetValue=SBegDate;SQL=select min(release_date) from films;
+SetValue=SEndDate;SQL=select max(release_date) from films;
+Calendar=Label=Дата начала;VariableName=SBegDate;DefaultValue=&SBegDate;ReOpen=1;
+Calendar=Label=Дата конца; VariableName=SEndDate;DefaultValue=&SEndDate;ReOpen=1;
+Query=select * from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';
+ReadOnly=1;
+SummQuery=count(s.show_date), sum(s.watchers), sum(s.cash);
+CommandButton=Label=Отчёты;CommandName=Shows_Call_ReportDialog_Scr;
+[Fields]
+8
+Дата
+SHOW_DATE
+Время
+SHOW_TIME
+Зрители
+WATCHERS
+Выручка
+CASH
+Кинотеатр
+CINEMA_NAME
+Последнее изменение
+LAST_UPDATE
+Фильм
+FILM_NAME
+Файл
+FILEN_NAME

@@ -1,0 +1,1 @@
+Dialog=Films;ValueField=FILM_NAME;KeyField=ID_FILM;KeyVariable=R_FILM_ID_V;ValueEditName=PU_FILM_Edit;ChooseMode=2;

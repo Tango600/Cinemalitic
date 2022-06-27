@@ -1,0 +1,19 @@
+UserAccessRaight=3;
+Caption=Хранилище двоичных данных;
+Query=select * from DCL_TEMPLATES;
+UpdateQuery=UpdateTable=DCL_TEMPLATES;KeyFields=TEID;
+Navigator=1;
+Style=2;
+ReadOnly=1;
+CommandButton=Label=Изменить;CommandName=BinStore_Edit_Scr;Pict=Edit;
+CommandButton=Label=Добавить;CommandName=BinStore_Add_Scr;Pict=New;
+CommandButton=Label=Сжать;CommandName=TemplateCompress;Pict=ZIP;
+CommandButton=Label=Расжать;CommandName=TemplateDeCompress;Pict=UnZIP;
+CommandButton=Label=Сохранить;CommandName=TemplateExport;Pict=SaveBS;
+CommandButton=Label=Загрузить;CommandName=TemplateImport;Pict=LoadBS;
+[Fields]
+2
+Ид.
+TEID
+Имя
+TEMPL_NAME

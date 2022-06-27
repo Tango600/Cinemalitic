@@ -1,0 +1,15 @@
+Caption=Роли;
+Query=select * from DCL_ROLES order by ROLE_ACCESSLEVEL, ROLENAME;
+Style=2;
+[Fields]
+5
+ID роли
+ROLESID
+Название
+ROLENAME
+Длинное название роли
+LONGROLENAME
+Показывать роль
+SHOWINLIST
+Права роли
+ROLE_ACCESSLEVEL

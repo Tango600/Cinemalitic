@@ -1,0 +1,5 @@
+Declare=CINEMA_ID=:CINEMA_ID;
+Declare=MAX_SEATS=:MAX_SEATS;
+Declare=CITY_ID=:CITY_ID;
+Declare=CINEMA_NAME=:CINEMA_NAME;
+Dialog=Theatres_Edit_Dlg;

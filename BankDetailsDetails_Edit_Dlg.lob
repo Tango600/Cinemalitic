@@ -1,0 +1,51 @@
+Caption=Реквизиты (редактирование);
+CloseQuery=;
+Single;
+Style=0;
+ReadOnly=1;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=BankDetailsDetails_Save_Scr;
+[Fields]
+21
+Расч. счёт (Казначейский счёт)\InputBox=Width=140;VariableName=BD_BANK_ACCOUNT;MaxLength=20;
+BANK_ACCOUNT
+Лицевой счёт\InputBox=VariableName=BD_FACECOUNT;Width=140;MaxLength=20;
+FACECOUNT
+Полное наименование\InputBox=VariableName=BD_FULL_NAME;Width=180;MaxLength=150;
+FULL_NAME
+Короткое наименование\InputBox=VariableName=BD_SHORT_NAME;Width=150;MaxLength=30;
+SHORT_NAME
+Юр. адрес\InputBox=VariableName=BD_UR_ADDRESS;Width=180;MaxLength=150;
+UR_ADDRESS
+Фактический адрес\InputBox=VariableName=BD_REAL_ADDRESS;Width=180;MaxLength=150;
+REAL_ADDRESS
+ИНН\InputBox=VariableName=BD_VATIN;Width=90;MaxLength=12;
+VATIN
+КПП\InputBox=VariableName=BD_KPP;Width=90;MaxLength=9;
+KPP
+ОГРН\InputBox=VariableName=BD_OGRN;Width=120;MaxLength=13;
+OGRN
+ОКПО\InputBox=VariableName=BD_OKPO;Width=90;MaxLength=8;
+OKPO
+ОКТМО\InputBox=VariableName=BD_OKTMO;Width=90;MaxLength=8;
+OKTMO
+ОКВЕД\InputBox=VariableName=BD_OKVEDS;Width=90;MaxLength=50;
+OKVEDS
+Телефон\InputBox=VariableName=BD_PHONE;Width=200;MaxLength=50;
+PHONE
+Директор\InputBox=VariableName=BD_DIRECTOR;Width=200;MaxLength=50;
+DIRECTOR
+Руководитель в род.падеже\InputBox=VariableName=BD_DIRECTOR_GENITIVE;Width=200;MaxLength=50;
+DIRECTOR_GENITIVE
+Исп.обязанности\CheckBox=VariableName=BD_IS_DELEGATOR;NoDataField=1;
+IS_DELEGATOR
+Гл. Бухгалтер\InputBox=VariableName=BD_FIFNANSIST;Width=200;MaxLength=40;
+SENIOR_FINANCEIST
+Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;KeyValue=&T_Bank_ID;
+BANK_ID
+Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_DETAIL_ID;Columns=EMAIL=140/E-MAIL;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_DETAIL_ID;
+ID
+Сайт\InputBox=VariableName=BD_WWW;Width=200;MaxLength=40;ContextButton=CommandName=BankDetailsDetails_Context_Button_Scr;
+WWW
+Дата\ReadOnly=1;Disabled=1;
+ACTUAL_DATE

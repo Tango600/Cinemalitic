@@ -1,0 +1,45 @@
+Caption=Реквизиты;
+ReadOnly=1;
+Single;
+Query=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;
+Style=2;
+CommandButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;
+CommandButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
+CommandButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
+CommandButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);
+[Fields]
+17
+Расч./Казн. счёт\Width=120;
+BANK_ACCOUNT
+Полное наименование\Width=150;
+FULL_NAME
+Короткое наименование\Width=120;
+SHORT_NAME
+Юр. адрес\Width=150;
+UR_ADDRESS
+Фактический адрес\Width=150;
+REAL_ADDRESS
+ИНН\Width=80;
+VATIN
+ОГРН\Width=80;
+OGRN
+ОКПО\Width=80;
+OKPO
+ОКТМО\Width=80;
+OKTMO
+КПП\Width=80;
+KPP
+ОКВЕД\Width=90;
+OKVEDS
+Телефон\Width=70;
+PHONE
+Директор\Width=80;
+DIRECTOR
+Банк\Width=120;
+BANK_NAME
+Лицевой счёт\Width=120;
+FACECOUNT
+Дата\Width=80;
+ACTUAL_DATE
+Приоритетный
+DEFAULT_FLG

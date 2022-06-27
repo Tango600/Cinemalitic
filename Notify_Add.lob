@@ -1,0 +1,13 @@
+FormWidth=300;
+Caption=Добавление оповещения;
+Navigator=0;
+Query=;
+CommandButton=Label=Добавить;CommandName=Notify_Add_Scr;FontStyle=Bold;
+[Fields]
+3
+Дата и время оповещения (ДД.ММ.ГГГГ ЧЧ.ММ.СС)\InputBox=VariableName=NOTIFY_TIME;Width=110;_Value=&_DATETIME_;
+DER
+Действие\DropListBox=&_NOTIFYACTIONS_;VariableName=NOTIFY_ACTION;_Value=0;
+MER
+Текст оповещения\InputBox=VariableName=NOTIFY_TEXT;Width=260;
+CWE

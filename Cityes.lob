@@ -1,0 +1,9 @@
+Caption=Города;
+Style=2;
+Query=select * from CITYES;
+[Fields]
+2
+Название;Width=180;
+CITY_NAME
+Население
+POPULATION

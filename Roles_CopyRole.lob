@@ -1,0 +1,12 @@
+Caption=Копирование роли;
+Navigator=0
+Style=0
+Modal=1
+FormHeight=200
+CommandButton=Label=Копировать;CommandName=Roles_CopyRoleExec;
+[Fields]
+2
+Копировать роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=RoleIDFrom;NoDataField=1;QueryLookup=select * from DCL_Roles;
+ROLEID
+В роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=RoleIDTo;NoDataField=1;QueryLookup=select * from DCL_Roles;
+MENUITEMID

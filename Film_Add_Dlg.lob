@@ -1,0 +1,23 @@
+Caption=Фильм (добавление);
+Style=0;
+Single;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
+[Fields]
+8
+Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;
+PU_NUM
+Название\InputBox=VariableName=FILM_NAME;NoDataField=1;
+FILM_NAME
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
+GGGG
+Российский\CheckBox=VariableName=DOMESTIC;NoDataField=1;
+FFFF
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;
+DDD
+УНФ\CheckBox=VariableName=UNF;NoDataField=1;
+FF2
+Не коммерческий\CheckBox=VariableName=NO_COMERCE;NoDataField=1;
+NO_COMERCE
+Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
+RELEASE_DATE

@@ -1,0 +1,1 @@
+ReportOfficeText=FileName=TheatrBlank.odt;SQL=select * from THEATERS where CINEMA_ID=:CINEMA_ID;

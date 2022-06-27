@@ -1,0 +1,38 @@
+Caption=Контракт (редактирование);
+Style=0;
+CloseQuery=;
+Single;
+ReadOnly=0;
+Navigator=0;
+CommandButton=Label=Сохранить;CommandName=UpdateContract_Scr;
+TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK_NUM;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=WEEK_NUM=70/№ недели,SEANSES_COUNT=80/Сеансов;Title=Количество сеансов;Navigator=1;NavigatorButtons=Post,Insert,Delete;NoDataField=1;
+[Fields]
+14
+Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;
+CONTRACT_NUMBER
+Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;Width=200;
+CONTRACT_TYPE_ID
+Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&_DATE_;As_Date;
+AGREEMENT_DATE
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;_ValueIfNull=0;Format=Digit;
+SHAR_KK
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;_ValueIfNull=0;
+SHAR_DISRT
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;_ValueIfNull=0;
+SHAR_DEMONSTRATOR
+Минимальная гарантия (руб)\InputBox=VariableName=MIN_SHARE;Width=100;_ValueIfNull=0;
+MIN_SHARE
+Фиксированная стоимость (руб)\InputBox=VariableName=FIXED_PRICE;Width=100;_ValueIfNull=0;
+FIXED_PRICE
+Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;Width=140;
+MEDIA_TYPE_ID
+Минимальная цена билета\InputBox=VariableName=MIN_TICKET_PRICE;Width=100;_ValueIfNull=0;
+MIN_TICKET_PRICE
+2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;
+SHOW_FORMAT_2D
+3D\SimplyCheckBox=VariableName=SHOW_FORMAT_3D;
+SHOW_FORMAT_3D
+Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;
+BEGIN_DEMONSTRATION
+Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;
+END_DEMONSTRATION

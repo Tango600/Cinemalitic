@@ -1,0 +1,14 @@
+Caption=Загрузки;
+Query=select * from FILES order by LAST_UPDATE;
+Navigator=1;Buttons=first,Last,Refresh;
+CommandButton=Label=Удалить;CommandName=Files_Delete_Scr;
+ReadOnly=1;
+Style=2;
+[Fields]
+3
+ID
+ID_FILE
+Имя файла
+FILEN_NAME
+Последнее изм.
+LAST_UPDATE

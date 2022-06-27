@@ -1,0 +1,20 @@
+Caption=Отчёты;
+Navigator=0;
+Style=0;
+CommandButton=Label=Кассовые;CommandName=Report_FilmCash;
+[Fields]
+7
+Дата начала\DateBox=;_Value=&SBegDate;Disabled=0;
+FFFF
+Дата конца\DateBox=;_Value=&SEndDate;Disabled=0;
+FFFF2
+Номер ПУ (фильм)\InputBox=VariableName=R_PU;NoDataField=1;ContextButton=CommandName=Film_Rep_Select_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;
+FILM_ID
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=R_DISTR;NoDataField=1;
+DISTR
+Российский\SimplyCheckBox=VariableName=R_DOMESTIC;NoDataField=1;
+DOMESTIC
+Возр. огр.\InputBox=VariableName=R_LIMIT;_Value=0;
+LIMIT
+Не коммерческий\SimplyCheckBox=VariableName=R_NO_COMERCE;NoDataField=1;
+NO_COMERCE

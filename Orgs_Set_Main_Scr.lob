@@ -1,0 +1,3 @@
+ExecQuery=update organizations o set o.mainorg=null;
+ExecQuery=update organizations o set o.mainorg=1 where o.oid=:OID;
+ReOpen;

@@ -1,0 +1,20 @@
+Caption=Дистрибьюторы;
+Title=Основные;
+Style=2;
+Navigator=1;Buttons=Post,Cancel,Delete;
+Query=select * from DISTRIBUTOR;
+[Fields]
+2
+Код
+CODE
+Название
+DISTR_NAME
+[Page]
+Title=Реквизиты;
+Navigator=1;Buttons=Post,Cancel,Delete;
+[Fields]
+2
+Расч. сч.
+BANK_ACCOUNT
+Адрес
+ADDRESS

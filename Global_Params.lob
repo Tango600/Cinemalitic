@@ -1,0 +1,18 @@
+Caption=Глобальные параметры;
+Query=select * from DCL_GLOBAL_PARAMS where PROGRAMM_PARAM is not null order by PARAM_NAME;
+Events=AfterPostEvents=GlobalParams_AP;
+Live=1;
+Modal=1;
+Navigator=1;Buttons=First,Edit,Insert,Post,Last,Delete,Refresh;
+CommandButton=Action=Find;Label=Найти
+CommandButton=Action=Print;Label=Печать
+Style=2;
+CommandButton=Label=Редактировать;CommandName=Global_Params_Edit_Scr;
+[Fields]
+3
+Наименование параметра
+PARAM_CAPT
+Параметр
+PARAM_NAME
+Значение
+PARAM_VALUE

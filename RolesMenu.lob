@@ -1,0 +1,18 @@
+UserAccessRaight=7;
+Caption=Меню ролей;
+Navigator=1;Buttons=First,Prior,Next,Last;
+Live=0;
+Query=select roleid, rolename, longrolename, MENUITEMID, dclname from DCL_ROLESTOMENU r2m order by roleid, MENUITEMID
+DBFilter=Label=Роль;List=LONGROLENAME;Key=ROLEID_R;FilterField=ROLEID;Width=150;DBFilterQuery=Select LONGROLENAME, ROLESID roleid_R from DCL_Roles Order by LONGROLENAME;
+Style=2;
+ReadOnly=1;
+Navigator=1;
+CommandButton=CommandName=Roles_AddRoleCallDialog;Label=Добавить;
+CommandButton=Label=Удалить;CommandName=Roles_DelRoleMenuItem;
+CommandButton=Label=Удалить роль;CommandName=Roles_DelRolesMenuItem_Call;
+CommandButton=Label=Копировать роль;CommandName=Roles_CopyRole_Call;
+CommandButton=Action=Print;Label=Печать
+CommandButton=Action=Find;Label=Найти
+CommandButton=Label=Недостающие;CommandName=Roles_Run_Test_RolesMenu;FontStyle=,Italic
+[Fields]
+*

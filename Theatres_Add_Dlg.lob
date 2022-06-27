@@ -1,0 +1,15 @@
+Caption=Кинотеатр (добавление);
+Style=0;
+NoData;
+Navigator=0;Buttons=Post,Cancel;
+CommandButton=Label=Добавить;CommandName=Theatres_Insert_Scr;
+[Fields]
+4
+ID в ссистеме\InputBox=VariableName=CINEMA_ID;NoDataField=1;Width=80;
+CINEMA_ID
+Наименование\InputBox=VariableName=CINEMA_NAME;NoDataField=1;MaxLength=120;
+CINEMA_NAME
+Количество мест\InputBox=VariableName=MAX_SEATS;NoDataField=1;_Value=1;
+MAX_SEATS
+Город\Lookup=SQL=select * from CITYES;Key=CTY_ID;List=CITY_NAME;VariableName=CITY_ID;NoDataField=1;
+CITY_ID

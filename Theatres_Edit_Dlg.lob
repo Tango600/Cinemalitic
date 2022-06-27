@@ -1,0 +1,15 @@
+Caption=Кинотеатр (редактирование);
+Style=0;
+Single;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=Theatres_Edit_Scr;
+[Fields]
+4
+ID\OutBox=Width=80;ReadOnly=1;
+CINEMA_ID
+Наименование\EditBox=VariableName=CINEMA_NAME;MaxLength=120;_Value=&CINEMA_NAME;NoDataField=1;
+CINEMA_NAME
+Количество мест\EditBox=VariableName=MAX_SEATS;NoDataField=1;_Value=&MAX_SEATS;
+MAX_SEATS
+Город\Lookup=SQL=select * from CITYES;Key=CTY_ID;List=CITY_NAME;VariableName=CITY_ID;KeyValue=:CITY_ID;NoDataField=1;
+CITY_ID

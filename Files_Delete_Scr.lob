@@ -1,0 +1,6 @@
+Declare=delRes=0;
+Message=Удалить загрузку?;Flags=YesNo;VariableName=delRes;
+if &delRes=1 then
+ExecQuery=delete from FILES where ID_FILE=:ID_FILE;
+Refresh;
+EndIf;

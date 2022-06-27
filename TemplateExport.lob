@@ -1,0 +1,4 @@
+Declare=FN;
+SaveFileDialog=FN;Ext=xls;
+GetFromDB=SQL=select * from DCL_TEMPLATES where TEID=:TEID;FileName=&FN;DataField=TEMPL_DATA;
+Dispose=FN;

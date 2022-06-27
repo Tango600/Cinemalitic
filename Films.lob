@@ -1,0 +1,35 @@
+Caption=Фильмы (прокатные удостоверения);
+Style=2;
+ReadOnly=1;
+Declare=FBegDate;
+Declare=FEndDate;
+SetValue=FBegDate;SQL=select min(release_date) from films;
+SetValue=FEndDate;SQL=select max(release_date) from films;
+Calendar=Label=Дата начала;VariableName=FBegDate;DefaultValue=&FBegDate;ReOpen=1;
+Calendar=Label=Дата конца; VariableName=FEndDate;DefaultValue=&FEndDate;ReOpen=1;
+ContextFilter=Label=Название;FilterField=FILM_NAME;FilterMode=Partial;
+ContextFilter=Label=ПУ;FilterField=PU_NUM;
+Navigator=1;NavigatorButtons=Post,Cancel,Delete,Edit;
+CommandButton=Label=Добавить;CommandName=Film_Add_Cmd;
+CommandButton=Label=Изменить;CommandName=Film_Edit_Cmd;
+Color==h999999;BrushKey=PU_NUM;
+Color=1=clGreen;BrushKey=NO_COMERCE;
+Query=select * from FILMS where coalesce(release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
+[Fields]
+8
+Номер ПУ
+PU_NUM
+Название
+FILM_NAME
+Прокатчик (код)
+DISTR
+Российский
+DOMESTIC
+Возрастное огр.
+LIMIT
+УНФ
+UNF
+Не коммерческий
+NO_COMERCE
+Дата премьеры
+RELEASE_DATE

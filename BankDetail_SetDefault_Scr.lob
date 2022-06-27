@@ -1,0 +1,3 @@
+ExecQuery=update BANK_DETAILS set IS_DEFAULT=null where PARTNER_ID=:PARTNER_ID;
+ExecQuery=update BANK_DETAILS set IS_DEFAULT=1 where ID=:ID;
+Refresh;

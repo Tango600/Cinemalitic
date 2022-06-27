@@ -1,0 +1,12 @@
+Caption=Глобальные параметры редактирование;
+Modal=1;
+Navigator=1;Buttons=Edit,Insert,Post;
+Style=0;
+[Fields]
+3
+Наименование параметра
+PARAM_CAPT
+Параметр
+PARAM_NAME
+Значение\As_Memo;Width=400;Height=200;
+PARAM_VALUE

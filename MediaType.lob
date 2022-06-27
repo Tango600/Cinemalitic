@@ -1,0 +1,9 @@
+Caption=Тип носителя;
+Query=select * from MEDIA_TYPE;
+Navigator=0;Buttons=Insert,Edit,Post;
+Style=2;
+ReadOnly=1;
+[Fields]
+1
+Носитель
+MEDIA_NAME

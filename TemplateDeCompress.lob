@@ -1,0 +1,1 @@
+DeCompressData=SQL=select * from DCL_TEMPLATES where TEID=:TEID;DataField=TEMPL_DATA;

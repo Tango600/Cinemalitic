@@ -1,0 +1,3 @@
+ExecQuery=insert into THEATERS(CINEMA_ID, CINEMA_NAME, MAX_SEATS, CITY_ID) values(&CINEMA_ID, '&CINEMA_NAME', &MAX_SEATS, &CITY_ID);
+CloseDialog;
+Refresh;

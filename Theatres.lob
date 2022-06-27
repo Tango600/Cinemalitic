@@ -1,0 +1,22 @@
+Caption=Кинотеатры;
+Single;
+Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID;
+UpdateTable=THEATERS;KeyFields=CINEMA_ID;
+Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
+CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
+CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;
+CommandButton=Label=Бланк;CommandName=TheatrBlank_Scr;
+CommandButton=Label=Реквизиты;CommandName=BankDetails_Call;
+Style=2;
+[Fields]
+5
+ID
+CINEMA_ID
+Наименование;Width=250;
+CINEMA_NAME
+Кол. мест
+MAX_SEATS
+Город;Width=150;ReadOnly=1;
+CITY_NAME
+Население
+POPULATION

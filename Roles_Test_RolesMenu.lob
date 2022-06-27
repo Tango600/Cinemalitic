@@ -1,0 +1,20 @@
+Caption=Недостающие элементы;
+Query=select * from rolesmenu_is_correct r order by r.role_id, r.dclname;
+Navigator=1;Buttons=First,Prior,Next,Last,Refresh;
+CommandButton=Action=Find;Label=Найти
+CommandButton=Action=Structure;Label=Структура
+CommandButton=Action=Print;Label=Печать
+Style=2;
+ReadOnly=1
+[Fields]
+5
+№ скрипта
+NUMSEQ
+Эл. меню
+DCLNAME
+Поле Ид.
+IDENT
+Код роли
+ROLE_ID
+Роль
+ROLE_NAME

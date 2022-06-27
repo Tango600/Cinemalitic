@@ -1,0 +1,13 @@
+Caption=Банки;
+Query=select * from BANKS;
+Style=2;
+[Fields]
+4
+Название
+BANK_NAME
+БИК
+BIC
+Кор.счёт
+CORRESP_ACC
+Наименование получателя
+PAYEE_NAME
