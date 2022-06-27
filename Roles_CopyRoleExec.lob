@@ -1,3 +1,3 @@
 ModifyingQuery=execute procedure copy_role(&RoleIDFrom, &RoleIDTo);
 Dispose=RoleIDFrom, RoleIDTo;
-ReOpen;
+Refresh;

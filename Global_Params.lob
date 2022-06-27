@@ -4,8 +4,6 @@ Events=AfterPostEvents=GlobalParams_AP;
 Live=1;
 Modal=1;
 Navigator=1;Buttons=First,Edit,Insert,Post,Last,Delete,Refresh;
-CommandButton=Action=Find;Label=Найти
-CommandButton=Action=Print;Label=Печать
 Style=2;
 CommandButton=Label=Редактировать;CommandName=Global_Params_Edit_Scr;
 [Fields]

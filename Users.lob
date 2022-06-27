@@ -5,8 +5,8 @@ Live=1
 Query=Select * from &_DCL_USERS_TABLE_ order by 2;
 Style=2
 CommandButton=Action=Print;Label=Печать
-CommandButton=Label=Оповещение;CommandName=Roles_Notify_Add_Scr;;Hint=Создать оповещение.
-CommandButton=Label=Оповещения;CommandName=Dialog=Notifycations;Hint=Таблица оповещенеий.
+CommandButton=Label=Оповещение;CommandName=Roles_Notify_Add_Scr;Hint=Создать оповещение.
+CommandButton=Label=Оповещения;CommandName=Notifycations_Call_Dlg;Hint=Таблица оповещенеий.
 CommandButton=Label=Просмотр;CommandName=User_Edit_Scr;
 TablePart=Title=Роли;SQL=select r.rolesid, r.rolename, r.longrolename, r.role_accesslevel from DCL_ROLES_TO_USERS ru, dcl_Roles r where ru.ru_roleid=r.rolesid and ru.ru_userid=:UID union select -1 rolesid, r.rolename, r.longrolename, r.role_accesslevel from dcl_roles r where r.rolesid=:DCL_ROLE;MasterDataField=UID;DependField=ru_userid;Columns=ROLESID/ID роли,ROLENAME/Роль,LONGROLENAME/Полн. назв,ROLE_ACCESSLEVEL/Права роли;
 [Fields]

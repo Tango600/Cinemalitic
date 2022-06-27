@@ -1,6 +1,6 @@
 Declare=tmpAddMenuitem;
 SetValue=tmpAddMenuitem;ReturnQuery=select t.isappend from ADD_MENU_ITEM_TO_ROLE(&ROLEIDV, &MenuIDv) t;
-if Expression1=&tmpAddMenuitem; Expression2=1; then
+if &tmpAddMenuitem=1 then
 Reopen;
 Else
 Message=Такой элемент уже существует;

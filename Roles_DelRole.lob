@@ -1,7 +1,7 @@
 Declare=YNv;
 Message=Удалить запись?;Flags=YesNo;VariableName=YNv;
-if Expression1=1; Expression2=&YNv; then
+if 1=&YNv then
 ModifyingQuery=execute procedure DEL_ROLE_AND_MENU(:ROLESID);
-ReOpen;
+Refresh;
 EndIf
 Dispose=YNv;
