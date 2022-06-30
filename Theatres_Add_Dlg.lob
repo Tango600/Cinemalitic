@@ -1,6 +1,5 @@
 Caption=Кинотеатр (добавление);
 Style=0;
-NoData;
 Navigator=0;Buttons=Post,Cancel;
 CommandButton=Label=Добавить;CommandName=Theatres_Insert_Scr;
 [Fields]

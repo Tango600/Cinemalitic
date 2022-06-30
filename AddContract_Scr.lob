@@ -5,4 +5,5 @@ Declare=SHAR_KK=0;
 Declare=SHAR_DISRT=0;
 Declare=MIN_SHARE=0;
 Declare=FIXED_PRICE=0;
+Declare=DestContract=0;
 Dialog=AddContract_Dlg;
