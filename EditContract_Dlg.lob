@@ -10,25 +10,25 @@ TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK
 16
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;
 CONTRACT_NUMBER
-Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&_DATE_;As_Date;
+Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;
 AGREEMENT_DATE
 Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;Width=200;
 CONTRACT_TYPE_ID
 Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=DISTR;
 DISTRIBUTOR
-Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;Width=180;
+Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;Width=180;
 CINEMA_ID
-Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;_ValueIfNull=0;
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;_ValueIfNull=0;Format=Digit;
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;Format=Digit;
 SHAR_KK
-Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;_ValueIfNull=0;
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;
 SHAR_DEMONSTRATOR
-Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Width=100;_ValueIfNull=0;
+Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Width=100;
 MIN_SHARE
-Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Width=100;_ValueIfNull=0;
+Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Width=100;
 FIXED_PRICE
-Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Width=100;_ValueIfNull=0;
+Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Width=100;
 MIN_TICKET_PRICE
 Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;Width=140;
 MEDIA_TYPE_ID
