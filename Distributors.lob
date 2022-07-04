@@ -2,6 +2,7 @@ Caption=Дистрибьюторы;
 Title=Основные;
 Style=2;
 Navigator=1;Buttons=Post,Cancel,Delete;
+CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
 Query=select * from DISTRIBUTOR;
 [Fields]
 2
@@ -9,12 +10,3 @@ Query=select * from DISTRIBUTOR;
 CODE
 Название
 DISTR_NAME
-[Page]
-Title=Реквизиты;
-Navigator=1;Buttons=Post,Cancel,Delete;
-[Fields]
-2
-Расч. сч.
-BANK_ACCOUNT
-Адрес
-ADDRESS
