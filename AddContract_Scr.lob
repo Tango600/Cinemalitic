@@ -6,4 +6,7 @@ Declare=SHAR_DISRT=0;
 Declare=MIN_SHARE=0;
 Declare=FIXED_PRICE=0;
 Declare=DestContract=0;
+Declare=SHOW_FORMAT_2D=0;
+Declare=SHOW_FORMAT_3D=0;
+Declare=CINEMA_ID=0;
 Dialog=AddContract_Dlg;
