@@ -7,6 +7,7 @@ Style=2;
 ReadOnly=1;
 CommandButton=Label=Изменить;CommandName=BinStore_Edit_Scr;Pict=Edit;
 CommandButton=Label=Добавить;CommandName=BinStore_Add_Scr;Pict=New;
+CommandButton=Label=Удалить;CommandName=BinStore_Add_Delete;Pict=Clear;
 CommandButton=Label=Сжать;CommandName=TemplateCompress;Pict=ZIP;
 CommandButton=Label=Расжать;CommandName=TemplateDeCompress;Pict=UnZIP;
 CommandButton=Label=Сохранить;CommandName=TemplateExport;Pict=SaveBS;
