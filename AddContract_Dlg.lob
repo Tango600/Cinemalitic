@@ -8,7 +8,7 @@ CommandButton=Label=Добавить;CommandName=InsertContract_Scr;
 17
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;
 CONTRACT_NUMBER
-Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&_DATE_;As_Date;
+Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
 Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;KeyValue=&CONTRACT_TYPE_ID;NoDataField=1;Width=180;
 CONTRACT_TYPE_ID
