@@ -14,7 +14,7 @@ AGREEMENT_DATE
 CONTRACT_TYPE_ID
 Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 GGGG
-Название фильма\InputBox=VariableName=R_PU;NoDataField=1;ContextButton=CommandName=Film_Contract_Select_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;Width=200;ReadOnly=1;ComponentName=EditFilmName;
+Название фильма\InputBox=VariableName=R_PU;NoDataField=1;ContextButton=CommandName=Film_Contract_Select_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;Width=200;ReadOnly=1;
 FFFFFF
 Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;Width=180;KeyValue=&CINEMA_ID;
 CINEMA_ID

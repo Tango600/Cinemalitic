@@ -19,4 +19,6 @@ Declare=END_DEMONSTRATION=:END_DEMONSTRATION;
 Declare=DestContract=:CONTRACT_ID;
 Declare=SHAR_RUB=:SHAR_DISTR_RUB;
 Dialog=AddContract_Dlg;
-EditByName=EditFilmName.Hide;
+Declare=tmpFileName;
+SetValue=tmpFileName;ReturnQuery=select FILM_NAME from FILMS where ID_FILM=:FILM_ID_C;
+EditByName=PU_FILM_Edit.SetText;_Value=&tmpFileName;
