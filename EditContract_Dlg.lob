@@ -24,10 +24,10 @@ SHAR_DISRT
 SHAR_KK
 Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;NoDataField=1;_Value=&SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
-Доля демонстратора (₽)\InputBox=VariableName=SHAR_RUB;NoDataField=1;Width=100;_Value=&SHAR_RUB;
-SHAR_DISTR_RUB
 Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Width=100;NoDataField=1;_Value=&MIN_SHARE;
 MIN_SHARE
+Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;NoDataField=1;Width=100;_Value=&SHAR_RUB;
+SHAR_DISTR_RUB
 Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Width=100;NoDataField=1;_Value=&FIXED_PRICE;
 FIXED_PRICE
 Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Width=100;NoDataField=1;_Value=&MIN_TICKET_PRICE;
