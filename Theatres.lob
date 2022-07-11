@@ -7,6 +7,7 @@ CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
 CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;
 CommandButton=Label=Бланк;CommandName=TheatrBlank_Scr;
 CommandButton=Label=Реквизиты;CommandName=BankDetails_Call;
+CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 Style=2;
 [Fields]
 5

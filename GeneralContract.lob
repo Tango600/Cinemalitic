@@ -1,0 +1,22 @@
+Caption=Генеральный договор;
+Query=select * from GENERAL_CONTRACT where PARTNER_ID=&CINEMA_ID order by CONTRACT_DATE;
+Style=2;
+ReadOnly=1;
+Navigator=1;Buttons=First,Last,Refresh;
+CommandButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;
+CommandButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;
+CommandButton=Label=Удалить;CommandName=DeleteConf;
+[Fields]
+6
+Номер
+NUM
+Дата договора
+CONTRACT_DATE
+Начало нумерации +1
+START_NUMBER
+Дистрибьютор (%)
+DISTR_SHARE
+Прокатчик (%)
+ROLLER_SHARE
+Демонстратор (%)
+DEMONSTRATOR_SHARE

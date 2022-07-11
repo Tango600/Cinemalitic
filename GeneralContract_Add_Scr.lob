@@ -1,0 +1,3 @@
+Insert;
+SetFieldValue=PARTNER_ID=&CINEMA_ID;
+Dialog=GeneralContract_Edit_Dlg;

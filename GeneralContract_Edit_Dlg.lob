@@ -1,0 +1,17 @@
+Caption=Генеральный договор;
+Navigator=1;Buttons=Post,Cancel;
+Style=0;
+[Fields]
+6
+Номер
+NUM
+Дата договора\DateBox=;
+CONTRACT_DATE
+Начало нумерации +1
+START_NUMBER
+Дистрибьютор (%)
+DISTR_SHARE
+Прокатчик (%)
+ROLLER_SHARE
+Демонстратор (%)
+DEMONSTRATOR_SHARE
