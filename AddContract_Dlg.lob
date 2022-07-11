@@ -36,7 +36,7 @@ MEDIA_TYPE_ID
 SHOW_FORMAT_2D
 3D\SimplyCheckBox=VariableName=SHOW_FORMAT_3D;NoDataField=1;_Value=&SHOW_FORMAT_3D;
 SHOW_FORMAT_3D
-Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;NoDataField=1;_Value=&_DATE_;
+Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;NoDataField=1;_Value=&BEGIN_DEMONSTRATION;
 BEGIN_DEMONSTRATION
-Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;NoDataField=1;
+Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;NoDataField=1;_Value=&END_DEMONSTRATION;
 END_DEMONSTRATION
