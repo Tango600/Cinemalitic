@@ -5,7 +5,7 @@ ReadOnly=0;
 Navigator=0;
 CommandButton=Label=Добавить;CommandName=InsertContract_Scr;
 [Fields]
-17
+18
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;
 CONTRACT_NUMBER
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
@@ -24,6 +24,8 @@ SHAR_DISRT
 SHAR_KK
 Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;NoDataField=1;Width=100;_Value=&SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
+Доля демонстратора (₽)\InputBox=VariableName=SHAR_RUB;NoDataField=1;Width=100;_Value=&SHAR_RUB;
+SHAR_DISTR_RUB
 Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;NoDataField=1;Width=100;_Value=&MIN_SHARE;
 MIN_SHARE
 Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;NoDataField=1;Width=100;_Value=&FIXED_PRICE;
