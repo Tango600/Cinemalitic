@@ -1,0 +1,8 @@
+Caption=Жанры;
+Query=select * from GENERS order by GENER_NAME;
+Navigator=1;
+Style=2;
+[Fields]
+1
+Жанр
+GENER_NAME
