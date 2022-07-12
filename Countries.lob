@@ -1,0 +1,8 @@
+Caption=Страны;
+Query=select * from COUNTRIES order by COUNTRY_NAME;
+Style=2;
+Navigator=1;
+[Fields]
+1
+Страна
+COUNTRY_NAME
