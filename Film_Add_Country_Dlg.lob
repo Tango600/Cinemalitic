@@ -1,0 +1,8 @@
+Caption=Страна фильма;
+Navigator=1;Buttons=Post,Cancel;
+Events=CloseEvents=Cancel;
+Style=0;
+[Fields]
+1
+Страна\Lookup=SQL=select * from COUNTRIES;Key=CONTR_ID;List=COUNTRY_NAME;
+COUNTRY_ID

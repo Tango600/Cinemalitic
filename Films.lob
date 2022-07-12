@@ -16,7 +16,7 @@ Color==h999999;BrushKey=PU_NUM;
 Color=1=clGreen;BrushKey=NO_COMERCE;
 Query=select * from FILMS where coalesce(release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
 [Fields]
-8
+10
 Номер ПУ
 PU_NUM
 Название
@@ -33,3 +33,7 @@ UNF
 NO_COMERCE
 Дата премьеры
 RELEASE_DATE
+Хронометраж (мин.)
+DURATION
+Год
+RELICE_YEAR

@@ -1,0 +1,8 @@
+Caption=Добавление жанра;
+Navigator=1;Buttons=Post,Cancel;
+Events=CloseEvents=Cancel;
+Style=0;
+[Fields]
+1
+Жанр\Lookup=SQL=select * from GENERS;Key=G_ID;List=GENER_NAME;
+GENER_ID
