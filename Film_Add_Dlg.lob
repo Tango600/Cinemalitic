@@ -4,7 +4,7 @@ Single;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
 [Fields]
-8
+10
 Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;
 PU_NUM
 Название\InputBox=VariableName=FILM_NAME;NoDataField=1;
@@ -21,3 +21,7 @@ FF2
 NO_COMERCE
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
+Хронометраж (мин.)
+DURATION
+Год
+RELICE_YEAR
