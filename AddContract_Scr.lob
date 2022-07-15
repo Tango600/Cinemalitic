@@ -12,4 +12,5 @@ Declare=CINEMA_ID=0;
 Declare=BEGIN_DEMONSTRATION=&_DATE_;
 Declare=END_DEMONSTRATION=&_DATE_;
 Declare=SHAR_RUB=;
+Declare=AGREEMENT_DATE=&_DATE_;
 Dialog=AddContract_Dlg;

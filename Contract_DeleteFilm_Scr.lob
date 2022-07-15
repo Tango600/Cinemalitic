@@ -1,0 +1,6 @@
+CurrentTablePart=1;
+Message=Удалить фильм?;VariableName=DeleteAnswResult;Flags=YesNo;
+if &DeleteAnswResult=1 then
+Delete_Part;
+Refresh;
+EndIf

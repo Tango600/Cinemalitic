@@ -5,6 +5,9 @@ Single;
 ReadOnly=0;
 Navigator=0;
 CommandButton=Label=Сохранить;CommandName=UpdateContract_Scr;
+TablePart=SQL=select * from FILMS_TO_CONTRACTS c left join films f on f.id_film=c.film_id where c.contract_id=&CONTRACT_ID;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=film_name=170/Фильм,pu_num=80/ПУ;Title=Фильмы;Navigator=0;NoDataField=1;
+TablePartToolButton=Label=Добавить;CommandName=Contract_AddFilm_Call;
+TablePartToolButton=Label=Удалить;CommandName=Contract_DeleteFilm_Scr;
 TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK_NUM;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=WEEK_NUM=70/№ недели,SEANSES_COUNT=80/Сеансов;Title=Количество сеансов;Navigator=1;NavigatorButtons=Post,Insert,Delete;NoDataField=1;
 [Fields]
 17

@@ -1,0 +1,9 @@
+Declare=Film_Exist_ID;
+SetValue=Film_Exist_ID;ReturnQuery=select count(*) from FILMS_TO_CONTRACTS where CONTRACT_ID=&CONTRACT_ID and FILM_ID=&C_FilmID;
+If &Film_Exist_ID>0 then
+Message=Такой фильм уже добавлен;
+Else
+ExecQuery=insert into FILMS_TO_CONTRACTS(CONTRACT_ID, FILM_ID) values(&CONTRACT_ID, &C_FilmID);
+Refresh;
+CloseDialog;
+EndIf;

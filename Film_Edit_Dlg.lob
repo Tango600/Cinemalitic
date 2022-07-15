@@ -2,15 +2,15 @@ Caption=Фильм (редактирование);
 Style=0;
 Single;
 Navigator=0;
+[Page]
+Title=Основные;
 CommandButton=Label=Записать;CommandName=Film_Post_Scr;
 TablePart=Title=Жанры;ReadOnly=1;Style=2;SQL=select * from GENERS_TO_FILMS gf left join geners g on gf.gener_id=g.g_id where gf.film_id=:ID_FILM;DependField=film_id;MasterDataField=ID_FILM;Navigator=0;Columns=GENER_NAME=200/Жанр;
 TablePartToolButton=Label=Добавить;CommandName=Film_Add_Genere_Call;
-TablePartToolButton=Label=Изменить;CommandName=Film_Edit_Genere_Call;
 TablePartToolButton=Label=Удалить;CommandName=Film_Genere_Delete_Scr;
 
 TablePart=Title=Страны;ReadOnly=1;Style=2;SQL=select * from COUNTRIES_TO_FILMS cf left join countries c on cf.country_id=c.contr_id where cf.film_id=:ID_FILM;DependField=FILM_ID;MasterDataField=ID_FILM;Navigator=0;Columns=COUNTRY_NAME=200/Страна;
 TablePartToolButton=Label=Добавить;CommandName=Film_Add_Country_Call;
-TablePartToolButton=Label=Изменить;CommandName=Film_Edit_Country_Call;
 TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
 [Fields]
 10
@@ -34,3 +34,19 @@ RELEASE_DATE
 DURATION
 Год
 RELICE_YEAR
+[Page]
+Title=Таблица;
+Style=2;
+ReadOnly=1;
+[Fields]
+5
+Номер ПУ
+PU_NUM
+Название
+FILM_NAME
+Прокатчик
+DISTR
+Российский
+DOMESTIC
+Возр. огр.
+LIMIT

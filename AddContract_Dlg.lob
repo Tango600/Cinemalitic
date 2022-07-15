@@ -5,7 +5,7 @@ ReadOnly=0;
 Navigator=0;
 CommandButton=Label=Добавить;CommandName=InsertContract_Scr;
 [Fields]
-18
+17
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;
 CONTRACT_NUMBER
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
@@ -14,8 +14,6 @@ AGREEMENT_DATE
 CONTRACT_TYPE_ID
 Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 GGGG
-Название фильма\InputBox=VariableName=R_PU;NoDataField=1;ContextButton=CommandName=Film_Contract_Select_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;Width=200;ReadOnly=1;
-FFFFFF
 Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;Width=180;KeyValue=&CINEMA_ID;
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;NoDataField=1;Width=100;_Value=&SHAR_DISRT;
