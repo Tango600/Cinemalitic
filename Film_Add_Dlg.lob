@@ -5,11 +5,11 @@ Navigator=0;
 CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
 [Fields]
 10
-Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;
+Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;Width=120;
 PU_NUM
 Название\InputBox=VariableName=FILM_NAME;NoDataField=1;
 FILM_NAME
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
 GGGG
 Российский\CheckBox=VariableName=DOMESTIC;NoDataField=1;
 FFFF
@@ -21,7 +21,7 @@ FF2
 NO_COMERCE
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
-Хронометраж (мин.)
+Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=100;
 DURATION
-Год
+Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=80;
 RELICE_YEAR

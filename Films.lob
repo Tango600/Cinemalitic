@@ -16,13 +16,11 @@ Color==h999999;BrushKey=PU_NUM;
 Color=1=clGreen;BrushKey=NO_COMERCE;
 Query=select * from FILMS where coalesce(release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
 [Fields]
-10
+9
 Номер ПУ
 PU_NUM
 Название
 FILM_NAME
-Прокатчик (код)
-DISTR
 Российский
 DOMESTIC
 Возрастное огр.

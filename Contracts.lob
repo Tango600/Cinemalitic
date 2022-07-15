@@ -3,23 +3,21 @@ Style=2;
 ReadOnly=1;
 Navigator=0;
 DBFilter=Label=Тип доп.соглашения;SQL=select -1 ID, '<>' CONTRACT_TYPE from RDB$DATABASE union select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
-Query=select cast((case f.domestic  when 1 then '*' when 0 then null end) as varchar(1)) is_russian, d.distr_name, c.*, f.film_name, ct.contract_type, mt.media_name, f.film_name || ' (' || coalesce(f.limit, 0) || '+)' age_limit, f.distr, f.limit, f.domestic, f.pu_num, t.cinema_name, t.max_seats from CONTRACTS c left join FILMS f on c.film_id_c = f.id_film left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.code=c.distributor;
+Query=select cast((case f.domestic  when 1 then '*' when 0 then null end) as varchar(1)) is_russian, d.distr_name, c.*, f.film_name, ct.contract_type, mt.media_name, f.film_name || ' (' || coalesce(f.limit, 0) || '+)' age_limit, f.limit, f.domestic, f.pu_num, t.cinema_name, t.max_seats from CONTRACTS c left join FILMS f on c.film_id_c = f.id_film left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.code=c.distributor;
 CommandButton=Label=Добавить;CommandName=AddContract_Scr;
 CommandButton=Label=Редактировать;CommandName=EditContract_Scr;
 CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;
 CommandButton=Label=Удалить;CommandName=DeleteConf;
 [Fields]
-22
+21
 Тип договора\Width=80;
 CONTRACT_TYPE
 Номер контракта\Width=100;
 CONTRACT_NUMBER
 Дата доп. соглашения\Width=80;
 AGREEMENT_DATE
-Прокатчик
-distr_name
-Прокатчик (код)\Width=100;
-DISTRIBUTOR
+Прокатчик\Width=120;
+DISTR_NAME
 Номер ПУ\Width=90;
 PU_NUM
 Название фильма\Width=200;

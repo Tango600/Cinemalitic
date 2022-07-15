@@ -13,13 +13,11 @@ TablePart=Title=Страны;ReadOnly=1;Style=2;SQL=select * from COUNTRIES_TO_F
 TablePartToolButton=Label=Добавить;CommandName=Film_Add_Country_Call;
 TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
 [Fields]
-10
+9
 Номер ПУ
 PU_NUM
 Название
 FILM_NAME
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=CODE;List=DISTR_NAME;
-DISTR
 Российский\CheckBox=;
 DOMESTIC
 Возр. огр.
