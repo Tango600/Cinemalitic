@@ -3,13 +3,13 @@ Style=2;
 ReadOnly=1;
 Navigator=0;
 DBFilter=Label=Тип доп.соглашения;SQL=select -1 ID, '<>' CONTRACT_TYPE from RDB$DATABASE union select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
-Query=select d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id;
+Query=select cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(300)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id;
 CommandButton=Label=Добавить;CommandName=AddContract_Scr;
 CommandButton=Label=Редактировать;CommandName=EditContract_Scr;
 CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;
 CommandButton=Label=Удалить;CommandName=DeleteConf;
 [Fields]
-17
+18
 Тип договора\Width=80;
 CONTRACT_TYPE
 Номер контракта\Width=100;
@@ -38,6 +38,8 @@ SHOW_FORMAT_2D
 SHOW_FORMAT_3D
 Цена билета\Width=100;
 MIN_TICKET_PRICE
+Фильмы\Width=180;
+films_names
 Начало демонстрации
 BEGIN_DEMONSTRATION
 Окончание демонстрации
