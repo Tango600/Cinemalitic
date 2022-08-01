@@ -11,17 +11,17 @@ PU_NUM
 FILM_NAME
 Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
 GGGG
-Российский\CheckBox=VariableName=DOMESTIC;NoDataField=1;
-FFFF
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;
-DDD
-УНФ\CheckBox=VariableName=UNF;NoDataField=1;
-FF2
-Не коммерческий\CheckBox=VariableName=NO_COMERCE;NoDataField=1;
-NO_COMERCE
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;
+DDD
 Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;
 DURATION
 Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;
 RELICE_YEAR
+Российский\CheckBox=VariableName=DOMESTIC;NoDataField=1;
+FFFF
+УНФ\CheckBox=VariableName=UNF;NoDataField=1;
+FF2
+Не коммерческий\CheckBox=VariableName=NO_COMERCE;NoDataField=1;
+NO_COMERCE
