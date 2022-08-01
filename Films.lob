@@ -16,7 +16,7 @@ CommandButton=Label=Excel;CommandName=FilmsToSheet;
 
 Color==h999999;BrushKey=PU_NUM;
 Color=1=clGreen;BrushKey=NO_COMERCE;
-Query=select f.PU_NUM, f.FILM_NAME, f.LIMIT, f.DURATION, f.RELICE_YEAR, f.RELEASE_DATE, f.DOMESTIC, f.UNF, d.CODE DISTR_CODE, cast((select list(g.gener_name, ';') from geners_to_films gf left join geners g on gf.gener_id = g.g_id where gf.film_id = f.id_film) as varchar(300)) geners_names, cast((select list(c.country_name, ';') from countries_to_films cf left join countries c on cf.country_id = c.contr_id where cf.film_id = f.id_film) as varchar(300)) countries_names from FILMS f left join DISTRIBUTOR d on f.DISTR_ID = d.ID where coalesce(f.release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
+Query=select f.*, cast((select list(c.country_name, ';') from countries_to_films cf left join countries c on cf.country_id = c.contr_id where cf.film_id = f.id_film) as varchar(300)) countries_names, cast((select list(g.gener_name, ';') from geners_to_films gf left join geners g on gf.gener_id = g.g_id where gf.film_id = f.id_film) as varchar(300)) geners_names, d.CODE DISTR_CODE from FILMS f left join DISTRIBUTOR d on f.DISTR_ID = d.ID where coalesce(f.release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
 UpdateTable=FILMS;KeyFields=id_film;
 [Fields]
 12
