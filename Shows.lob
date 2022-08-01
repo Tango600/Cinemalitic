@@ -9,7 +9,8 @@ Calendar=Label=Дата конца; VariableName=SEndDate;DefaultValue=&SEndDate
 Query=select * from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';
 ReadOnly=1;
 SummQuery=count(s.show_date), sum(s.watchers), sum(s.cash);
-CommandButton=Label=Отчёты;CommandName=Shows_Call_ReportDialog_Scr;
+///CommandButton=Label=Отчёты;CommandName=Shows_Call_ReportDialog_Scr;
+CommandButton=Label=Excel;CommandName=ShowsToSheet;
 [Fields]
 8
 Дата
