@@ -6,6 +6,7 @@ Modal=1;
 Navigator=1;Buttons=First,Edit,Insert,Post,Last,Delete,Refresh;
 Style=2;
 CommandButton=Label=Редактировать;CommandName=Global_Params_Edit_Scr;
+CommandButton=Label=Папка профиля;CommandName=Global_Params_OpenProfileDir;Width=150;
 [Fields]
 3
 Наименование параметра
