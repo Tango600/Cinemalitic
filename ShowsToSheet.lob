@@ -1,1 +1,1 @@
-ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;SQL=select CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH, LAST_UPDATE, FILEN_NAME from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';OfficeType=oo;
+ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;SQL=select CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';OfficeType=oo;
