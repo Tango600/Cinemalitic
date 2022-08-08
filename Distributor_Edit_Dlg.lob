@@ -1,0 +1,9 @@
+Caption=Дистрибьютор (редактирование);
+Style=0;
+Navigator=1;Buttons=Post,Cancel;
+[Fields]
+2
+Код
+CODE
+Название
+DISTR_NAME

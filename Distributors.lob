@@ -1,9 +1,10 @@
 Caption=Дистрибьюторы;
-Title=Основные;
 Style=2;
-Navigator=1;Buttons=Post,Cancel,Delete;
+ReadOnly=1;
+Navigator=1;Buttons=Post,Insert,Cancel,Delete;
 CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
-Query=select * from DISTRIBUTOR;
+Query=select * from DISTRIBUTOR order by CODE;
+CommandButton=Label=Изменить;CommandName=Distributor_Edit_Cmd;
 [Fields]
 2
 Код

@@ -19,7 +19,7 @@ DDD
 DURATION
 Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;
 RELICE_YEAR
-Российский\CheckBox=VariableName=DOMESTIC;NoDataField=1;
+Оттечественный\CheckBox=VariableName=DOMESTIC;NoDataField=1;
 FFFF
 УНФ\CheckBox=VariableName=UNF;NoDataField=1;
 FF2
