@@ -1,9 +1,10 @@
 Caption=Дистрибьюторы;
 Style=2;
 ReadOnly=1;
-Navigator=1;Buttons=Post,Insert,Cancel,Delete;
-CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
+Navigator=0;
 Query=select * from DISTRIBUTOR order by CODE;
+CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
+CommandButton=Label=Добавить;CommandName=Distributor_Add_Cmd;
 CommandButton=Label=Изменить;CommandName=Distributor_Edit_Cmd;
 [Fields]
 2
