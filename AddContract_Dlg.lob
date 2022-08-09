@@ -16,19 +16,19 @@ CONTRACT_TYPE_ID
 GGGG
 Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;Width=180;KeyValue=&CINEMA_ID;
 CINEMA_ID
-Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;NoDataField=1;Width=100;_Value=&SHAR_DISRT;
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DISRT;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;NoDataField=1;_Value=&SHAR_KK;Width=100;
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;_Value=&SHAR_KK;Width=100;
 SHAR_KK
-Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;NoDataField=1;Width=100;_Value=&SHAR_DEMONSTRATOR;
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
-Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;NoDataField=1;Width=100;_Value=&MIN_SHARE;
+Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_SHARE;
 MIN_SHARE
-Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;NoDataField=1;Width=100;_Value=&SHAR_RUB;
+Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_RUB;
 SHAR_DISTR_RUB
-Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;NoDataField=1;Width=100;_Value=&FIXED_PRICE;
+Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&FIXED_PRICE;
 FIXED_PRICE
-Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;NoDataField=1;Width=100;_Value=&MIN_TICKET_PRICE;
+Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_TICKET_PRICE;
 MIN_TICKET_PRICE
 Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;KeyValue=&MEDIA_TYPE_ID;
 MEDIA_TYPE_ID
