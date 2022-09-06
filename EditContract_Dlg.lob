@@ -9,6 +9,9 @@ TablePart=SQL=select * from FILMS_TO_CONTRACTS c left join films f on f.id_film=
 TablePartToolButton=Label=Добавить;CommandName=Contract_AddFilm_Call;
 TablePartToolButton=Label=Удалить;CommandName=Contract_DeleteFilm_Scr;
 TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK_NUM;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=WEEK_NUM=70/№ недели,SEANSES_COUNT=80/Сеансов;Title=Количество сеансов;Navigator=1;NavigatorButtons=Post,Insert,Delete;NoDataField=1;
+
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;
+
 [Fields]
 17
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;
