@@ -16,7 +16,7 @@ CONTRACT_TYPE
 CONTRACT_NUMBER
 Дата доп. соглашения\Width=80;
 AGREEMENT_DATE
-Прокатчик\Width=120;
+Дистрибьютор\Width=120;
 DISTR_NAME
 Кинотеатр\Width=180;
 CINEMA_NAME
