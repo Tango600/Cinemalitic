@@ -8,6 +8,9 @@ CommandButton=Label=Добавить;CommandName=AddContract_Scr;
 CommandButton=Label=Редактировать;CommandName=EditContract_Scr;
 CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;
 CommandButton=Label=Удалить;CommandName=DeleteConf;
+
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;
+
 [Fields]
 18
 Тип договора\Width=80;
