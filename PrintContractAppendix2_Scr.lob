@@ -1,0 +1,1 @@
+ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select * from GET_AGEEMENT_DATA(:CONTRACT_ID);OfficeType=mso;

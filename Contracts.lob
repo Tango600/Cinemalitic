@@ -4,12 +4,13 @@ ReadOnly=1;
 Navigator=0;
 DBFilter=Label=Тип доп.соглашения;SQL=select -1 ID, '<>' CONTRACT_TYPE from RDB$DATABASE union select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
 Query=select cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(300)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id;
-CommandButton=Label=Добавить;CommandName=AddContract_Scr;
+CommandButton=Label=Добавить;CommandName=AddContract_Scr;Width=70;
 CommandButton=Label=Редактировать;CommandName=EditContract_Scr;
-CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;
-CommandButton=Label=Удалить;CommandName=DeleteConf;
+CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;Width=80;
+CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;
 
-CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=100;
+CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;
 
 [Fields]
 18
