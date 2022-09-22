@@ -1,1 +1,1 @@
-ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select * from GET_AGEEMENT_DATA(:CONTRACT_ID);OfficeType=mso;
+ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select p.*, p.ROLL_PAYD ROLL_PAYD2 from GET_AGEEMENT_DATA(:CONTRACT_ID) p;OfficeType=mso;
