@@ -4,7 +4,7 @@ Style=0;
 [Fields]
 6
 Номер
-NUM
+GENERAL_NUM
 Дата договора\DateBox=;
 CONTRACT_DATE
 Начало нумерации +1

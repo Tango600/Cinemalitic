@@ -9,7 +9,7 @@ CommandButton=Label=Удалить;CommandName=DeleteConf;
 [Fields]
 6
 Номер
-NUM
+GENERAL_NUM
 Дата договора
 CONTRACT_DATE
 Начало нумерации +1
