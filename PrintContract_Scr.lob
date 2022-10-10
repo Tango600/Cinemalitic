@@ -1,1 +1,5 @@
+if :CONTRACT_TYPE_ID=1 then
 ReportOfficeText=Template=AgreementBlank.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(:CONTRACT_ID) p;OfficeType=mso;
+Else
+Message=Печатная форма ещё не создана;
+EndIf
