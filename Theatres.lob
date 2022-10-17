@@ -1,6 +1,7 @@
 Caption=Кинотеатры;
 Single;
 Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID;
+ReadOnly=1;
 UpdateTable=THEATERS;KeyFields=CINEMA_ID;
 Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
 CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
