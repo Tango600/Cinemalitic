@@ -3,7 +3,7 @@ SetValue=Film_Exist_ID;ReturnQuery=select count(*) from FILMS_TO_CONTRACTS where
 If &Film_Exist_ID>0 then
 Message=Такой фильм уже добавлен;
 Else
-ExecQuery=insert into FILMS_TO_CONTRACTS(CONTRACT_ID, FILM_ID) values(&CONTRACT_ID, &C_FilmID);
+ExecQuery=insert into FILMS_TO_CONTRACTS(CONTRACT_ID, FILM_ID, ROLL_DATE_BEGIN, ROLL_DATE_END, NOTE) values(&CONTRACT_ID, &C_FilmID, '&ROLL_DATE_BEGIN', '&ROLL_DATE_END', '&NOTE_FILM_CONTRACT');
 Refresh;
 CloseDialog;
 EndIf;
