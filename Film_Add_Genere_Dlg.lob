@@ -1,7 +1,8 @@
 Caption=Добавление жанра;
-Navigator=1;Buttons=Post,Cancel;
+Navigator=0;
 Events=CloseEvents=Cancel;
 Style=0;
+CommandButton=Label=Записать;CommandName=PostAndClose;
 [Fields]
 1
 Жанр\Lookup=SQL=select * from GENERS;Key=G_ID;List=GENER_NAME;
