@@ -10,6 +10,8 @@ ContextFilter=Label=Кинотеатр;FilterField=CINEMA_NAME;FilterMode=Partia
 ContextFilter=Label=Фильм;FilterField=FILM_NAME;FilterMode=Partial;
 Query=select * from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';
 ReadOnly=1;
+Color=<0=clRed;BrushKey=FILM_ID_S;
+
 SummQuery=count(s.show_date), sum(s.watchers), sum(s.cash);
 ///CommandButton=Label=Отчёты;CommandName=Shows_Call_ReportDialog_Scr;
 CommandButton=Label=Excel;CommandName=ShowsToSheet;
