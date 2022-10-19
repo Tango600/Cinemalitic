@@ -9,6 +9,7 @@ SetValue=CEndDate;SQL=select max(AGREEMENT_DATE) from CONTRACTS;
 Calendar=Label=Дата начала;VariableName=CBegDate;DefaultValue=&CBegDate;ReOpen=1;
 Calendar=Label=Дата конца;VariableName=CEndDate;DefaultValue=&CEndDate;ReOpen=1;
 
+ContextFilter=Label=№;FilterField=CONTRACT_NUMBER;Width=30;
 DBFilter=Label=Тип доп.соглашения;SQL=select -1 ID, '<>' CONTRACT_TYPE from RDB$DATABASE union select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
 DBFilter=Label=Дистрибутор;SQL=select -1 ID, '<>' DISTR_NAME from RDB$DATABASE union select ID, DISTR_NAME from DISTRIBUTOR;List=DISTR_NAME;Key=ID;FilterField=DISTR_ID;Width=200;
 DBFilter=Label=Кинотеатр;SQL=select -1 CINEMA_ID, '<>' CINEMA_NAME from RDB$DATABASE union select CINEMA_ID, CINEMA_NAME from THEATERS;List=CINEMA_NAME;Key=CINEMA_ID;FilterField=c.CINEMA_ID;
