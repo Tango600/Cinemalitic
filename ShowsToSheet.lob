@@ -1,1 +1,1 @@
-ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;SQL=select CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH, iif(CASH > 0, 1, 0) from v_shows where SHOW_DATE between '&SBegDate' and '&SEndDate';OfficeType=mso;FillStrategy=replace;
+ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;SQL=select CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH, iif(WATCHERS > 0, 1, 0) from v_shows where SHOW_DATE between '&SBegDate' and '&SEndDate';OfficeType=mso;FillStrategy=replace;
