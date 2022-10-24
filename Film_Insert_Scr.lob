@@ -1,3 +1,14 @@
+Declare=isError=0;
+if &PU_NUM= then
+if &NO_COMERCE=0 then
+SetValue=isError=1;
+EndIf
+EndIf
+
+if &isError=1 Then
+Message=ПУ не заполнен!;
+Break;
+EndIf
 ExecQuery=insert into FILMS(PU_NUM, FILM_NAME, LIMIT, DOMESTIC, UNF, NO_COMERCE, RELEASE_DATE, DURATION, RELICE_YEAR, DISTR_ID) values(trim('&PU_NUM'), trim('&FILM_NAME'), &LIMIT, &DOMESTIC, &UNF, &NO_COMERCE, '&RELEASE_DATE', &DURATION, &RELICE_YEAR, &DISTR);
 CloseDialog;
 Refresh;

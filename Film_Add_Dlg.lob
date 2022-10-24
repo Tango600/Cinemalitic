@@ -1,5 +1,6 @@
 Caption=Фильм (добавление);
 Style=0;
+CloseQuery=;
 Single;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
@@ -13,11 +14,11 @@ FILM_NAME
 GGGG
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;Format=Digit;
 DDD
-Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;
+Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;Format=Digit;
 DURATION
-Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;
+Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;Format=Digit;
 RELICE_YEAR
 Оттечественный\CheckBox=VariableName=DOMESTIC;NoDataField=1;
 FFFF
