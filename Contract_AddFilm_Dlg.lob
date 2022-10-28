@@ -6,9 +6,9 @@ CommandButton=Label=Добавить;CommandName=Contract_AddFilm_Scr;
 4
 Фильм\InputBox=NoDataField=1;ContextButton=CommandName=Contract_FilmSelect_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;Width=200;ReadOnly=1;
 FFFFFF
-Начало проката\DateBox=VariableName=ROLL_DATE_BEGIN;NoDataField=1;
+Начало проката\DateBox=VariableName=ROLL_DATE_BEGIN;NoDataField=1;_Value=&BEGIN_DEMONSTRATION;
 EEEE
-Окончание проката\DateBox=VariableName=ROLL_DATE_END;NoDataField=1;
+Окончание проката\DateBox=VariableName=ROLL_DATE_END;NoDataField=1;_Value=&END_DEMONSTRATION;
 HHHH
 Событие\InputBox=NoDataField=1;VariableName=NOTE_FILM_CONTRACT;
 GGDDD
