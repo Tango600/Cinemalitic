@@ -8,6 +8,9 @@ Calendar=Label=Дата начала;VariableName=SBegDate;DefaultValue=&SBegDat
 Calendar=Label=Дата конца; VariableName=SEndDate;DefaultValue=&SEndDate;ReOpen=1;
 ContextFilter=Label=Кинотеатр;FilterField=CINEMA_NAME;FilterMode=Partial;
 ContextFilter=Label=Фильм;FilterField=FILM_NAME;FilterMode=Partial;
+
+DBFilter=Label=Не состоявшиеся;SQL=select -1 id, '<>' distr_name from rdb$database union all select 0 id, 'Не состоявшиеся' distr_name from rdb$database;Key=ID;List=distr_name;FilterField=WATCHERS;
+
 Query=select * from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDate';
 ReadOnly=1;
 Color=<0=clRed;BrushKey=FILM_ID_S;
