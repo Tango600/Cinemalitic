@@ -13,6 +13,8 @@ TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK
 CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;
 CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;
 
+CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;
+
 [Fields]
 17
 Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;
@@ -25,11 +27,11 @@ CONTRACT_TYPE_ID
 ID
 Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;
 CINEMA_ID
-Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;NoDataField=1;_Value=&SHAR_DISRT;
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;NoDataField=1;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_KK;
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_KK;ComponentName=Edit_SHAR_KK;
 SHAR_KK
-Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_DEMONSTRATOR;
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_DEMONSTRATOR;ComponentName=Edit_SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
 Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;Width=100;NoDataField=1;_Value=&MIN_SHARE;
 MIN_SHARE

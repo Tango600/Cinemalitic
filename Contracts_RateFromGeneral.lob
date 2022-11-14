@@ -1,0 +1,7 @@
+SetValue=genRate_DISTR_SHARE;SQL=select first 1 GC.DISTR_SHARE from GENERAL_CONTRACT GC where GC.PARTNER_ID = :CINEMA_ID order by CONTRACT_DATE desc;
+SetValue=genRate_ROLLER_SHARE;SQL=select first 1 GC.ROLLER_SHARE from GENERAL_CONTRACT GC where GC.PARTNER_ID = :CINEMA_ID order by CONTRACT_DATE desc;
+SetValue=genRate_DEMONSTRATOR;SQL=select first 1 GC.DEMONSTRATOR_SHARE from GENERAL_CONTRACT GC where GC.PARTNER_ID = :CINEMA_ID order by CONTRACT_DATE desc;
+
+EditByName=Edit_SHAR_DISRT.SetText;_Value=&genRate_DISTR_SHARE;
+EditByName=Edit_SHAR_KK.SetText;_Value=&genRate_ROLLER_SHARE;
+EditByName=Edit_SHAR_DEMONSTRATOR.SetText;_Value=&genRate_DEMONSTRATOR;
