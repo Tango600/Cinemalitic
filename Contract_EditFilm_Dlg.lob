@@ -1,0 +1,11 @@
+Caption=Договоры (редактирование фильма);
+Style=0;
+Navigator=1;Buttons=Post,Cancel;
+[Fields]
+3
+Начало проката\DateBox=
+ROLL_DATE_BEGIN
+Окончание проката\DateBox=
+ROLL_DATE_END
+Событие
+NOTE
