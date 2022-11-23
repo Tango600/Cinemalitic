@@ -1,5 +1,6 @@
 Caption=Контракт (редактирование);
 Style=0;
+OnTop=1;
 CloseQuery=;
 Single;
 ReadOnly=0;
