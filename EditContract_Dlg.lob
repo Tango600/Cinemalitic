@@ -27,7 +27,7 @@ AGREEMENT_DATE
 CONTRACT_TYPE_ID
 Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 ID
-Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;
+Кинотеатр\OutBox=SQL=select CINEMA_NAME from THEATERS where CINEMA_ID = &CINEMA_ID;NoDataField=1;ReadOnly=1;
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;NoDataField=1;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
