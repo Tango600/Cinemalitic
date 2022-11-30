@@ -25,7 +25,7 @@ DDFFFDF
 AGREEMENT_DATE
 Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;NoDataField=1;KeyValue=&CONTRACT_TYPE_ID;
 CONTRACT_TYPE_ID
-Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 ID
 Кинотеатр\OutBox=SQL=select CINEMA_NAME from THEATERS where CINEMA_ID = &CINEMA_ID;NoDataField=1;ReadOnly=1;
 CINEMA_ID

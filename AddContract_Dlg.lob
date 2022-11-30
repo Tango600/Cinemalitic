@@ -14,7 +14,7 @@ CONTRACT_NUMBER
 AGREEMENT_DATE
 Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;KeyValue=&CONTRACT_TYPE_ID;NoDataField=1;
 CONTRACT_TYPE_ID
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 GGGG
 Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;
 CINEMA_ID
