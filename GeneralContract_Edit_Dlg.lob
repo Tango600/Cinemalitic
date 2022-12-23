@@ -2,11 +2,13 @@ Caption=Генеральный договор;
 Navigator=1;Buttons=Post,Cancel;
 Style=0;
 [Fields]
-6
+7
 Номер
 GENERAL_NUM
 Дата договора\DateBox=;
 CONTRACT_DATE
+Дата начала\DateBox=;
+START_DATE
 Начало нумерации +1
 START_NUMBER
 Дистрибьютор (%)

@@ -7,11 +7,13 @@ CommandButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;
 CommandButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;
 CommandButton=Label=Удалить;CommandName=DeleteConf;
 [Fields]
-6
+7
 Номер
 GENERAL_NUM
-Дата договора
+Дата заключения
 CONTRACT_DATE
+Дата начала
+START_DATE
 Начало нумерации +1
 START_NUMBER
 Дистрибьютор (%)
