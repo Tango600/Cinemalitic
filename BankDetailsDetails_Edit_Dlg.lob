@@ -43,7 +43,7 @@ IS_DELEGATOR
 SENIOR_FINANCEIST
 Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;KeyValue=&T_Bank_ID;
 BANK_ID
-Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_DETAIL_ID;Columns=EMAIL=140/E-MAIL;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_DETAIL_ID;
+Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_DETAIL_ID;Columns=EMAIL=140/E-MAIL,FOR_SEND=30/Отпр.;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_DETAIL_ID;
 ID
 Сайт\InputBox=VariableName=BD_WWW;Width=200;MaxLength=40;ContextButton=CommandName=BankDetailsDetails_Context_Button_Scr;
 WWW
