@@ -1,0 +1,8 @@
+ExecCommand=SetOutPath;
+
+if &CONTRACT_TYPE_ID=1 then
+ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select p.*, p.ROLL_PAYD ROLL_PAYD2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;Close=1;Save=1;FileName=&OutPath\Приложение;OneDoc=1;
+Else
+ReportOfficeSheet=Template=NoneComerceAgrAppendix1.xlsx;SQL=select * from NONE_COMERCE_AGR_APP(&CONTRACT_ID);OfficeType=mso;FillStrategy=replace;Close=1;Save=1;FileName=&OutPath\Приложение;
+EndIf
+Exit;
