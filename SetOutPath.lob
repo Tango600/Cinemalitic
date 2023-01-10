@@ -6,4 +6,13 @@ SetValue=email;ReturnQuery=select m.email from bank_details d, mails m where d.i
 
 SetValue=ExportPath;ReturnQuery=select PARAM_VALUE from DCL_GLOBAL_PARAMS where PARAM_NAME='ExportPath';
 
-Declare=OutPath=&ExportPath\&sn\&email;
+Declare=OutPath=&ExportPath\&sn;
+
+Declare=FilmName;
+SetValue=FilmName;ReturnQuery=select F.FILM_NAME from FILMS_TO_CONTRACTS FC, V_FILMS F where FC.FILM_ID = F.ID_FILM and FC.CONTRACT_ID = &CONTRACT_ID;
+
+Declare=cn;
+SetValue=cn;ReturnQuery=select CONTRACT_NUMBER from contracts where contract_id = &CONTRACT_ID;
+
+Declare=EventName;
+//SetValue=EventName;ReturnQuery=;
