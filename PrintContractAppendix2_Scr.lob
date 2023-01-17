@@ -1,1 +1,6 @@
-Execute=DCLRun Script=PrintContractAppendix2_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID;
+if :CONTRACT_TYPE_ID=1 then
+// Коммерческий
+ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select p.*, p.ROLL_PAYD ROLL_PAYD2 from GET_AGEEMENT_DATA(:CONTRACT_ID) p;OfficeType=mso;
+Else
+ReportOfficeSheet=Template=NoneComerceAgrAppendix1.xlsx;SQL=select * from NONE_COMERCE_AGR_APP(:CONTRACT_ID);OfficeType=mso;FillStrategy=replace;
+EndIf

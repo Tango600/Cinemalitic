@@ -1,1 +1,6 @@
-Execute=DCLRun Script=PrintContract_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID;
+if :CONTRACT_TYPE_ID=1 then
+// Коммерческий
+ReportOfficeText=Template=AgreementBlank.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(:CONTRACT_ID) p;OfficeType=mso;
+Else
+ReportOfficeText=Template=NoneComerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(:CONTRACT_ID) p;OfficeType=mso;
+EndIf

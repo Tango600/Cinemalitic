@@ -13,6 +13,3 @@ SetValue=FilmName;ReturnQuery=select F.FILM_NAME from FILMS_TO_CONTRACTS FC, V_F
 
 Declare=cn;
 SetValue=cn;ReturnQuery=select CONTRACT_NUMBER from contracts where contract_id = &CONTRACT_ID;
-
-Declare=EventName;
-//SetValue=EventName;ReturnQuery=;

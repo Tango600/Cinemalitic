@@ -23,10 +23,10 @@ CommandButton=Label=Редактировать;CommandName=EditContract_Scr;
 CommandButton=Label=Скопировать;CommandName=CopyContract_Scr;Width=80;
 CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;
 
-CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=105;ForEach=1;
-CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;ForEach=1;
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=105;
+CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;
 
-CommandButton=Label=Пакет док.;CommandName=PrintContractPack_Scr;Width=115;
+CommandButton=Label=Пакет док.;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
 
 [Fields]
 19
