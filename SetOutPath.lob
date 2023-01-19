@@ -14,4 +14,4 @@ SetValue=tmp_FilmName;ReturnQuery=select F.FILM_NAME from FILMS_TO_CONTRACTS FC,
 Declare=FilmName=!!DeleteNonFilesSimb(&tmp_FilmName);
 
 Declare=cn;
-SetValue=cn;ReturnQuery=select CONTRACT_NUMBER from contracts where contract_id = &CONTRACT_ID;
+SetValue=cn;ReturnQuery=select FILL_LEFT(CONTRACT_NUMBER, '0', 3) from contracts where contract_id = &CONTRACT_ID;
