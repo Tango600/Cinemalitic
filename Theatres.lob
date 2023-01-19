@@ -1,6 +1,6 @@
 Caption=Кинотеатры;
 Single;
-Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID;
+Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID left join general_contract g on t.cinema_id = g.partner_id and g.start_date = (select max(g1.start_date) from general_contract g1 where g1.partner_id = t.cinema_id) order by t.cinema_name;
 ReadOnly=1;
 UpdateTable=THEATERS;KeyFields=CINEMA_ID;
 Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
@@ -11,7 +11,7 @@ CommandButton=Label=Реквизиты;CommandName=BankDetails_Call;
 CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 Style=2;
 [Fields]
-5
+8
 ID
 CINEMA_ID
 Наименование;Width=250;
@@ -22,3 +22,9 @@ MAX_SEATS
 CITY_NAME
 Население
 POPULATION
+Номер ген.дог
+GENERAL_NUM
+Дата заключ.
+CONTRACT_DATE
+Дата начала
+START_DATE
