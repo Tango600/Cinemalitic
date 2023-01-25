@@ -15,7 +15,7 @@ CommandButton=Label=Добавить;CommandName=Film_Add_Cmd;
 CommandButton=Label=Изменить;CommandName=Film_Edit_Cmd;
 CommandButton=Label=Excel;CommandName=FilmsToSheet;
 
-ComboFilter=Label=Коммерческий;List=-1/Все,0/Не Коммерческий,1/Коммерческий;FilterField=NO_COMERCE;Width=100;
+ComboFilter=Label=Коммерческий;List=-1/Все,1/Не Коммерческий,0/Коммерческий;FilterField=NO_COMERCE;Width=100;
 
 Color==h999999;BrushKey=PU_NUM;
 Color=1=clGreen;BrushKey=NO_COMERCE;
