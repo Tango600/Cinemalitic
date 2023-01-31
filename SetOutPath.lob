@@ -9,7 +9,7 @@ SetValue=ExportPath;ReturnQuery=select PARAM_VALUE from DCL_GLOBAL_PARAMS where 
 Declare=OutPath=&ExportPath\!!DeleteNonFilesSimb(&sn);
 
 Declare=tmp_FilmName;
-SetValue=tmp_FilmName;ReturnQuery=select F.FILM_NAME from FILMS_TO_CONTRACTS FC, V_FILMS F where FC.FILM_ID = F.ID_FILM and FC.CONTRACT_ID = &CONTRACT_ID;
+SetValue=tmp_FilmName;ReturnQuery=select TRIM_DOTS(F.FILM_NAME) from FILMS_TO_CONTRACTS FC, V_FILMS F where FC.FILM_ID = F.ID_FILM and FC.CONTRACT_ID = &CONTRACT_ID;
 
 Declare=FilmName=!!DeleteNonFilesSimb(&tmp_FilmName);
 
