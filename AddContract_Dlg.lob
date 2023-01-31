@@ -4,7 +4,6 @@ Single;
 ReadOnly=0;
 Navigator=0;
 CommandButton=Label=Добавить;CommandName=InsertContract_Scr;
-CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;
 
 [Fields]
 17
