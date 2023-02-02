@@ -2,13 +2,16 @@ Caption=Дистрибьюторы;
 Style=2;
 ReadOnly=1;
 Navigator=0;
-Query=select * from DISTRIBUTOR order by CODE;
+Query=select d.CODE, d.distr_name, cast(list(m.email, '; ') as varchar(300)) mail from distributor d, bank_details b, mails m where d.id=b.partner_id and b.id=m.partner_id group by d.distr_name, d.CODE order by d.CODE;
+UpdateTable=distributor;KeyFields=id;
 CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
 CommandButton=Label=Добавить;CommandName=Distributor_Add_Cmd;
 CommandButton=Label=Изменить;CommandName=Distributor_Edit_Cmd;
 [Fields]
-2
+3
 Код
 CODE
 Название
 DISTR_NAME
+E-mail адреса;ReadOnly=1;
+mail
