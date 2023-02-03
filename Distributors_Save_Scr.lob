@@ -1,0 +1,2 @@
+ExecQuery=update DISTRIBUTOR set CODE='&Distr_Code', DISTR_NAME='&Distr_Name' where ID=&Distr_ID;
+Refresh;

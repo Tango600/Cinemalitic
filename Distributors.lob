@@ -2,7 +2,7 @@ Caption=Дистрибьюторы;
 Style=2;
 ReadOnly=1;
 Navigator=0;
-Query=select d.CODE, d.distr_name, cast(list(m.email, '; ') as varchar(300)) mail from distributor d, bank_details b, mails m where d.id=b.partner_id and b.id=m.partner_id group by d.distr_name, d.CODE order by d.CODE;
+Query=select d.ID, d.CODE, d.distr_name, cast(list(m.email, '; ') as varchar(300)) mail from distributor d, bank_details b, mails m where d.id=b.partner_id and b.id=m.partner_id group by d.ID, d.distr_name, d.CODE order by d.CODE;
 UpdateTable=distributor;KeyFields=id;
 CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
 CommandButton=Label=Добавить;CommandName=Distributor_Add_Cmd;

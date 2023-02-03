@@ -1,9 +1,11 @@
 Caption=Дистрибьютор (редактирование);
 Style=0;
-Navigator=1;Buttons=Post,Cancel;
+Single;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=Distributors_Save_Scr;
 [Fields]
 2
-Код
+Код\EditBox=VariableName=Distr_Code;MaxLength=10;Width=90;
 CODE
-Название
+Название\EditBox=VariableName=Distr_Name;MaxLength=50;
 DISTR_NAME
