@@ -13,4 +13,4 @@ Declare=BEGIN_DEMONSTRATION=&_DATE_;
 Declare=END_DEMONSTRATION=&_DATE_;
 Declare=SHAR_RUB=;
 Declare=AGREEMENT_DATE=&_DATE_;
-Dialog=AddContract_Dlg;
+Dialog=Contract_Add_Dlg;

@@ -1,0 +1,44 @@
+Caption=Контракт (копирование);
+Style=0;
+Single;
+ReadOnly=0;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=InsertContract_Scr;
+CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;
+
+[Fields]
+17
+Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;
+CONTRACT_NUMBER
+Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
+AGREEMENT_DATE
+Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;KeyValue=&CONTRACT_TYPE_ID;NoDataField=1;
+CONTRACT_TYPE_ID
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
+GGGG
+Кинотеатр\Lookup=SQL=select * from THEATERS;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;
+CINEMA_ID
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
+SHAR_DISRT
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;_Value=&SHAR_KK;Width=100;ComponentName=Edit_SHAR_KK;
+SHAR_KK
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DEMONSTRATOR;ComponentName=Edit_SHAR_DEMONSTRATOR;
+SHAR_DEMONSTRATOR
+Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_SHARE;
+MIN_SHARE
+Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_RUB;
+SHAR_DISTR_RUB
+Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&FIXED_PRICE;
+FIXED_PRICE
+Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_TICKET_PRICE;
+MIN_TICKET_PRICE
+Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;KeyValue=&MEDIA_TYPE_ID;
+MEDIA_TYPE_ID
+2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;NoDataField=1;_Value=&SHOW_FORMAT_2D;
+SHOW_FORMAT_2D
+3D\SimplyCheckBox=VariableName=SHOW_FORMAT_3D;NoDataField=1;_Value=&SHOW_FORMAT_3D;
+SHOW_FORMAT_3D
+Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;NoDataField=1;_Value=&BEGIN_DEMONSTRATION;
+BEGIN_DEMONSTRATION
+Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;NoDataField=1;_Value=&END_DEMONSTRATION;
+END_DEMONSTRATION
