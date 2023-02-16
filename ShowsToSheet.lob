@@ -1,1 +1,2 @@
-ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;FieldsSet=CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH, iif(WATCHERS > 0, 1, 0);OfficeType=mso;FillStrategy=replace;
+Declare=officeType=!!ReadConfig(ShowsOffice);
+ReportOfficeSheet=Template=_Shows.xlsx;FileName=Shows;FieldsSet=CINEMA_NAME, FILM_NAME, SHOW_DATE, SHOW_TIME, WATCHERS, CASH, iif(WATCHERS > 0, 1, 0);OfficeType=&ShowsOffice;FillStrategy=replace;
