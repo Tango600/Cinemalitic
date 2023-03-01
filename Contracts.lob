@@ -28,6 +28,8 @@ CommandButton=Label=Печать Приложения 2;CommandName=PrintContrac
 
 CommandButton=Label=Пакет док.;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
 
+CommandButton=Label=Рассылку!;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;
+
 [Fields]
 19
 Тип договора\Width=80;
