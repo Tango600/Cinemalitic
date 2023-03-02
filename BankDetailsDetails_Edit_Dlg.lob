@@ -7,10 +7,6 @@ Navigator=0;
 CommandButton=Label=Записать;CommandName=BankDetailsDetails_Save_Scr;
 [Fields]
 21
-Расч. счёт (Казначейский счёт)\InputBox=Width=140;VariableName=BD_BANK_ACCOUNT;MaxLength=20;
-BANK_ACCOUNT
-Лицевой счёт\InputBox=VariableName=BD_FACECOUNT;Width=140;MaxLength=20;
-FACECOUNT
 Полное наименование\InputBox=VariableName=BD_FULL_NAME;Width=180;MaxLength=150;
 FULL_NAME
 Короткое наименование\InputBox=VariableName=BD_SHORT_NAME;Width=150;MaxLength=30;
@@ -43,6 +39,10 @@ IS_DELEGATOR
 SENIOR_FINANCEIST
 Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;KeyValue=&T_Bank_ID;
 BANK_ID
+Расч. счёт (Казначейский счёт)\InputBox=Width=140;VariableName=BD_BANK_ACCOUNT;MaxLength=20;
+BANK_ACCOUNT
+Лицевой счёт\InputBox=VariableName=BD_FACECOUNT;Width=140;MaxLength=20;
+FACECOUNT
 Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_DETAIL_ID;Columns=EMAIL=140/E-MAIL,FOR_SEND=30/Отпр.;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_DETAIL_ID;
 ID
 Сайт\InputBox=VariableName=BD_WWW;Width=200;MaxLength=40;ContextButton=CommandName=BankDetailsDetails_Context_Button_Scr;
