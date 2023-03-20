@@ -4,7 +4,7 @@ ReadOnly=1;
 Declare=FBegDate;
 Declare=FEndDate;
 SetValue=FBegDate;SQL=select min(release_date) from films;
-SetValue=FEndDate;SQL=select max(release_date) from films;
+SetValue=FEndDate;SQL=select max(release_date)+14 from films;
 Calendar=Label=Дата начала;VariableName=FBegDate;DefaultValue=&FBegDate;ReOpen=1;
 Calendar=Label=Дата конца; VariableName=FEndDate;DefaultValue=&FEndDate;ReOpen=1;
 ContextFilter=Label=Название;FilterField=FILM_NAME;FilterMode=Partial;
