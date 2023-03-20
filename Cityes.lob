@@ -1,5 +1,6 @@
 Caption=Города;
 Style=2;
+NoButtonsPanel;
 Query=select * from CITYES;
 [Fields]
 2

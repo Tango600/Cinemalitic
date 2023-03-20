@@ -1,5 +1,6 @@
 Caption=Банки;
 Query=select * from BANKS;
+NoButtonsPanel;
 Style=2;
 [Fields]
 4
