@@ -2,14 +2,14 @@ Caption=Дистрибьюторы;
 Style=2;
 ReadOnly=1;
 Navigator=0;
-Query=select d.ID, d.CODE, d.distr_name, cast(list(m.email, '; ') as varchar(300)) mail from distributor d left join bank_details b on d.id=b.partner_id left join mails m on b.id=m.partner_id where b.IS_DELETE=0 group by d.ID, d.distr_name, d.CODE order by d.CODE;
+Query=select d.ID, d.CODE, d.distr_name, cast(list(m.email, '; ') as varchar(300)) mail from distributor d left join bank_details b on d.id=b.partner_id and b.IS_DELETE=0 left join mails m on b.id=m.partner_id group by d.ID, d.distr_name, d.CODE order by d.CODE;
 UpdateTable=distributor;KeyFields=id;
 CommandButton=Label=Реквизиты;CommandName=Distributor_BankDetails_Call;
 CommandButton=Label=Добавить;CommandName=Distributor_Add_Cmd;
 CommandButton=Label=Изменить;CommandName=Distributor_Edit_Cmd;
 [Fields]
 3
-Код
+Код;Width=70;
 CODE
 Название
 DISTR_NAME
