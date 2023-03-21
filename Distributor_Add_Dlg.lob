@@ -1,0 +1,10 @@
+Caption=Дистрибьютор (редактирование);
+Style=0;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=Distributors_Add_Scr;
+[Fields]
+2
+Код\EditBox=VariableName=Distr_Code;MaxLength=10;Width=90;NoDataField=1;
+CODE
+Название\EditBox=VariableName=Distr_Name;MaxLength=50;NoDataField=1;
+DISTR_NAME

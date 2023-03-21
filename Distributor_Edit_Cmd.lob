@@ -1,2 +1,4 @@
 Declare=Distr_ID=:ID;
+Declare=Distr_Code=:CODE;
+Declare=Distr_Name=:DISTR_NAME;
 Dialog=Distributor_Edit_Dlg;

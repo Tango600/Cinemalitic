@@ -1,0 +1,3 @@
+ExecQuery=insert into DISTRIBUTOR(CODE, DISTR_NAME) values('&Distr_Code', '&Distr_Name');
+CloseDialog;
+Refresh;

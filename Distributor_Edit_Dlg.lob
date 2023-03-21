@@ -1,11 +1,10 @@
 Caption=Дистрибьютор (редактирование);
 Style=0;
-Single;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=Distributors_Save_Scr;
 [Fields]
 2
-Код\EditBox=VariableName=Distr_Code;MaxLength=10;Width=90;
+Код\EditBox=VariableName=Distr_Code;MaxLength=10;Width=90;NoDataField=1;_Value=&Distr_Code;
 CODE
-Название\EditBox=VariableName=Distr_Name;MaxLength=50;
+Название\EditBox=VariableName=Distr_Name;MaxLength=50;NoDataField=1;_Value=&Distr_Name;
 DISTR_NAME
