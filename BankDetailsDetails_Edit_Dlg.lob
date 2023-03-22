@@ -33,7 +33,7 @@ PHONE
 DIRECTOR
 Руководитель в род.падеже\InputBox=VariableName=BD_DIRECTOR_GENITIVE;Width=200;MaxLength=50;
 DIRECTOR_GENITIVE
-Исп.обязанности\CheckBox=VariableName=BD_IS_DELEGATOR;NoDataField=1;
+Исп.обязанности\CheckBox=VariableName=BD_IS_DELEGATOR;NoDataField=1;_Value=:IS_DELEGATOR;
 IS_DELEGATOR
 Гл. Бухгалтер\InputBox=VariableName=BD_FIFNANSIST;Width=200;MaxLength=40;
 SENIOR_FINANCEIST
