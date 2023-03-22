@@ -8,7 +8,7 @@ CommandButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
 CommandButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
 CommandButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);
 [Fields]
-17
+18
 Расч./Казн. счёт\Width=120;
 BANK_ACCOUNT
 Полное наименование\Width=150;
@@ -35,6 +35,8 @@ OKVEDS
 PHONE
 Директор\Width=80;
 DIRECTOR
+Основание
+ORDER_BLANK_NAME
 Банк\Width=120;
 BANK_NAME
 Лицевой счёт\Width=120;

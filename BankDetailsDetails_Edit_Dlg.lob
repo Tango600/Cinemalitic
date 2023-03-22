@@ -6,7 +6,7 @@ ReadOnly=1;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=BankDetailsDetails_Save_Scr;
 [Fields]
-21
+22
 Полное наименование\InputBox=VariableName=BD_FULL_NAME;Width=180;MaxLength=150;
 FULL_NAME
 Короткое наименование\InputBox=VariableName=BD_SHORT_NAME;Width=180;MaxLength=30;
@@ -33,6 +33,8 @@ PHONE
 DIRECTOR
 Руководитель в род.падеже\InputBox=VariableName=BD_DIRECTOR_GENITIVE;Width=200;MaxLength=50;
 DIRECTOR_GENITIVE
+Основание\InputBox=VariableName=BD_ORDER_BLANK_NAME;Width=200;MaxLength=100;
+ORDER_BLANK_NAME
 Исп.обязанности\CheckBox=VariableName=BD_IS_DELEGATOR;NoDataField=1;_Value=:IS_DELEGATOR;
 IS_DELEGATOR
 Гл. Бухгалтер\InputBox=VariableName=BD_FIFNANSIST;Width=200;MaxLength=40;
