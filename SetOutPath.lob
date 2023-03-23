@@ -2,7 +2,7 @@ Declare=ExportPath;
 Declare=sn;
 Declare=email;
 SetValue=sn;ReturnQuery=select t.cinema_name from contracts c, theaters t where c.cinema_id = t.cinema_id and c.contract_id = &CONTRACT_ID;
-SetValue=email;ReturnQuery=select m.email from bank_details d, mails m where d.id = m.partner_id and d.partner_id = (select c.cinema_id from contracts c where c.contract_id = &CONTRACT_ID) order by m.for_send desc, m.mid;
+SetValue=email;ReturnQuery=select m.email from bank_details d, mails m where d.partner_id = m.partner_id and d.partner_id = (select c.cinema_id from contracts c where c.contract_id = &CONTRACT_ID) order by m.for_send desc, m.mid;
 
 SetValue=ExportPath;ReturnQuery=select PARAM_VALUE from DCL_GLOBAL_PARAMS where PARAM_NAME='ExportPath';
 
