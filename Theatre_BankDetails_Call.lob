@@ -1,0 +1,3 @@
+Declare=CINEMA_ID=:CINEMA_ID;
+Declare=BP_ParnerName=:CINEMA_NAME;
+Dialog=BankDetailsDetails;

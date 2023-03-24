@@ -1,4 +1,4 @@
-Caption=Реквизиты;
+Caption=Реквизиты (&BP_ParnerName);
 ReadOnly=1;
 Query=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;
 Style=2;

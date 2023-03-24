@@ -1,2 +1,3 @@
 Declare=CINEMA_ID=:ID;
+Declare=BP_ParnerName=:distr_name;
 Dialog=BankDetailsDetails;

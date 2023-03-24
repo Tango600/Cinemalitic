@@ -6,7 +6,7 @@ UpdateTable=THEATERS;KeyFields=CINEMA_ID;
 Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
 CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
 CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;
-CommandButton=Label=Реквизиты;CommandName=BankDetails_Call;Host=1;
+CommandButton=Label=Реквизиты;CommandName=Theatre_BankDetails_Call;Host=1;
 CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 Style=2;
 [Fields]
