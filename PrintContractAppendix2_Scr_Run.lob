@@ -1,1 +1,1 @@
-Execute=DCLRun "&_DCLINI_" Script=PrintContractAppendix2_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID;
+Execute=DCLRun "&_DCLINI_" Script=PrintContractAppendix2_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID
