@@ -2,10 +2,17 @@ ExecCommand=SetOutPath;
 
 if &CONTRACT_TYPE_ID=1 then
 //Коммерческий
-ReportOfficeText=Template=AgreementBlank.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;Close=1;Save=1;FileName=&OutPath\&cn - &FilmName - ДС;OneDoc=1;
+ReportOfficeText=Template=CommerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;Close=1;Save=1;FileName=&OutPath\&cn - &FilmName - ДС;OneDoc=1;
 ReportOfficeText=Template=AgeementAppendix2.docx;SQL=select p.*, p.ROLL_PAYD ROLL_PAYD2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;Close=1;Save=1;FileName=&OutPath\&cn - &FilmName - ПР;OneDoc=1;
-Else
+EndIf
+if &CONTRACT_TYPE_ID=2 then
+//Некоммерческий
 ReportOfficeText=Template=NoneComerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;Close=1;Save=1;FileName=&OutPath\&cn - Некоммерческий - ДС;OneDoc=1;
 ReportOfficeSheet=Template=NoneComerceAgrAppendix1.xlsx;SQL=select * from NONE_COMERCE_AGR_APP(&CONTRACT_ID);OfficeType=mso;FillStrategy=replace;Close=1;Save=1;FileName=&OutPath\&cn - Некоммерческий - ПР;
 EndIf
+if &CONTRACT_TYPE_ID=3 then
+//Сотрудничество
+ReportOfficeText=Template=CooperationAreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;FileName=&OutPath\&cn - ДогСотрудничества - ДС;OneDoc=1;
+EndIf
+
 Exit;
