@@ -1,0 +1,16 @@
+Caption=Журнал выдачи фильмов;
+Style=2;
+Navigator=1;Buttons=First,Last;
+Query=select FD.*, F.film_name, F.pu_num, c.agreement_date from FILMS_TO_CONTRACTS FC left join FILMS F on FC.FILM_ID = F.ID_FILM left join FILMS_DELIVERYS FD on FC.CONTRACT_ID = FD.CONTRACT_ID and FC.FILM_ID = FD.FILM_ID left join CONTRACTS C on C.contract_id = fd.contract_id left join theaters t on c.cinema_id = t.cinema_id left join media_type mt on c.media_type_id = mt.med_id where fd.film_id is not null order by c.agreement_date, fd.delivery_num;
+CommandButton=Label=Выбор (даипазон);CommandName=DeliveryHistory_Params_Call;Width=110;
+CommandButton=Label=Выбор (квартал);CommandName=DeliveryHistory_Params_Quartal_Call;Width=110;
+[Fields]
+4
+Номер выдачи
+DELIVERY_NUM
+Фильм
+FILM_NAME
+ПУ
+PU_NUM
+Дата договора
+AGREEMENT_DATE

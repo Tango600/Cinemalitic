@@ -1,0 +1,11 @@
+CurrentTablePart=1;
+Declare=TP_FILM_ID;
+SetValue=TP_FILM_ID=:FILM_ID;TablePart=1;
+SetValue=IS_CLOSED_PERIOD;SQL=select count(1) from CLOSED_PERIODS P where P.IS_CLOSED is not null and cast(':AGREEMENT_DATE' as Timestamp) between P.PERIOD_BEGIN and P.PERIOD_END;
+if &IS_CLOSED_PERIOD=0 then
+ExecQuery=update FILMS_TO_CONTRACTS set EXCLUDE_FROM_DELIVERIES=null where CONTRACT_ID = &CONTRACT_ID and FILM_ID = &TP_FILM_ID;
+Else
+Message=Период закрыт!;
+EndIf
+Dispose=TP_FILM_ID;
+Refresh;

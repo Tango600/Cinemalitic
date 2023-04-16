@@ -1,0 +1,11 @@
+Caption=Печать журнала выдачи;
+Navigator=0;
+Style=0;
+CommandButton=Label=Печать;CommandName=Print_DeliveryHistory_Dates;
+
+[Fields]
+2
+Дата начала\DateBox=;_Value=&_DATE_;VariableName=QDateBeg;
+FFFF
+Дата конца\DateBox=;_Value=&_DATE_;VariableName=QDateEnd;
+FFFF2

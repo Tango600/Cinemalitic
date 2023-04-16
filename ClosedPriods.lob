@@ -1,0 +1,15 @@
+Caption=Закрытые периоды;
+Query=select * from CLOSED_PERIODS order by PERIOD_BEGIN, PERIOD_END;
+Navigator=0;
+
+CommandButton=Label=Открыть;CommandName=Open_Period_Scr;
+CommandButton=Label=Закрыть;CommandName=Close_Period_Scr;
+
+[Fields]
+3
+Начало
+PERIOD_BEGIN
+Окончание
+PERIOD_END
+Закрыт
+IS_CLOSED

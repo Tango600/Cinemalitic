@@ -1,0 +1,2 @@
+ExecQuery=update CLOSED_PERIODS set IS_CLOSED=null where PERIOD_ID=:PERIOD_ID;
+Refresh;
