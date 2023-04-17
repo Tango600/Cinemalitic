@@ -1,5 +1,6 @@
 Caption=Пользователь;
 Style=0;
+Navigator=1;Buttons=Post,Cancel;
 TablePart=Title=Роли;SQL=select r.rolesid, r.rolename, r.longrolename, r.role_accesslevel from dcl_Roles r, DCL_ROLES_TO_USERS ru where ru.ru_roleid=r.rolesid and ru.ru_userid=:UID;MasterDataField=UID;DependField=ru_userid;Columns=ROLESID/ID роли,ROLENAME/Роль,LONGROLENAME/Полн. назв,ROLE_ACCESSLEVEL/Права роли;
 [Fields]
 6
@@ -13,5 +14,5 @@ DCL_LONG_USER_NAME
 DCL_USER_PASS
 Показывать
 SHOWINLIST
-Права\DropListBox=List=&_USERNAMEACCESSLEVELS_;SetIndexValue=1
+Права\DropListBox=List=&_USERNAMEACCESSLEVELS_;SetIndexValue=1;UseIndex=1;
 ACCESSLEVEL
