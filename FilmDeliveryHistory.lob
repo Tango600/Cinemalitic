@@ -1,16 +1,26 @@
 Caption=Журнал выдачи фильмов;
+Declare=CBegDate;
+Declare=CEndDate;
+SetValue=CBegDate;SQL=select min(c.agreement_date) from films_deliverys fd, contracts c where fd.contract_id=c.contract_id;
+SetValue=CEndDate;SQL=select max(c.agreement_date) from films_deliverys fd, contracts c where fd.contract_id=c.contract_id;
+Calendar=Label=Дата начала;VariableName=CBegDate;DefaultValue=&CBegDate;ReOpen=1;
+Calendar=Label=Дата конца;VariableName=CEndDate;DefaultValue=&CEndDate;ReOpen=1;
+
 Style=2;
-Navigator=1;Buttons=First,Last;
-Query=select FD.*, F.film_name, F.pu_num, c.agreement_date from FILMS_TO_CONTRACTS FC left join FILMS F on FC.FILM_ID = F.ID_FILM left join FILMS_DELIVERYS FD on FC.CONTRACT_ID = FD.CONTRACT_ID and FC.FILM_ID = FD.FILM_ID left join CONTRACTS C on C.contract_id = fd.contract_id left join theaters t on c.cinema_id = t.cinema_id left join media_type mt on c.media_type_id = mt.med_id where fd.film_id is not null order by c.agreement_date, fd.delivery_num;
+ReadOnly=1;
+Navigator=0;Buttons=First,Last;
+Query=select FD.*, F.film_name, F.pu_num, c.agreement_date, t.cinema_name from FILMS_TO_CONTRACTS FC left join FILMS F on FC.FILM_ID = F.ID_FILM left join FILMS_DELIVERYS FD on FC.CONTRACT_ID = FD.CONTRACT_ID and FC.FILM_ID = FD.FILM_ID left join CONTRACTS C on C.contract_id = fd.contract_id left join theaters t on c.cinema_id = t.cinema_id left join media_type mt on c.media_type_id = mt.med_id where fd.film_id is not null and c.agreement_date between '&CBegDate' and '&CEndDate' order by c.agreement_date, fd.delivery_num;
 CommandButton=Label=Выбор (даипазон);CommandName=DeliveryHistory_Params_Call;Width=110;
 CommandButton=Label=Выбор (квартал);CommandName=DeliveryHistory_Params_Quartal_Call;Width=110;
 [Fields]
-4
-Номер выдачи
+5
+Номер выдачи\Width=80;
 DELIVERY_NUM
-Фильм
+Потребитель\Width=150;
+cinema_name
+Фильм\Width=180;
 FILM_NAME
-ПУ
+ПУ\Width=70;
 PU_NUM
 Дата договора
 AGREEMENT_DATE
