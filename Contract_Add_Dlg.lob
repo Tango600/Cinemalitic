@@ -17,11 +17,11 @@ CONTRACT_TYPE_ID
 GGGG
 Кинотеатр\Lookup=SQL=select * from THEATERS order by CINEMA_NAME;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;
 CINEMA_ID
-Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
+Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;_Value=&SHAR_KK;Width=100;ComponentName=Edit_SHAR_KK;
+Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_KK;
 SHAR_KK
-Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_DEMONSTRATOR;ComponentName=Edit_SHAR_DEMONSTRATOR;
+Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
 Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_SHARE;
 MIN_SHARE
