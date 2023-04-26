@@ -16,7 +16,7 @@ TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
 PU_NUM
 Название
 FILM_NAME
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;
 DISTR_ID
 Дата релиза\DateBox=
 RELEASE_DATE
