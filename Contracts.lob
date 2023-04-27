@@ -26,7 +26,8 @@ CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;
 CommandButton=Label=Печать договора;CommandName=PrintContract_Scr_Run;Width=105;ForEach=1;
 CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr_Run;Width=135;ForEach=1;
 
-CommandButton=Label=Пакет док.;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
+CommandButton=Label=Пакет ДС;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
+CommandButton=Label=Пакет ПР;CommandName=PrintContractPRPack_Scr;Width=90;ForEach=1;
 
 CommandButton=Label=Рассылку!;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;
 
