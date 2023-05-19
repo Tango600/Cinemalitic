@@ -1,9 +1,8 @@
 UserAccessRaight=7;
 Caption=Пользователи;
 Navigator=1;
-Live=1
 Query=Select * from &_DCL_USERS_TABLE_ order by 2;
-Style=2
+Style=2;
 CommandButton=Action=Print;Label=Печать
 CommandButton=Label=Оповещение;CommandName=Roles_Notify_Add_Scr;Hint=Создать оповещение.
 CommandButton=Label=Оповещения;CommandName=Notifycations_Call_Dlg;Hint=Таблица оповещенеий.
