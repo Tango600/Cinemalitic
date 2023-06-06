@@ -1,5 +1,9 @@
 ExecQuery=delete from MAILS where EMAIL is null;
 
+if &_ISEMPTY_=1 then
+ExecQuery=insert into BANK_DETAILS(PARTNER_ID) values(&CINEMA_ID);
+EndIf
+
 Declare=BD_Partner_ID=:PARTNER_ID;
 Declare=T_Bank_ID=:BANK_ID;
 Declare=BD_DETAIL_ID=:ID;
