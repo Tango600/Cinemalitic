@@ -5,5 +5,5 @@ Style=0;
 CommandButton=Label=Записать;CommandName=PostAndClose;
 [Fields]
 1
-Страна\Lookup=SQL=select * from COUNTRIES order by COUNTRY_NAME;Key=CONTR_ID;List=COUNTRY_NAME;
+Страна\Lookup=SQL=select * from COUNTRIES order by ORDER_FLG desc, COUNTRY_NAME;Key=CONTR_ID;List=COUNTRY_NAME;
 COUNTRY_ID
