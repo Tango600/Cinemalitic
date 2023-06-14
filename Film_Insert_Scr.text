@@ -10,7 +10,11 @@ Message=ПУ не заполнен!;
 Break;
 EndIf
 
+Declare=PPU=&PU_NUM;
 ExecQuery=insert into FILMS(PU_NUM, FILM_NAME, LIMIT, DOMESTIC, UNF, NO_COMERCE, RELEASE_DATE, DURATION, RELICE_YEAR, DISTR_ID) values(trim('&PU_NUM'), trim('&FILM_NAME'), &LIMIT, &DOMESTIC, &UNF, &NO_COMERCE, '&RELEASE_DATE', &DURATION, &RELICE_YEAR, &DISTR);
 ExecQuery=insert into countries_to_films(COUNTRY_ID, FILM_ID) select first 1 &CTRY, f.id_film from films f where f.pu_num=trim('&PU_NUM') order by f.id_film desc;
 CloseDialog;
 Refresh;
+GotoKey=&PPU;KeyField=PU_NUM;
+
+Dialog=Film_Edit_Dlg;ModalOpen=1;
