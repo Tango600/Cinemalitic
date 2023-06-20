@@ -1,3 +1,3 @@
 ExecCommand=Print_DeliveryHistory_SetQuery;
 
-ReportOfficeSheet=Template=FilmsDelivery.xlsx;SQL=&PrintFDQuery and c.agreement_date between '&QDateBeg' and '&QDateEnd' order by c.agreement_date, fd.delivery_num;OfficeType=mso;FillStrategy=replace;
+ReportOfficeSheet=Template=FilmsDelivery.xlsm;SQL=&PrintFDQuery and c.agreement_date between '&QDateBeg' and '&QDateEnd' order by c.agreement_date, fd.delivery_num;OfficeType=mso;FillStrategy=replace;
