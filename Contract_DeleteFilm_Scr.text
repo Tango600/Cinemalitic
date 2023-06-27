@@ -1,6 +1,9 @@
 CurrentTablePart=1;
 Message=Удалить фильм?;VariableName=DeleteAnswResult;Flags=YesNo;
 if &DeleteAnswResult=1 then
-Delete_Part;
+Declare=tmp_Del_Film_ID;
+SetValue=tmp_Del_Film_ID=:FTC_ID;TablePart=1;
+ExecQuery=delete from FILMS_TO_CONTRACTS where FTC_ID=&tmp_Del_Film_ID;
+Dispose=tmp_Del_Film_ID;
 Refresh;
 EndIf
