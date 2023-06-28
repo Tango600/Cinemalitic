@@ -1,4 +1,14 @@
+Declare=LastContractID;
 ExecQuery=execute procedure ADD_CONTRACT('&MIN_TICKET_PRICE', '&SHAR_DEMONSTRATOR', '&AGREEMENT_DATE', &MEDIA_TYPE_ID, &CONTRACT_TYPE_ID, '&CONTRACT_NUMBER', &CINEMA_ID, '&SHAR_KK', '&SHAR_DISRT', '&SHAR_RUB', '&MIN_SHARE', '&FIXED_PRICE', &SHOW_FORMAT_2D, &SHOW_FORMAT_3D, '&DISTR', '&BEGIN_DEMONSTRATION', '&END_DEMONSTRATION', '&DestContract');
 
+SetValue=LastContractID;SQL=select max(CONTRACT_ID) from CONTRACTS;
+
 CloseDialog;
+Sleep=500;
 Refresh;
+Sleep=500;
+Declare=DestContract=0;
+
+GotoKey=&LastContractID;KeyField=CONTRACT_ID;
+
+ExecCommand=Contract_Edit_Scr;
