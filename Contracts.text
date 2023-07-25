@@ -5,7 +5,7 @@ Navigator=0;
 Declare=CBegDate;
 Declare=CEndDate;
 SetValue=CBegDate;SQL=select min(AGREEMENT_DATE) from CONTRACTS;
-SetValue=CEndDate;SQL=select max(AGREEMENT_DATE) from CONTRACTS;
+SetValue=CEndDate;SQL=select max(AGREEMENT_DATE)+30 from CONTRACTS;
 Calendar=Label=Дата начала;VariableName=CBegDate;DefaultValue=&CBegDate;ReOpen=1;
 Calendar=Label=Дата конца;VariableName=CEndDate;DefaultValue=&CEndDate;ReOpen=1;
 
