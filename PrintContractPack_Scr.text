@@ -1,1 +1,1 @@
-Execute=DCLRun "&_DCLINI_" Script=PrintContractPack_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID
+Execute=&_APPNAME_ "&_DCLINI_" Script=PrintContractPack_Scr_Ext Variables=CONTRACT_ID=:CONTRACT_ID,CONTRACT_TYPE_ID=:CONTRACT_TYPE_ID
