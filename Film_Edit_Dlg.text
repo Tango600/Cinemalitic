@@ -10,6 +10,8 @@ TablePartToolButton=Label=Удалить;CommandName=Film_Genere_Delete_Scr;
 TablePart=Title=Страны;ReadOnly=1;Style=2;SQL=select * from COUNTRIES_TO_FILMS cf left join countries c on cf.country_id=c.contr_id where cf.film_id=:ID_FILM;DependField=FILM_ID;MasterDataField=ID_FILM;Navigator=0;Columns=COUNTRY_NAME=200/Страна;
 TablePartToolButton=Label=Добавить;CommandName=Film_Add_Country_Call;
 TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
+
+AddStatus=:ID_FILM;
 [Fields]
 10
 Номер ПУ

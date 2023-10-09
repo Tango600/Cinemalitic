@@ -6,7 +6,7 @@ TablePart=Title=Роли;SQL=select r.rolesid, r.rolename, r.longrolename, r.rol
 6
 Имя
 DCL_USER_NAME
-Роль\Lookup=QueryLookup=select * from DCL_ROLES;Key=ROLESID;List=LONGROLENAME;
+Роль\Lookup=SQL=select * from DCL_ROLES;Key=ROLESID;List=LONGROLENAME;
 DCL_ROLE
 Полное имя
 DCL_LONG_USER_NAME
