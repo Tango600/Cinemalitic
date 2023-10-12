@@ -23,6 +23,9 @@ Query=select f.*, cast((select list(c.country_name, ';') from countries_to_films
 UpdateTable=FILMS;KeyFields=id_film;
 QueryKeyField=PU_NUM;
 
+Color=h999999;Condition=PU_NUM=;
+Color=clGreen;Condition=NO_COMERCE=1;
+
 [Fields]
 12
 Номер ПУ
