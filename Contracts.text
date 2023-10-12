@@ -29,7 +29,7 @@ CommandButton=Label=Печать Приложения 2;CommandName=PrintContrac
 CommandButton=Label=Пакет ДС;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
 CommandButton=Label=Пакет ПР;CommandName=PrintContractPRPack_Scr;Width=90;ForEach=1;
 
-CommandButton=Label=Рассылку!;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;
+CommandButton=Label=Email рассылка;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;
 
 [Fields]
 19
