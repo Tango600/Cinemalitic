@@ -18,18 +18,18 @@ DBFilter=Label=Фильм;SQL=select -1 ID_FILM, '<>' FILM_NAME from RDB$DATABAS
 Query=select cast((select list(seanses_count, '/') from (select seanses_count from weeks w where w.contract_id = c.contract_id order by w.week_num)) as varchar(300)) weeks_nums, cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(8100)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id where c.AGREEMENT_DATE between '&CBegDate' and '&CEndDate' and (&FilmIDF=-1 or exists(select * from FILMS_TO_CONTRACTS fc where fc.film_id = &FilmIDF and fc.contract_id = c.contract_id));
 Multiselect=1;
 
-CommandButton=Label=Добавить;CommandName=Contract_Add_Scr;Width=70;
-CommandButton=Label=Редактировать;CommandName=Contract_Edit_Scr;
-CommandButton=Label=Скопировать;CommandName=Contracts_Copy_Scr;Width=80;
-CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;
+CommandButton=Label=Добавить;CommandName=Contract_Add_Scr;Width=70;AutoSize=1;
+CommandButton=Label=Редактировать;CommandName=Contract_Edit_Scr;AutoSize=1;
+CommandButton=Label=Скопировать;CommandName=Contracts_Copy_Scr;Width=80;AutoSize=1;
+CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;AutoSize=1;
 
-CommandButton=Label=Печать договора;CommandName=PrintContract_Scr_Run;Width=105;ForEach=1;
-CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr_Run;Width=135;ForEach=1;
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr_Run;Width=105;ForEach=1;AutoSize=1;
+CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr_Run;Width=135;ForEach=1;AutoSize=1;
 
-CommandButton=Label=Пакет ДС;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;
-CommandButton=Label=Пакет ПР;CommandName=PrintContractPRPack_Scr;Width=90;ForEach=1;
+CommandButton=Label=Пакет ДС;CommandName=PrintContractPack_Scr;Width=90;ForEach=1;AutoSize=1;
+CommandButton=Label=Пакет ПР;CommandName=PrintContractPRPack_Scr;Width=90;ForEach=1;AutoSize=1;
 
-CommandButton=Label=Email рассылка;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;
+CommandButton=Label=Email рассылка;Hint=Запустить рассылку;CommandName=RunBellhoper_Scr;AutoSize=1;
 
 [Fields]
 19
