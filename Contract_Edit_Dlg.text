@@ -9,7 +9,7 @@ CommandButton=Label=Сохранить;CommandName=Contract_Update_Scr;
 
 TablePart=SQL=select fc.*, f.*, coalesce('с ' || DATE2STR(fc.roll_date_begin) || ' по ', '') || coalesce(DATE2STR(fc.roll_date_end), '') roll_dates, fd.delivery_num from films_to_contracts fc left join films f on fc.film_id = f.id_film left join films_deliverys fd on fc.contract_id = fd.contract_id and fc.film_id = fd.film_id where fc.contract_id=&CONTRACT_ID;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=film_name=170/Фильм,pu_num=80/ПУ,roll_dates=120/Сроки проката,NOTE=120/Примечание,delivery_num=80/Номер в жур.,exclude_from_deliveries=120/Исключить из выдачи;Title=Фильмы;Navigator=0;NoDataField=1;ReadOnly=1;
 
-TablePartToolButton=Label=Редактировать;CommandName=Contract_EditFilm_Call;Width=110;
+TablePartToolButton=Label=Редактировать;CommandName=Contract_EditFilm_Call;Width=110;AutoSize=1;
 TablePartToolButton=Label=Добавить;CommandName=Contract_AddFilm_Call;Width=70;
 TablePartToolButton=Label=Удалить;CommandName=Contract_DeleteFilm_Scr;Width=55;
 TablePartToolButton=Label=Искл. из выдачи;CommandName=Contract_FilmExcludeFromDelivery_Scr;Width=100;
@@ -17,10 +17,10 @@ TablePartToolButton=Label=Вкл. в выдачу;CommandName=Contract_FilmInclu
 
 TablePart=SQL=select * from WEEKS where CONTRACT_ID = &CONTRACT_ID order by WEEK_NUM;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=WEEK_NUM=70/№ недели,SEANSES_COUNT=80/Сеансов;Title=Количество сеансов;Navigator=1;NavigatorButtons=Post,Insert,Delete;NoDataField=1;
 
-CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;
-CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;AutoSize=1;
+CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;AutoSize=1;
 
-CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;
+CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;AutoSize=1;
 
 AddStatus=&CONTRACT_ID;
 
