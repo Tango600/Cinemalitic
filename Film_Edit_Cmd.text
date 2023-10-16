@@ -1,1 +1,13 @@
+Declare=ID_FILM=:ID_FILM;
+Declare=PU_NUM=:PU_NUM;
+Declare=FILM_NAME=:FILM_NAME;
+Declare=DISTR_ID=:DISTR_ID;
+Declare=RELEASE_DATE=:RELEASE_DATE;
+Declare=LIMIT=:LIMIT;
+Declare=DURATION=:DURATION;
+Declare=RELICE_YEAR=:RELICE_YEAR;
+Declare=DOMESTIC=:DOMESTIC;
+Declare=UNF=:UNF;
+Declare=NO_COMERCE=:NO_COMERCE;
+
 Dialog=Film_Edit_Dlg;ModalOpen=1;

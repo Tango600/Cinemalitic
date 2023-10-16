@@ -1,1 +1,1 @@
-Post;
+ExecQuery=execute procedure EDIT_FILM(&ID_FILM, '&PU_NUM', '&FILM_NAME', &DISTR_ID, '&RELEASE_DATE', '&LIMIT', '&DURATION', '&RELICE_YEAR', '&DOMESTIC', '&UNF', '&NO_COMERCE');

@@ -11,8 +11,8 @@ ContextFilter=Label=Название;FilterField=FILM_NAME;FilterMode=Partial;
 ContextFilter=Label=ПУ;FilterField=PU_NUM;
 DBFilter=Label=Дистрибьютор;SQL=select -1 id, '<>' distr_name from rdb$database union all select id, distr_name from (select id, distr_name || ' (' || code || ')' distr_name from distributor order by distr_name);Key=ID;List=distr_name;FilterField=DISTR_ID;Width=220;
 Navigator=0;
-CommandButton=Label=Добавить;CommandName=Film_Add_Cmd;
-CommandButton=Label=Изменить;CommandName=Film_Edit_Cmd;
+CommandButton=Label=Добавить;CommandName=Film_Add_Cmd;Host=1;
+CommandButton=Label=Изменить;CommandName=Film_Edit_Cmd;Host=1;
 CommandButton=Label=Excel;CommandName=FilmsToSheet;
 
 ComboFilter=Label=Коммерческий;List=-1/Все,1/Не Коммерческий,0/Коммерческий;FilterField=NO_COMERCE;Width=100;

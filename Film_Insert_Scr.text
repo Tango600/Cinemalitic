@@ -16,4 +16,4 @@ CloseDialog;
 Refresh;
 GotoKey=&PPU;KeyField=PU_NUM;
 
-Dialog=Film_Edit_Dlg;ModalOpen=1;
+ExecCommand=Film_Edit_Cmd;
