@@ -10,7 +10,7 @@ CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
 PU_NUM
 Название\InputBox=VariableName=FILM_NAME;NoDataField=1;MaxLength=120;
 FILM_NAME
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;
 GGGG
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
