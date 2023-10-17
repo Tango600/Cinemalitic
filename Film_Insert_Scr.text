@@ -17,3 +17,5 @@ Refresh;
 GotoKey=&FID;KeyField=ID_FILM;
 
 ExecCommand=Film_Edit_Cmd;
+
+DialogByName=Film_Edit_Dlg.Show;
