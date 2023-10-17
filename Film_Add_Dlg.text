@@ -14,7 +14,7 @@ FILM_NAME
 GGGG
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;Format=Digit;
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;Format=Digit;NoDataField=1;
 DDD
 Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;Format=Digit;
 DURATION
