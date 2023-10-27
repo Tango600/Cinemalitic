@@ -10,4 +10,4 @@ Declare=DOMESTIC=:DOMESTIC;
 Declare=UNF=:UNF;
 Declare=NO_COMERCE=:NO_COMERCE;
 
-Dialog=Film_Edit_Dlg;
+Dialog=Film_Edit_Dlg;ModalOpen=0;
