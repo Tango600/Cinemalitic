@@ -1,12 +1,11 @@
 Caption=Добавление элемента меню;
-Navigator=0
-Style=0
-Modal=1
-FormHeight=200
+Navigator=0;
+Style=0;
+Modal=1;
 CommandButton=Label=Добавить;CommandName=Roles_AddMenuItemExec;
 [Fields]
 2
-Роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=ROLEIDV;NoDataField=1;QueryLookup=select * from DCL_Roles order by LongRoleName;
+Роль\LookUp=List=Long_Role_Name;Key=ID_Role;VariableName=ROLEIDV;NoDataField=1;SQL=select * from DCL_Roles order by Long_Role_Name;
 ROLESID
-Меню\LookUp=List=DCLName;Key=NumSeq;VariableName=MenuIDv;NoDataField=1;QueryLookup=select * from DCL_SCRIPTS t where t.ident between 0 and 60000 order by t.DCLName, t.NumSeq;
+Меню\LookUp=List=combine;Key=ID_SCR;VariableName=MenuIDv;NoDataField=1;SQL=select SCR_Name || ' (' || ident || ')' combine, SCR_Name, ID_SCR from DCL_SCRIPTS t where t.ident between 1 and 49999 order by t.SCR_Name;
 MENUITEMID

@@ -6,7 +6,7 @@ FormHeight=200
 CommandButton=Label=Копировать;CommandName=Roles_CopyRoleExec;
 [Fields]
 2
-Копировать роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=RoleIDFrom;NoDataField=1;QueryLookup=select * from DCL_Roles;
+Копировать роль\LookUp=List=Long_Role_Name;Key=ID_Role;VariableName=RoleIDFrom;NoDataField=1;SQL=select * from DCL_Roles order by LONG_ROLE_NAME;
 ROLEID
-В роль\LookUp=List=LongRoleName;Key=RolesID;VariableName=RoleIDTo;NoDataField=1;QueryLookup=select * from DCL_Roles;
+В роль\LookUp=List=Long_Role_Name;Key=ID_Role;VariableName=RoleIDTo;NoDataField=1;SQL=select * from DCL_Roles order by LONG_ROLE_NAME;
 MENUITEMID

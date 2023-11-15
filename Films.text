@@ -31,13 +31,13 @@ PU_NUM
 Название
 FILM_NAME
 Отечественный
-DOMESTIC
+DOMESTIC\As_Logic;
 Возрастное огр.
 LIMIT
 УНФ
-UNF
+UNF\As_Logic;
 Не коммерческий
-NO_COMERCE
+NO_COMERCE\As_Logic;
 Дата премьеры
 RELEASE_DATE
 Хронометраж (мин.)

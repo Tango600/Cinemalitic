@@ -1,15 +1,15 @@
+UserAccessRaight=10;
 Caption=Роли;
-Query=select * from DCL_ROLES order by ROLE_ACCESSLEVEL, ROLENAME;
+Query=select * from DCL_ROLES order by ROLE_NAME;
+CommandButton=Label=Состав;CommandName=Roles_Menus_Call;
 Style=2;
 [Fields]
-5
+4
 ID роли
-ROLESID
+ID_ROLE
 Название
-ROLENAME
+ROLE_NAME
 Длинное название роли
-LONGROLENAME
+LONG_ROLE_NAME
 Показывать роль
-SHOWINLIST
-Права роли
-ROLE_ACCESSLEVEL
+SHOW_IN_LIST

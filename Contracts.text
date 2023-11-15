@@ -56,9 +56,9 @@ FIXED_PRICE
 Тип носителя\Width=110;
 MEDIA_NAME
 2D\Width=70;
-SHOW_FORMAT_2D
+SHOW_FORMAT_2D\As_Logic;
 3D\Width=70;
-SHOW_FORMAT_3D
+SHOW_FORMAT_3D\As_Logic;
 Цена билета\Width=100;
 MIN_TICKET_PRICE
 Фильмы\Width=180;

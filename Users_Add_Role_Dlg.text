@@ -1,0 +1,7 @@
+Caption=Добавление роли;
+Style=0;
+CommandButton=Label=Добавить;CommandName=User_AddRole_Scr;
+[Fields]
+1
+Роль\InputBox=NoDataField=1;ContextButton=CommandName=Users_SelectRole_Scr;Hint=Выбрать роль;ComponentName=Role_Edit;Width=200;ReadOnly=1;
+GDFD

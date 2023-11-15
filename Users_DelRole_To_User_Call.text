@@ -1,0 +1,2 @@
+ExecQuery=delete from DCL_ROLES_TO_USERS where RU_ID=:RU_ID;
+Refresh;

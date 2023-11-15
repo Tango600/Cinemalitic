@@ -1,0 +1,3 @@
+ExecQuery=insert into DCL_ROLES_TO_USERS(RU_USERID, RU_ROLEID) values(:RU_USERID, &SelectRoleID);
+CloseDialog;
+Refresh;

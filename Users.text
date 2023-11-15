@@ -1,13 +1,14 @@
-UserAccessRaight=7;
+UserAccessRaight=ulDeveloper;
 Caption=Пользователи;
 Navigator=1;
-Query=Select * from &_DCL_USERS_TABLE_ order by 2;
+Query=Select * from DCL_USERS order by DCL_USER_NAME;
 Style=2;
-CommandButton=Action=Print;Label=Печать
-CommandButton=Label=Оповещение;CommandName=Roles_Notify_Add_Scr;Hint=Создать оповещение.
-CommandButton=Label=Оповещения;CommandName=Notifycations_Call_Dlg;Hint=Таблица оповещенеий.
+CommandButton=Label=Оповещение;CommandName=Roles_Notify_Add_Scr;Hint=Создать оповещение.;Host=1;
+CommandButton=Label=Оповещения;CommandName=Notifycations_Call_Dlg;Hint=Таблица оповещенеий.;Host=1;
 CommandButton=Label=Просмотр;CommandName=User_Edit_Scr;
-TablePart=Title=Роли;SQL=select r.rolesid, r.rolename, r.longrolename, r.role_accesslevel from DCL_ROLES_TO_USERS ru, dcl_Roles r where ru.ru_roleid=r.rolesid and ru.ru_userid=:UID union select -1 rolesid, r.rolename, r.longrolename, r.role_accesslevel from dcl_roles r where r.rolesid=:DCL_ROLE;MasterDataField=UID;DependField=ru_userid;Columns=ROLESID/ID роли,ROLENAME/Роль,LONGROLENAME/Полн. назв,ROLE_ACCESSLEVEL/Права роли;
+TablePart=Title=Роли;SQL=select * from DCL_ROLES_TO_USERS ru, DCL_ROLES r where ru.ru_roleid=r.id_role and ru.ru_userid=:UID;MasterDataField=UID;DependField=ru_userid;Columns=ID_ROLE/ID роли,ROLE_NAME/Роль,LONG_ROLE_NAME/Полн. назв;
+TablePartToolButton=Label=Добавить роль;CommandName=Users_AddRole_To_User_Call;AutoSize=1;Host=1;
+TablePartToolButton=Label=Удалить роль;CommandName=Users_DelRole_To_User_Call;AutoSize=1;Host=1;
 [Fields]
 5
 ID
@@ -17,6 +18,6 @@ DCL_USER_NAME
 Полное имя
 DCL_LONG_USER_NAME
 Показывать
-SHOWINLIST
+SHOW_IN_LIST
 Права
-ACCESSLEVEL
+ACCESS_LEVEL

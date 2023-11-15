@@ -1,0 +1,1 @@
+Dialog=Roles;ValueField=ROLE_NAME;KeyField=ID_ROLE;KeyVariable=SelectRoleID;ValueEditName=Role_Edit;ChooseMode=2;
