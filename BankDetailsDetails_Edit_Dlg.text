@@ -44,7 +44,7 @@ BANK_ID
 BANK_ACCOUNT
 Лицевой счёт\InputBox=VariableName=BD_FACECOUNT;Width=140;MaxLength=20;
 FACECOUNT
-Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_Partner_ID order by FOR_SEND;Columns=EMAIL=140/E-MAIL,FOR_SEND=30/Отпр.;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_Partner_ID;Height=200;NavigatorButtons=Post,Delete;[FieldParagraphDown];Navigator=1;
+Электропочта\LookupTable=SQL=select * from MAILS where PARTNER_ID=&BD_Partner_ID order by FOR_SEND;Columns=EMAIL=140/E-MAIL,FOR_SEND=30/Отпр.;DependField=PARTNER_ID;NoDataField=1;VariableName=BD_Partner_ID;Height=200;NavigatorButtons=Post,Delete,Insert;[FieldParagraphDown];Navigator=1;
 ID
 Сайт\InputBox=VariableName=BD_WWW;Width=200;MaxLength=40;ContextButton=CommandName=BankDetailsDetails_Context_Button_Scr;
 WWW
