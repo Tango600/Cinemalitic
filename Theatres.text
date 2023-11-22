@@ -18,8 +18,6 @@ TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER
 
 TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
 TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
-TablePartToolButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
-TablePartToolButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);AutoSize=1;
 
 Style=2;
 [Fields]
