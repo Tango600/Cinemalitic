@@ -1,0 +1,2 @@
+Declare=USERID;
+SetValue=USERID=:UID;

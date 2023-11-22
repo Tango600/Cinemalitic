@@ -1,7 +1,10 @@
 Declare=tmpAddMenuitem;
-SetValue=tmpAddMenuitem;ReturnQuery=select t.isappend from ADD_MENU_ITEM_TO_ROLE(&ROLEIDV, &MenuIDv) t;
-if &tmpAddMenuitem=1 then
-Reopen;
+SetValue=tmpAddMenuitem;SQL=select count(*) from DCL_ROLESMENU where ROLEID=&ROLEIDV and MENUITEM_ID=&MenuIDv;
+
+if &tmpAddMenuitem=0 then
+ExecQuery=insert into DCL_ROLESMENU(ROLEID, MENUITEM_ID) values(&ROLEIDV, &MenuIDv);
+Message=Элемент &MenuIDv, добавлен;
+Refresh;
 Else
 Message=Такой элемент уже существует;
 EndIf

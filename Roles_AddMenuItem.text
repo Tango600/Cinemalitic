@@ -7,5 +7,5 @@ CommandButton=Label=Добавить;CommandName=Roles_AddMenuItemExec;
 2
 Роль\LookUp=List=Long_Role_Name;Key=ID_Role;VariableName=ROLEIDV;NoDataField=1;SQL=select * from DCL_Roles order by Long_Role_Name;
 ROLESID
-Меню\LookUp=List=combine;Key=ID_SCR;VariableName=MenuIDv;NoDataField=1;SQL=select SCR_Name || ' (' || ident || ')' combine, SCR_Name, ID_SCR from DCL_SCRIPTS t where t.ident between 1 and 49999 order by t.SCR_Name;
+Меню\LookUp=List=SCR_Name;Key=Ident;VariableName=MenuIDv;NoDataField=1;SQL=select ident, SCR_Name || ' (' || ident || ')' SCR_Name from DCL_SCRIPTS t where t.ident between 1 and 49999 order by t.SCR_Name;
 MENUITEMID

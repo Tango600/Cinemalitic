@@ -11,5 +11,5 @@ DCL_LONG_USER_NAME
 DCL_USER_PASS
 Показывать
 SHOW_IN_LIST
-Права\DropListBox=List=&_USERNAMEACCESSLEVELS_;SetIndexValue=1
+Права\DropListBox=List=&_USERNAMEACCESSLEVELS_;SetIndexValue=1;UseIndex=1;
 ACCESS_LEVEL

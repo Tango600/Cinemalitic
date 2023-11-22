@@ -1,7 +1,7 @@
 Declare=YNv;
 Message=Удалить запись?;Flags=YesNo;VariableName=YNv;
 if 1=&YNv then
-ModifyingQuery=delete from RolesMenu where RoleID=:RoleID and MenuItemID=:MenuItemID;
-ReOpen;
+ExecQuery=delete from DCL_ROLESMENU where ROLEID=:ID_ROLE and MENUITEM_ID=:MENUITEM_ID;
+Refresh;
 EndIf
 Dispose=YNv;

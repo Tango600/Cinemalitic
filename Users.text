@@ -1,4 +1,5 @@
 UserAccessRaight=ulDeveloper;
+Events=Scroll=Users_Scroll;
 Caption=Пользователи;
 Navigator=1;
 Query=Select * from DCL_USERS order by DCL_USER_NAME;
