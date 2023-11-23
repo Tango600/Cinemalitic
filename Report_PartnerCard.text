@@ -1,0 +1,24 @@
+[BODY]
+  Карточка реквизитов контрагента :SHORT_NAME
+
+Полное наименование: :FULL_NAME
+Краткое наименование: :SHORT_NAME
+Юр. адрес: :UR_ADDRESS
+Адрес регистрации: :REAL_ADDRESS
+Банк: :BANK_NAME
+Расчётный счёт: :BANK_ACCOUNT
+Расчётный\Казн. счёт: :FACECOUNT
+ИНН: :VATIN
+КПП: :KPP
+ОГРН: :OGRN
+ОКПО: :OKPO
+ОКТМО: :OKTMO
+ОКВЕДы: :OKVEDS
+Директор: :DIRECTOR
+Директор (род. падеже): :DIRECTOR_GENITIVE
+Гл. бухгалтер: :SENIOR_FINANCEIST
+Телефоны: :PHONE
+Web страница: :WWW
+Признак Исп. обязанности: :IS_DELEGATOR
+По умолчанию (1-да): :IS_DEFAULT
+[END BODY]
