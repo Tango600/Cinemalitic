@@ -1,4 +1,4 @@
-Caption=Реквизиты (редактирование);
+Caption=Реквизиты (редактирование &CINEMA_ID);
 CloseQuery=;
 Style=0;
 ReadOnly=1;

@@ -1,6 +1,7 @@
 Caption=Реквизиты (&BP_ParnerName (&CINEMA_ID));
 ReadOnly=1;
 Query=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;
+UpdateTable=BANKS;KeyFields=ID;
 Style=2;
 CommandButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
 CommandButton=Label=Добавить;CommandName=BankDetail_Add_Scr;

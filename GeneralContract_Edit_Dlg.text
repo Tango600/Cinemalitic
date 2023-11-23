@@ -5,9 +5,9 @@ Style=0;
 7
 Номер
 GENERAL_NUM
-Дата договора\DateBox=;
+Дата договора
 CONTRACT_DATE
-Дата начала\DateBox=;
+Дата начала
 START_DATE
 Начало нумерации +1
 START_NUMBER

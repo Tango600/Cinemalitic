@@ -1,5 +1,7 @@
 Caption=Кинотеатры;
 Single;
+Declare=CINEMA_ID;
+Events=Scroll=Theatres_Scroll;
 Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID left join general_contract g on t.cinema_id = g.partner_id and g.start_date = (select max(g1.start_date) from general_contract g1 where g1.partner_id = t.cinema_id) order by t.cinema_name;
 ReadOnly=1;
 UpdateTable=THEATERS;KeyFields=CINEMA_ID;
@@ -11,13 +13,13 @@ CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=:CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;Columns=BANK_ACCOUNT=120/Расч.Казн. счёт,SHORT_NAME/Короткое наименование,OGRN=80/ОГРН,OKVEDS=90/ОКВЕД,BANK_NAME/Банк;
 
-TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
-TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
+TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;Host=1;
+TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;Host=1;
 
 TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=CINEMA_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);
 
-TablePartToolButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;
-TablePartToolButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;
+TablePartToolButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;Host=1;
+TablePartToolButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;Host=1;
 
 Style=2;
 [Fields]
