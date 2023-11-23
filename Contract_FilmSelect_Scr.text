@@ -1,1 +1,1 @@
-Dialog=Films;ValueField=FILM_NAME;KeyField=ID_FILM;KeyVariable=C_FilmID;ValueEditName=PU_FILM_Edit;ChooseMode=2;
+Dialog=Films;ValueField=FILM_NAME;KeyField=ID_FILM;KeyVariable=C_FilmID;ValueEditName=PU_FILM_Edit;ChooseMode=2;MultiSelect=1;BatchScript=Contract_AddFilm_Batch;ModalOpen=1;FinishScript=Contract_AddFilm_Finish;
