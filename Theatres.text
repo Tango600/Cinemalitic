@@ -13,14 +13,9 @@ CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=:CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;Columns=SHORT_NAME=120/Краткое наименование,DIRECTOR=100/Директор,PHONE=80/Телефон,UR_ADDRESS=130/Юр.адрес,REAL_ADDRESS=130/Факт.адрес,VATIN/ИНН,OGRN/ОГРН,KPP/КПП,OKPO/ОКПО,OKTMO/ОКТМО,BANK_NAME=120/Банк,BANK_ACCOUNT/Расч.(Казн.) счёт,FACECOUNT/Лицевой счёт,DEFAULT_FLG/По умолч.;
 
-TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;Host=1;
-TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;Host=1;
 TablePartToolButton=Label=Карточка КА;CommandName=PartnerCard;
 
 TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=CINEMA_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);
-
-TablePartToolButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;Host=1;
-TablePartToolButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;Host=1;
 
 Style=2;
 [Fields]
