@@ -5,8 +5,8 @@ Declare=FBegDate;
 Declare=FEndDate;
 SetValue=FBegDate;SQL=select min(release_date) from films;
 SetValue=FEndDate;SQL=select max(release_date)+30 from films;
-Calendar=Label=Дата начала;VariableName=FBegDate;DefaultValue=&FBegDate;ReOpen=1;
-Calendar=Label=Дата конца; VariableName=FEndDate;DefaultValue=&FEndDate;ReOpen=1;
+Calendar=Label=Дата начала;ParamName=FBegDate;DefaultValue=&FBegDate;ReOpen=1;
+Calendar=Label=Дата конца;ParamName=FEndDate;DefaultValue=&FEndDate;ReOpen=1;
 ContextFilter=Label=Название;FilterField=FILM_NAME;FilterMode=Partial;
 ContextFilter=Label=ПУ;FilterField=PU_NUM;
 DBFilter=Label=Дистрибьютор;SQL=select -1 id, '<>' distr_name from rdb$database union all select id, distr_name from (select id, distr_name || ' (' || code || ')' distr_name from distributor order by distr_name);Key=ID;List=distr_name;FilterField=DISTR_ID;Width=220;
@@ -17,12 +17,11 @@ CommandButton=Label=Excel;CommandName=FilmsToSheet;
 
 ComboFilter=Label=Коммерческий;List=-1/Все,1/Не Коммерческий,0/Коммерческий;FilterField=NO_COMERCE;Width=100;
 
-Query=select f.*, cast((select list(c.country_name, ';') from countries_to_films cf left join countries c on cf.country_id = c.contr_id where cf.film_id = f.id_film) as varchar(300)) countries_names, cast((select list(g.gener_name, ';') from geners_to_films gf left join geners g on gf.gener_id = g.g_id where gf.film_id = f.id_film) as varchar(300)) geners_names, d.CODE from FILMS f left join DISTRIBUTOR d on f.DISTR_ID = d.ID where coalesce(f.release_date, Cast('&FBegDate' as Date)) between '&FBegDate' and '&FEndDate';
+Query=select f.*, cast((select list(c.country_name, ';') from countries_to_films cf left join countries c on cf.country_id = c.contr_id where cf.film_id = f.id_film) as varchar(300)) countries_names, cast((select list(g.gener_name, ';') from geners_to_films gf left join geners g on gf.gener_id = g.g_id where gf.film_id = f.id_film) as varchar(300)) geners_names, d.CODE from FILMS f left join DISTRIBUTOR d on f.DISTR_ID = d.ID where ((f.release_date between :FBegDate and :FEndDate) or (f.release_date is null));
 UpdateTable=FILMS;KeyFields=id_film;
 QueryKeyField=PU_NUM;
 
 Color=clGreen;Condition=NO_COMERCE=1;
-Color=1=clGreen;BrushKey=NO_COMERCE;
 
 [Fields]
 12
