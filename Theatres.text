@@ -8,8 +8,8 @@ UpdateTable=THEATERS;KeyFields=CINEMA_ID;
 Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
 CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
 CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;
-CommandButton=Label=Реквизиты;CommandName=Theatre_BankDetails_Call;Host=1;
-CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
+//CommandButton=Label=Реквизиты;CommandName=Theatre_BankDetails_Call;Host=1;
+//CommandButton=Label=Ген.договор;CommandName=GeneralContract_Call;
 
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=:CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;Columns=SHORT_NAME=120/Краткое наименование,DIRECTOR=100/Директор,PHONE=80/Телефон,UR_ADDRESS=130/Юр.адрес,REAL_ADDRESS=130/Факт.адрес,VATIN/ИНН,OGRN/ОГРН,KPP/КПП,OKPO/ОКПО,OKTMO/ОКТМО,BANK_NAME=120/Банк,BANK_ACCOUNT/Расч.(Казн.) счёт,FACECOUNT/Лицевой счёт,DEFAULT_FLG/По умолч.;
 

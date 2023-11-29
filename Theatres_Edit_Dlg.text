@@ -4,18 +4,18 @@ Single;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=Theatres_Edit_Scr;
 
-TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=&CINEMA_ID order by CONTRACT_DATE;DependField=CINEMA_ID;VariableName=CONTRACT_ID;Navigator=0;NoDataField=1;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);
-
-TablePartToolButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;
-TablePartToolButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;
-TablePartToolButton=Label=Удалить;CommandName=DeleteConf;
-
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;NoDataField=1;Columns=BANK_ACCOUNT=120/Расч.Казн. счёт,SHORT_NAME/Короткое наименование,OGRN=80/ОГРН,OKVEDS=90/ОКВЕД,BANK_NAME/Банк;
 
 TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
 TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
 TablePartToolButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
 TablePartToolButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);AutoSize=1;
+
+TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=&CINEMA_ID order by CONTRACT_DATE;DependField=CINEMA_ID;VariableName=CONTRACT_ID;Navigator=0;NoDataField=1;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);
+
+TablePartToolButton=Label=Добавить;CommandName=GeneralContract_Add_Scr;
+TablePartToolButton=Label=Изменить;CommandName=GeneralContract_Edit_Scr;
+TablePartToolButton=Label=Удалить;CommandName=DeleteConf;
 
 [Fields]
 4
