@@ -20,5 +20,5 @@
 Телефоны: :PHONE
 Web страница: :WWW
 Признак Исп. обязанности: :IS_DELEGATOR
-По умолчанию (1-да): :IS_DEFAULT
+По умолчанию: :DEFAULT_FLG
 [END BODY]

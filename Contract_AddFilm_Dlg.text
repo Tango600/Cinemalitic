@@ -1,7 +1,7 @@
 Caption=Договоры (добавление фильма);
+Events=Close=Refresh;
 Style=0;
 Navigator=0;
-CommandButton=Label=Добавить;CommandName=Contract_AddFilm_Scr;
 [Fields]
 4
 Фильм\InputBox=NoDataField=1;ContextButton=CommandName=Contract_FilmSelect_Scr;Hint=Выбрать фильм;ComponentName=PU_FILM_Edit;Width=200;ReadOnly=1;

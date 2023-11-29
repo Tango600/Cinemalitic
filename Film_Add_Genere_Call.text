@@ -1,2 +1,2 @@
-Append_Part;
-Dialog=Film_Add_Genere_Dlg;TablePart=1;
+Append;
+Dialog=Film_Add_Genere_Dlg;
