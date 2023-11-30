@@ -1,0 +1,1 @@
+ExecQuery=insert into COUNTRIES_TO_FILMS(FILM_ID, COUNTRY_ID) values(&ID_FILM, &F_CountryID);

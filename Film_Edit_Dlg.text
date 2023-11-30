@@ -3,11 +3,12 @@ Style=0;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=Film_Post_Scr;
 TablePart=Title=Жанры;ReadOnly=1;Style=2;SQL=select * from GENERS_TO_FILMS gf left join geners g on gf.gener_id=g.g_id where gf.film_id=&ID_FILM;DependField=film_id;Navigator=0;Columns=GENER_NAME=200/Жанр;NoDataField=1;VariableName=ID_FILM;
-TablePartToolButton=Label=Добавить;CommandName=Film_Add_Genere_Call;
+TablePartToolButton=Label=Добавить;CommandName=Film_GenerSelect_Scr;
 TablePartToolButton=Label=Удалить;CommandName=Film_Genere_Delete_Scr;
 
+
 TablePart=Title=Страны;ReadOnly=1;Style=2;SQL=select * from COUNTRIES_TO_FILMS cf left join countries c on cf.country_id=c.contr_id where cf.film_id=&ID_FILM;DependField=FILM_ID;Navigator=0;Columns=COUNTRY_NAME=200/Страна;NoDataField=1;VariableName=ID_FILM;
-TablePartToolButton=Label=Добавить;CommandName=Film_Add_Country_Call;
+TablePartToolButton=Label=Добавить;CommandName=Film_CountrySelect_Scr;
 TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
 
 AddStatus=:ID_FILM;

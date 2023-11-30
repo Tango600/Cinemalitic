@@ -1,0 +1,1 @@
+ExecQuery=insert into GENERS_TO_FILMS(FILM_ID, GENER_ID) values(&ID_FILM, &F_GenerID);

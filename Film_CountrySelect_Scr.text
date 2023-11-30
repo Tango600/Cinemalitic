@@ -1,0 +1,1 @@
+Dialog=Countries;KeyField=CONTR_ID;KeyVariable=F_CountryID;ChooseMode=2;MultiSelect=1;BatchScript=Film_AddCountry_Batch;ModalOpen=1;FinishScript=Refresh_Command;

@@ -1,0 +1,1 @@
+Dialog=Geners;KeyField=G_ID;KeyVariable=F_GenerID;ChooseMode=2;MultiSelect=1;BatchScript=Film_AddGener_Batch;ModalOpen=1;FinishScript=Refresh_Command;
