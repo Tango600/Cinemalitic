@@ -1,6 +1,7 @@
-UserAccessRaight=10;
+UserAccessRaight=ulDeveloper;
 Caption=Меню ролей;
 Navigator=1;Buttons=First,Prior,Next,Last;
+ReadOnlyData=1;
 Query=select * from DCL_ROLESTOMENU r2m;
 DBFilter=Label=Роль;List=LONG_ROLE_NAME;Key=ID_ROLE;FilterField=ID_ROLE;Width=150;SQL=Select LONG_ROLE_NAME, ID_ROLE from DCL_Roles Order by LONG_ROLE_NAME;
 Style=2;
