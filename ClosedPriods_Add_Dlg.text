@@ -1,0 +1,11 @@
+Caption=Закрытые периоды (Добавление);
+Navigator=1;Buttons=Post,Cancel;
+Style=0;
+[Fields]
+3
+Начало
+PERIOD_BEGIN
+Окончание
+PERIOD_END
+Закрыт
+CLOSED

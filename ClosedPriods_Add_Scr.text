@@ -1,0 +1,5 @@
+Append;
+SetFieldValue=CLOSED=false;
+SetFieldValue=PERIOD_BEGIN=&_DATE_;
+SetFieldValue=PERIOD_END=&_DATE_;
+Dialog=ClosedPriods_Add_Dlg;
