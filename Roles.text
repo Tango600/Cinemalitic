@@ -1,15 +1,13 @@
-UserAccessRaight=10;
+UserAccessRaight=ulDeveloper;
 Caption=Роли;
 Query=select * from DCL_ROLES order by ROLE_NAME;
 CommandButton=Label=Состав;CommandName=Roles_Menus_Call;
 Style=2;
 [Fields]
-4
+3
 ID роли
 ID_ROLE
 Название
 ROLE_NAME
 Длинное название роли
 LONG_ROLE_NAME
-Показывать роль
-SHOW_IN_LIST

@@ -1,12 +1,8 @@
 Caption=Оповещения;
 Query=select * from DCL_NOTIFYCATIONS n order by NOTIFY_TIME, USER_ID, NOTIFY_STATE, NOTIFY_ACTION;
 OrderByFields=NOTIFY_ID,NOTIFY_TIME,NOTIFY_ACTION,NOTIFY_STATE,USER_ID;
-Live=1;
 Modal=1;
 Navigator=1;Buttons=First,Prior,Next,Last,Post,Insert,Edit,Delete,Cancel,Refresh;Flat=1;
-CommandButton=Action=Find;Label=Найти
-CommandButton=Action=Structure;Label=Структура
-CommandButton=Action=Print;Label=Печать
 Style=2;
 [Fields]
 5

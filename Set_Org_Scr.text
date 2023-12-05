@@ -1,5 +1,4 @@
-Script Type=Command
-If Expression1=-1; Expression2=&Organization; then
+If (-1=&Organization) then
 SetValue=Organization;ReturnQuery=select first 1 o.oid from organizations o where o.ord is not null and o.oid<>-1 order by o.ord;
 Else
 SetFieldValue=org=&Organization;
