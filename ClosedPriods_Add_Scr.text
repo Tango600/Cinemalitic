@@ -1,3 +1,3 @@
-ExecQuery=execute procedure Add_Period(&PeriodMonthBeg, &PeriodYearBeg, &PeriodMonthEnd, &PeriodYearEnd, &PeriodClosed, &BeginsFrom);
+ExecQuery=execute procedure Add_Period(&PeriodMonthBeg+1, &PeriodYearBeg, &PeriodMonthEnd+1, &PeriodYearEnd, &PeriodClosed, &BeginsFrom);
 CloseDialog;
 Refresh;

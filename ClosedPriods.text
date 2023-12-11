@@ -18,7 +18,7 @@ CommandButton=Label=Пересчитать;CommandName=PeriodRecalc_Scr;AccessLe
 PERIOD_BEGIN
 Окончание
 PERIOD_END
-Начать с
+Начальный №
 BEGIN_FROM
 Закрыт
 CLOSED

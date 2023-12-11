@@ -12,7 +12,6 @@ Style=2;
 ReadOnly=1;
 Navigator=0;Buttons=First,Last;
 Query=select FD.*, F.film_name, F.pu_num, c.contract_number, c.agreement_date, t.cinema_name from FILMS_TO_CONTRACTS FC left join FILMS F on FC.FILM_ID = F.ID_FILM left join FILMS_DELIVERYS FD on FC.CONTRACT_ID = FD.CONTRACT_ID and FC.FILM_ID = FD.FILM_ID left join CONTRACTS C on C.contract_id = fd.contract_id left join theaters t on c.cinema_id = t.cinema_id left join media_type mt on c.media_type_id = mt.med_id where fd.film_id is not null and c.agreement_date between :CBegDate and :CEndDate order by c.agreement_date, fd.delivery_num;
-CommandButton=Label=Выбор (даипазон);CommandName=DeliveryHistory_Params_Call;Width=110;Host=1;
 CommandButton=Label=Выбор (период);CommandName=DeliveryHistory_Params_Period_Call;Width=110;Host=1;
 [Fields]
 6
