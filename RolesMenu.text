@@ -5,11 +5,9 @@ ReadOnlyData=1;
 Query=select * from DCL_ROLESTOMENU r2m;
 DBFilter=Label=Роль;List=LONG_ROLE_NAME;Key=ID_ROLE;FilterField=ID_ROLE;Width=150;SQL=Select LONG_ROLE_NAME, ID_ROLE from DCL_Roles Order by LONG_ROLE_NAME;
 Style=2;
-ReadOnly=1;
 CommandButton=CommandName=Roles_AddRoleCallDialog;Label=Добавить;
 CommandButton=Label=Удалить;CommandName=Roles_DelRoleMenuItem;
 CommandButton=Label=Копировать роль;CommandName=Roles_CopyRole_Call;AutoSize=1;
-///CommandButton=Label=Недостающие;CommandName=Roles_Run_Test_RolesMenu;FontStyle=Italic;
 [Fields]
 5
 ID роли

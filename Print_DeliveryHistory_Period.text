@@ -1,0 +1,7 @@
+ExecCommand=Print_DeliveryHistory_SetQuery;
+Declare=PeriodBegDate;
+Declare=PeriodEndDate;
+SetValue=PeriodBegDate;SQL=select p.period_begin from CLOSED_PERIODS p where p.period_id=&PeriodID;
+SetValue=PeriodEndDate;SQL=select p.period_end from CLOSED_PERIODS p where p.period_id=&PeriodID;
+
+ReportOfficeSheet=Template=FilmsDelivery.xlsm;SQL=&PrintFDQuery and c.agreement_date between '&PeriodBegDate' and '&PeriodEndDate' order by c.agreement_date, fd.delivery_num;OfficeType=mso;FillStrategy=replace;

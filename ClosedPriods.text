@@ -1,17 +1,23 @@
 Caption=Закрытые периоды;
 Query=select * from CLOSED_PERIODS order by PERIOD_BEGIN, PERIOD_END;
-Navigator=1;Buttons=Post,Cancel,Delete;
+Navigator=0;
+ReadOnly=1;
 
 CommandButton=Label=Открыть;CommandName=Open_Period_Scr;
 CommandButton=Label=Закрыть период;CommandName=Close_Period_Scr;AutoSize=1;
 
-CommandButton=Label=Добавить;CommandName=ClosedPriods_Add_Scr;
+CommandButton=Label=Добавить;CommandName=ClosedPriods_Add_Call;Host=1;
+CommandButton=Label=Удалить;CommandName=ClosedPriods_Del_Scr;
+
+CommandButton=Label=Пересчитать;CommandName=PeriodRecalc_Scr;AccessLevel=ulLevel2;
 
 [Fields]
-3
+4
 Начало
 PERIOD_BEGIN
 Окончание
 PERIOD_END
+Начать с
+BEGIN_FROM
 Закрыт
 CLOSED

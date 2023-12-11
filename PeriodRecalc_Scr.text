@@ -1,0 +1,7 @@
+Declare=vv;
+Message=Пересчитать период?;Flags=YesNo;VariableName=vv;
+If &vv=1 then
+ExecQuery=execute procedure RECALC_PERIOD(:PERIOD_ID);
+Refresh;
+EndIf
+Dispose=vv;

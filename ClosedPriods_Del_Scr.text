@@ -1,0 +1,7 @@
+Declare=vv;
+Message=Удалить период?;Flags=YesNo;VariableName=vv;
+If &vv=1 then
+ExecQuery=delete from CLOSED_PERIODS where PERIOD_ID=:PERIOD_ID;
+Refresh;
+EndIf
+Dispose=vv;

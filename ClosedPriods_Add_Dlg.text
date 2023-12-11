@@ -1,11 +1,18 @@
 Caption=Закрытые периоды (Добавление);
-Navigator=1;Buttons=Post,Cancel;
+Navigator=0;
 Style=0;
+CommandButton=Label=Добавить;CommandName=ClosedPriods_Add_Scr;
 [Fields]
-3
-Начало
+6
+Начало (месяц)\DropListBox=List=1,2,3,4,5,6,7,8,9,10,11,12;VariableName=PeriodMonthBeg;Width=80;UseIndex=0;
 PERIOD_BEGIN
-Окончание
-PERIOD_END
-Закрыт
+Окончание (год)\InputBox=VariableName=PeriodYearBeg;Width=80;MaxLength=4;_Value=&_YEAR_;
+GGDF
+Начало (месяц)\DropListBox=List=1,2,3,4,5,6,7,8,9,10,11,12;VariableName=PeriodMonthEnd;Width=80;UseIndex=0;
+PERIOD2_BEGIN
+Окончание (год)\InputBox=VariableName=PeriodYearEnd;Width=80;MaxLength=4;_Value=&_YEAR_;
+HHHG
+Начать с\InputBox=VariableName=BeginsFrom;Width=80;MaxLength=4;_Value=1;
+BeginsFrom
+Закрыт\SimplyCheckBox=VariableName=PeriodClosed;_OffCheck;
 CLOSED

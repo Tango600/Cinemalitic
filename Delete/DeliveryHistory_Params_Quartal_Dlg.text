@@ -1,0 +1,9 @@
+Caption=Печать журнала выдачи;
+Navigator=0;
+Style=0;
+CommandButton=Label=Печать;CommandName=Print_DeliveryHistory_Period;
+
+[Fields]
+1
+Период\Lookup=SQL=select p.period_id, P.PERIOD_BEGIN || ' / ' || P.PERIOD_END yy from CLOSED_PERIODS P order by P.PERIOD_BEGIN;Key=period_id;List=yy;VariableName=PeriodID;NoDataField=1;
+FFFF
