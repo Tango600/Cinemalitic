@@ -1,6 +1,7 @@
 Caption=Жанры;
 Query=select * from GENERS order by GENER_NAME;
-Navigator=1;
+Navigator=0;
+ReadOnly=1;
 Style=2;
 [Fields]
 1
