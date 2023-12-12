@@ -1,12 +1,24 @@
 Declare=isError=0;
-if &PU_NUM= then
-if &NO_COMERCE=0 then
+if (&PU_NUM=) then
+if (&NO_COMERCE=0) then
 SetValue=isError=1;
 EndIf
 EndIf
 
-if &isError=1 Then
+Declare=puc;
+SetValue=puc;SQL=select count(*) from FILMS where PU_NUM=trim('&PU_NUM');
+
+if (&puc>0) then
+SetValue=isError=2;
+EndIf
+
+if (&isError=1) Then
 Message=ПУ не заполнен!;
+Break;
+EndIf
+
+if (&isError=2) Then
+Message=Такой ПУ уже есть!;
 Break;
 EndIf
 
