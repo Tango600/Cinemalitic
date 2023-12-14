@@ -3,7 +3,7 @@ Style=0;
 Single;
 ReadOnly=0;
 Navigator=0;
-CommandButton=Label=Добавить;CommandName=InsertContract_Scr;
+CommandButton=Label=Добавить;CommandName=ContractInsert_Scr;
 
 [Fields]
 17

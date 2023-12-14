@@ -6,9 +6,8 @@ SetValue=LastContractID;SQL=select max(CONTRACT_ID) from CONTRACTS;
 SetValue=CEndDate;SQL=select max(AGREEMENT_DATE) from CONTRACTS;
 
 CloseDialog;
-Sleep=500;
 Refresh;
-Sleep=500;
+
 Declare=DestContract=0;
 
 GotoKey=&LastContractID;KeyField=CONTRACT_ID;
