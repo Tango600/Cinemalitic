@@ -6,6 +6,7 @@
 Юр. адрес: :UR_ADDRESS
 Адрес регистрации: :REAL_ADDRESS
 Банк: :BANK_NAME
+БИК: :BIC
 Расчётный счёт: :BANK_ACCOUNT
 Расчётный\Казн. счёт: :FACECOUNT
 ИНН: :VATIN
