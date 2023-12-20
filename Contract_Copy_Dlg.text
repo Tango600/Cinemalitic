@@ -3,7 +3,7 @@ Style=0;
 Single;
 ReadOnly=0;
 Navigator=0;
-CommandButton=Label=Записать;CommandName=InsertContract_Scr;
+CommandButton=Label=Записать;CommandName=Contract_Insert_Scr;
 CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;
 
 [Fields]
