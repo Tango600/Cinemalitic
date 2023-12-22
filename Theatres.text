@@ -13,7 +13,7 @@ TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER
 
 TablePartToolButton=Label=Карточка КА;CommandName=PartnerCard;
 
-TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=CINEMA_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);ReadOnly=1;
+TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=PARTNER_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);ReadOnly=1;
 
 Style=2;
 [Fields]
