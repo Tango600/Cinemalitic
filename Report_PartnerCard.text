@@ -7,8 +7,8 @@
 Адрес регистрации: :REAL_ADDRESS
 Банк: :BANK_NAME
 БИК: :BIC
-Расчётный счёт: :BANK_ACCOUNT
-Расчётный\Казн. счёт: :FACECOUNT
+Расчётный счёт: :FACECOUNT
+Расчётный\Казн. счёт: :BANK_ACCOUNT
 ИНН: :VATIN
 КПП: :KPP
 ОГРН: :OGRN
