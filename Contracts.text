@@ -1,6 +1,7 @@
 Caption=Контракты;
 Style=2;
 ReadOnly=1;
+Declare=MEDIA_TYPE_ID=2;
 Navigator=0;
 Declare=CBegDate;
 Declare=CEndDate;
