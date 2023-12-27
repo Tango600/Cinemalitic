@@ -19,7 +19,7 @@ GGGG
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_KK;
+Доля киносети (%)\InputBox=VariableName=SHAR_KK;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_KK;
 SHAR_KK
 Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR

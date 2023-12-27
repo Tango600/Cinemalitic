@@ -38,7 +38,7 @@ ID
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;NoDataField=1;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
-Доля АУ РК Комикино (%)\InputBox=VariableName=SHAR_KK;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_KK;ComponentName=Edit_SHAR_KK;
+Доля киносети (%)\InputBox=VariableName=SHAR_KK;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_KK;ComponentName=Edit_SHAR_KK;
 SHAR_KK
 Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Width=100;Format=Digit;NoDataField=1;_Value=&SHAR_DEMONSTRATOR;ComponentName=Edit_SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
