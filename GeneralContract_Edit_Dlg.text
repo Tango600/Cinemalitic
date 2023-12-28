@@ -2,15 +2,13 @@ Caption=Генеральный договор;
 Navigator=1;Buttons=Post,Cancel;
 Style=0;
 [Fields]
-7
+6
 Номер
 GENERAL_NUM
 Дата договора
 CONTRACT_DATE
 Дата начала
 START_DATE
-Начало нумерации +1
-START_NUMBER
 Дистрибьютор (%)
 DISTR_SHARE
 Киносеть (%)
