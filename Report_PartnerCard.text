@@ -6,8 +6,9 @@
 Юр. адрес: :UR_ADDRESS
 Адрес регистрации: :REAL_ADDRESS
 Банк: :BANK_NAME
+Корсчёт: CORESP_ACC
 БИК: :BIC
-Расчётный счёт: :FACECOUNT
+Лицевой счёт: :FACECOUNT
 Расчётный\Казн. счёт: :BANK_ACCOUNT
 ИНН: :VATIN
 КПП: :KPP
