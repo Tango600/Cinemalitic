@@ -1,0 +1,6 @@
+Declare=vr;
+Message=Удалить договор №:CONTRACT_NUMBER?;Flags=YesNo;VariableName=vr;
+if (&vr=1) then
+ExecQuery=delete from CONTRACTS where CONTRACT_ID=:CONTRACT_ID;
+Refresh;
+Endif

@@ -25,7 +25,7 @@ Multiselect=1;
 CommandButton=Label=Добавить;CommandName=Contract_Add_Scr;Width=70;AutoSize=1;
 CommandButton=Label=Редактировать;CommandName=Contract_Edit_Scr;AutoSize=1;
 CommandButton=Label=Скопировать;CommandName=Contracts_Copy_Scr;Width=80;AutoSize=1;
-CommandButton=Label=Удалить;CommandName=DeleteConf;Width=60;AutoSize=1;
+CommandButton=Label=Удалить;CommandName=Contract_Del_Scr;Width=60;AutoSize=1;
 
 CommandButton=Label=Печать договора;CommandName=PrintContract_Scr_Run;Width=105;ForEach=1;AutoSize=1;
 CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr_Run;Width=135;ForEach=1;AutoSize=1;
