@@ -1,5 +1,4 @@
 Caption=Договоры (добавление фильма);
-Events=Close=Refresh;
 Style=0;
 Navigator=0;
 [Fields]

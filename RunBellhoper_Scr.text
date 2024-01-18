@@ -1,1 +1,1 @@
-Execute=CinemaBellhop -start;WorkDir=MailSender\;
+Execute=CinemaBellhop -start;WorkDir=&_APPPATH_\MailSender\;
