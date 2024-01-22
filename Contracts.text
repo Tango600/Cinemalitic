@@ -5,8 +5,8 @@ Declare=MEDIA_TYPE_ID=2;
 Navigator=0;
 Declare=CBegDate;
 Declare=CEndDate;
-SetValue=CBegDate;SQL=select min(AGREEMENT_DATE) from CONTRACTS;
-SetValue=CEndDate;SQL=select max(AGREEMENT_DATE)+30 from CONTRACTS;
+SetValue=CBegDate;SQL=select min(AGREEMENT_DATE) from CONTRACTS where DEL = 0;
+SetValue=CEndDate;SQL=select max(AGREEMENT_DATE)+30 from CONTRACTS where DEL = 0;
 Calendar=Label=Дата начала;ParamName=CBegDate;DefaultValue=&CBegDate;ReOpen=1;
 Calendar=Label=Дата конца;ParamName=CEndDate;DefaultValue=&CEndDate;ReOpen=1;
 
@@ -18,8 +18,8 @@ DBFilter=Label=Кинотеатр;SQL=select -1 CINEMA_ID, '<>' CINEMA_NAME from
 ContextFilter=Label=Фильм;VariableName=FILMNAMEF;
 
 
-//Query=select cast((select list(seanses_count, '/') from (select seanses_count from weeks w where w.contract_id = c.contract_id order by w.week_num)) as varchar(300)) weeks_nums, cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(8100)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id where c.AGREEMENT_DATE between :CBegDate and :CEndDate and (&FilmIDF=-1 or exists(select * from FILMS_TO_CONTRACTS fc where fc.film_id = &FilmIDF and fc.contract_id = c.contract_id));
-Query=select cast((select list(seanses_count, '/') from (select seanses_count from weeks w where w.contract_id = c.contract_id order by w.week_num)) as varchar(300)) weeks_nums, cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(8100)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id where c.AGREEMENT_DATE between :CBegDate and :CEndDate and ('&FILMNAMEF'='' or exists(select * from Films f, FILMS_TO_CONTRACTS FC where f.id_film=fc.film_id and lower(f.film_name) like lower('%&FILMNAMEF%') and FC.CONTRACT_ID = C.CONTRACT_ID));
+//Query=select cast((select list(seanses_count, '/') from (select seanses_count from weeks w where w.contract_id = c.contract_id order by w.week_num)) as varchar(300)) weeks_nums, cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(8100)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id where C.DEL = 0 and c.AGREEMENT_DATE between :CBegDate and :CEndDate and (&FilmIDF=-1 or exists(select * from FILMS_TO_CONTRACTS fc where fc.film_id = &FilmIDF and fc.contract_id = c.contract_id));
+Query=select cast((select list(seanses_count, '/') from (select seanses_count from weeks w where w.contract_id = c.contract_id order by w.week_num)) as varchar(300)) weeks_nums, cast((select list(f.film_name, ';') from films_to_contracts fc left join films f on fc.film_id = f.id_film where fc.contract_id = c.contract_id) as varchar(8100)) films_names, d.distr_name, c.*, ct.contract_type, mt.media_name, t.cinema_name, t.max_seats from CONTRACTS c left join THEATERS t on c.CINEMA_ID = t.CINEMA_ID left join contract_types ct on c.contract_type_id=ct.id left join media_type mt on c.media_type_id=mt.med_id left join distributor d on d.id=c.distr_id where C.DEL = 0 and c.AGREEMENT_DATE between :CBegDate and :CEndDate and ('&FILMNAMEF'='' or exists(select * from Films f, FILMS_TO_CONTRACTS FC where f.id_film=fc.film_id and lower(f.film_name) like lower('%&FILMNAMEF%') and FC.CONTRACT_ID = C.CONTRACT_ID));
 Multiselect=1;
 
 CommandButton=Label=Добавить;CommandName=Contract_Add_Scr;Width=70;AutoSize=1;

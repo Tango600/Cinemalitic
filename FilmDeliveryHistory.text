@@ -1,8 +1,8 @@
 Caption=Журнал выдачи фильмов;
 Declare=CBegDate;
 Declare=CEndDate;
-SetValue=CBegDate;SQL=select min(c.agreement_date) from films_deliverys fd, contracts c where fd.contract_id=c.contract_id;
-SetValue=CEndDate;SQL=select max(c.agreement_date) from films_deliverys fd, contracts c where fd.contract_id=c.contract_id;
+SetValue=CBegDate;SQL=select min(c.agreement_date) from films_deliverys fd, contracts c where c.del=0 and fd.contract_id=c.contract_id;
+SetValue=CEndDate;SQL=select max(c.agreement_date) from films_deliverys fd, contracts c where c.del=0 and fd.contract_id=c.contract_id;
 Calendar=Label=Дата начала;ParamName=CBegDate;DefaultValue=&CBegDate;ReOpen=1;
 Calendar=Label=Дата конца;ParamName=CEndDate;DefaultValue=&CEndDate;ReOpen=1;
 
