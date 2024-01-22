@@ -6,7 +6,7 @@ EndIf
 EndIf
 
 Declare=puc;
-SetValue=puc;SQL=select count(*) from FILMS where PU_NUM=trim('&PU_NUM');
+SetValue=puc;SQL=select count(*) from FILMS where PU_NUM=trim('&PU_NUM') and NO_COMERCE=0;
 
 if (&puc>0) then
 SetValue=isError=2;
@@ -30,4 +30,4 @@ GotoKey=&FID;KeyField=ID_FILM;
 
 ExecCommand=Film_Edit_Cmd;
 
-DialogByName=Film_Edit_Dlg.Show;
+//DialogByName=Film_Edit_Dlg.Show;
