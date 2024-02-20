@@ -1,0 +1,12 @@
+Caption=Страны;
+Query=select * from COUNTRIES order by COUNTRY_NAME;
+Style=2;
+Navigator=0;
+ReadOnly=1;
+
+CommandButton=Label=Добавить;CommandName=CountryAdd_Call;
+CommandButton=Label=Удалить;CommandName=CountryDel_Scr;
+[Fields]
+1
+Страна
+COUNTRY_NAME

@@ -1,0 +1,13 @@
+Declare=ge;
+SetValue=ge;SQL=select count(*) from GENERS_TO_FILMS where GENER_ID=:G_ID;
+If (&ge=0) then
+  Message=Удалить жанр?;VariableName=DeleteAnswResult;Flags=YesNo;
+  if (&DeleteAnswResult=1) then
+    ExecQuery=delete from GENERS where G_ID=:G_ID;
+    Refresh;
+  EndIf
+  Dispose=DeleteAnswResult;
+Else
+  Message=Жанр используется!;
+EndIf
+Dispose=ge;

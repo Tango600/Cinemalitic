@@ -1,0 +1,13 @@
+Declare=ge;
+SetValue=ge;SQL=select count(*) from COUNTRIES_TO_FILMS where COUNTRY_ID=:CONTR_ID;
+If (&ge=0) then
+  Message=Удалить страну?;VariableName=DeleteAnswResult;Flags=YesNo;
+  if (&DeleteAnswResult=1) then
+    ExecQuery=delete from COUNTRIES where CONTR_ID=:CONTR_ID;
+    Refresh;
+  EndIf
+  Dispose=DeleteAnswResult;
+Else
+  Message=Страна используется!;
+EndIf
+Dispose=ge;

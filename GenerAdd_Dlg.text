@@ -1,0 +1,7 @@
+Caption=Жанр (добавление);
+Style=0;
+CommandButton=Label=Добавить;CommandName=GenerAdd_Scr;
+[Fields]
+1
+Жанр\InputBox=VariableName=GENER_NAME;NoDataField=1;
+GE

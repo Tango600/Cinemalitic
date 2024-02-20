@@ -1,0 +1,3 @@
+ExecQuery=insert into GENERS(GENER_NAME) values('&GENER_NAME');
+CloseDialog;
+Refresh;

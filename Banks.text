@@ -1,4 +1,6 @@
 Caption=Банки;
+AddNotAllowOperation=Edit;
+AddNotAllowOperation=Insert;
 Query=select * from BANKS;
 NoButtonsPanel;
 Style=2;

@@ -1,0 +1,12 @@
+Caption=Жанры;
+Query=select * from GENERS order by GENER_NAME;
+Navigator=0;
+ReadOnly=1;
+Style=2;
+
+CommandButton=Label=Добавить;CommandName=CountryAdd_Call;
+CommandButton=Label=Удалить;CommandName=GCountryDel_Scr;
+[Fields]
+1
+Жанр
+GENER_NAME

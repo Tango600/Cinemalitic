@@ -1,0 +1,7 @@
+Caption=Страна (добавление);
+Style=0;
+CommandButton=Label=Добавить;CommandName=CountryAdd_Scr;
+[Fields]
+1
+Страна\InputBox=VariableName=COUNTRY_NAME;NoDataField=1;
+CCCC

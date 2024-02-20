@@ -1,0 +1,3 @@
+ExecQuery=insert into COUNTRIES(COUNTRY_NAME) values('&COUNTRY_NAME');
+CloseDialog;
+Refresh;
