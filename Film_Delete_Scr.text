@@ -1,0 +1,13 @@
+Declare=ge;
+SetValue=ge;SQL=select R from FILM_IS_DEPENDS(:ID_FILM);
+If (&ge=0) then
+  Message=Удалить фильм?;VariableName=DeleteAnswResult;Flags=YesNo;
+  if (&DeleteAnswResult=1) then
+    ExecQuery=delete from FILMS where ID_FILM=:ID_FILM;
+    Refresh;
+  EndIf
+  Dispose=DeleteAnswResult;
+Else
+  Message=Фильм используется!;
+EndIf
+Dispose=ge;

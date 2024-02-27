@@ -3,6 +3,9 @@ Query=select * from GENERS order by GENER_NAME;
 Navigator=0;
 ReadOnly=1;
 Style=2;
+
+CommandButton=Label=Добавить;CommandName=GenerAdd_Call;
+CommandButton=Label=Удалить;CommandName=GenerDelete_Scr;
 [Fields]
 1
 Жанр

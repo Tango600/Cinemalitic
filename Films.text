@@ -23,6 +23,8 @@ QueryKeyField=PU_NUM;
 
 Color=clGreen;Condition=NO_COMERCE=1;
 
+CommandButton=Label=Удалить;CommandName=Film_Delete_Scr;
+
 [Fields]
 12
 Номер ПУ
@@ -48,4 +50,4 @@ geners_names
 Страны
 countries_names
 Прокатчик (код)
-CODE
+DISTR_CODE

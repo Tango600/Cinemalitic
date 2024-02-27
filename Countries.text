@@ -1,8 +1,11 @@
 Caption=Страны;
-Query=select * from COUNTRIES order by COUNTRY_NAME;
+Query=select * from COUNTRIES order by ORDER_FLG desc, COUNTRY_NAME;
 Style=2;
 Navigator=0;
 ReadOnly=1;
+
+CommandButton=Label=Добавить;CommandName=CountryAdd_Call;AccessLevel=ulLevel2;
+CommandButton=Label=Удалить;CommandName=CountryDel_Scr;AccessLevel=ulLevel2;
 [Fields]
 1
 Страна
