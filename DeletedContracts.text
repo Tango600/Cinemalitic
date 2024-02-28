@@ -9,6 +9,7 @@ DBFilter=Label=Кинотеатр;SQL=select -1 CINEMA_ID, '<>' CINEMA_NAME from
 
 Query=select D.DISTR_NAME, C.*, CT.CONTRACT_TYPE, T.CINEMA_NAME, T.MAX_SEATS from CONTRACTS C left join THEATERS T on C.CINEMA_ID = T.CINEMA_ID left join CONTRACT_TYPES CT on C.CONTRACT_TYPE_ID = CT.ID left join DISTRIBUTOR D on D.ID = C.DISTR_ID where C.DEL = 1;
 
+CommandButton=Label=Фильмы;CommandName=DeletedContract_Films_Call;
 CommandButton=Label=Восстановить;CommandName=Contract_Restore_Scr;
 
 [Fields]
