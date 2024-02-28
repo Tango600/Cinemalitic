@@ -1,6 +1,5 @@
 Declare=vr;
 Message=Удалить договор №:CONTRACT_NUMBER?;Flags=YesNo;VariableName=vr;
 if (&vr=1) then
-ExecQuery=update CONTRACTS set DEL = 1 where CONTRACT_ID=:CONTRACT_ID;
-Refresh;
+ExecQuery=update CONTRACTS set DEL = 1, DEL_DATE = 'now' where CONTRACT_ID=:CONTRACT_ID;
 Endif

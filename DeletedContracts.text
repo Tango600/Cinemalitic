@@ -1,0 +1,41 @@
+Caption=Контракты;
+Style=2;
+ReadOnly=1;
+Navigator=0;
+
+DBFilter=Label=Тип доп.соглашения;SQL=select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
+DBFilter=Label=Дистрибутор;SQL=select -1 ID, '<>' DISTR_NAME from RDB$DATABASE union all select ID, DISTR_NAME from (select ID, DISTR_NAME from DISTRIBUTOR order by DISTR_NAME);List=DISTR_NAME;Key=ID;FilterField=DISTR_ID;Width=200;
+DBFilter=Label=Кинотеатр;SQL=select -1 CINEMA_ID, '<>' CINEMA_NAME from RDB$DATABASE union all select CINEMA_ID, CINEMA_NAME from (select CINEMA_ID, CINEMA_NAME from THEATERS order by CINEMA_NAME);List=CINEMA_NAME;Key=CINEMA_ID;FilterField=c.CINEMA_ID;
+
+Query=select D.DISTR_NAME, C.*, CT.CONTRACT_TYPE, T.CINEMA_NAME, T.MAX_SEATS from CONTRACTS C left join THEATERS T on C.CINEMA_ID = T.CINEMA_ID left join CONTRACT_TYPES CT on C.CONTRACT_TYPE_ID = CT.ID left join DISTRIBUTOR D on D.ID = C.DISTR_ID where C.DEL = 1;
+
+CommandButton=Label=Восстановить;CommandName=Contract_Restore_Scr;
+
+[Fields]
+13
+Тип договора\Width=80;
+CONTRACT_TYPE
+Номер контракта\Width=100;
+CONTRACT_NUMBER
+Дата доп. соглашения\Width=80;
+AGREEMENT_DATE
+Дистрибьютор\Width=120;
+DISTR_NAME
+Кинотеатр\Width=180;
+CINEMA_NAME
+Тип носителя\Width=110;
+MEDIA_NAME
+2D\Width=70;
+SHOW_FORMAT_2D\As_Logic;
+3D\Width=70;
+SHOW_FORMAT_3D\As_Logic;
+Цена билета\Width=100;
+MIN_TICKET_PRICE
+Начало демонстрации
+BEGIN_DEMONSTRATION
+Окончание демонстрации
+END_DEMONSTRATION
+ID
+CONTRACT_ID
+Дата удаления
+DEL_DATE

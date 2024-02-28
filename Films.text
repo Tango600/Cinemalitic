@@ -19,7 +19,6 @@ ComboFilter=Label=Коммерческий;List=-1/Все,1/Не Коммерч�
 
 Query=select f.*, cast((select list(c.country_name, ';') from countries_to_films cf left join countries c on cf.country_id = c.contr_id where cf.film_id = f.id_film) as varchar(300)) countries_names, cast((select list(g.gener_name, ';') from geners_to_films gf left join geners g on gf.gener_id = g.g_id where gf.film_id = f.id_film) as varchar(300)) geners_names, d.CODE from FILMS f left join DISTRIBUTOR d on f.DISTR_ID = d.ID where ((f.release_date between :FBegDate and :FEndDate) or (f.release_date is null));
 UpdateTable=FILMS;KeyFields=id_film;
-QueryKeyField=PU_NUM;
 
 Color=clGreen;Condition=NO_COMERCE=1;
 
