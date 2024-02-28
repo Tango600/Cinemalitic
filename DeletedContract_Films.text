@@ -1,5 +1,6 @@
 Caption=Фильмы в удалённом договоре;
 Style=2;
+NoButtonsPanel;
 ReadOnly=1;
 Query=select * from V_FILMS f, FILMS_TO_CONTRACTS fc where FC.FILM_ID = F.ID_FILM and FC.CONTRACT_ID = :CONTRACT_ID;
 Navigator=0;
