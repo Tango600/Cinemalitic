@@ -3,5 +3,5 @@ Style=0;
 Navigator=1;Buttons=Post;
 [Fields]
 1
-Примечание
+Примечание\Width=300;
 TITLE
