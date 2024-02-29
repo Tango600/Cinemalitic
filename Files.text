@@ -3,6 +3,8 @@ Query=select * from FILES order by LAST_UPDATE;
 PrintTool;
 Navigator=1;Buttons=first,Last,Refresh;
 CommandButton=Label=Примечание;CommandName=FileNote_Call;AutoSize=1;
+CommandButton=Label=Открыть;CommandName=File_Open_Scr;AutoSize=1;
+CommandButton=Label=Папка;CommandName=File_OpenDir_Scr;AutoSize=1;
 CommandButton=Label=Удалить;CommandName=Files_Delete_Scr;
 ReadOnly=1;
 Style=2;
