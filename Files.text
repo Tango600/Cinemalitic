@@ -2,13 +2,18 @@ Caption=Загрузки;
 Query=select * from FILES order by LAST_UPDATE;
 PrintTool;
 Navigator=1;Buttons=first,Last,Refresh;
+CommandButton=Label=Примечание;CommandName=FileNote_Call;AutoSize=1;
 CommandButton=Label=Удалить;CommandName=Files_Delete_Scr;
 ReadOnly=1;
 Style=2;
 [Fields]
-3
+5
 ID
 ID_FILE
+Примечание
+TITLE
+Путь к файлу
+FILE_PATH
 Имя файла
 FILEN_NAME
 Последнее изм.
