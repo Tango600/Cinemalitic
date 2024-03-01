@@ -11,7 +11,7 @@ TablePart=SQL=select fc.*, f.*, coalesce('с ' || DATE2STR(fc.roll_date_begin) |
 
 TablePartToolButton=Label=Редактировать;CommandName=Contract_EditFilm_Call;Width=110;AutoSize=1;
 TablePartToolButton=Label=Добавить;CommandName=Contract_AddFilm_Call;Width=70;
-TablePartToolButton=Label=Удалить;CommandName=Contract_DeleteFilm_Scr;Width=55;
+TablePartToolButton=Label=Удалить;CommandName=Contract_DeleteFilm_Scr;Width=55;ForEach=1;
 TablePartToolButton=Label=Искл. из выдачи;CommandName=Contract_FilmExcludeFromDelivery_Scr;Width=100;ForEach=1;
 TablePartToolButton=Label=Вкл. в выдачу;CommandName=Contract_FilmIncludeToDelivery_Scr;Width=95;ForEach=1;
 
