@@ -4,7 +4,6 @@ If (&ge=0) then
   Message=Удалить страну?;VariableName=DeleteAnswResult;Flags=YesNo;
   if (&DeleteAnswResult=1) then
     ExecQuery=delete from COUNTRIES where CONTR_ID=:CONTR_ID;
-    Refresh;
   EndIf
   Dispose=DeleteAnswResult;
 Else

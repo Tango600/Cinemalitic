@@ -1,0 +1,5 @@
+SetValue=cp;SQL=select count(*) from CLOSED_PERIODS P where P.CLOSED = true and cast(':AGREEMENT_DATE' as date) between P.PERIOD_BEGIN and P.PERIOD_END;
+if (&cp>0) then
+  Message=Период закрыт!;
+  break;
+EndIf

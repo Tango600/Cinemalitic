@@ -1,3 +1,4 @@
+ExecCommand=Contract_Edit_TestClosedPeriod;
 CurrentTablePart=1;
 Message=Удалить фильм?;VariableName=DeleteAnswResult;Flags=YesNo;
 if &DeleteAnswResult=1 then

@@ -1,3 +1,4 @@
+ExecCommand=Contract_TestClosedPeriod;
 Declare=vr;
 Message=Удалить договор №:CONTRACT_NUMBER?;Flags=YesNo;VariableName=vr;
 if (&vr=1) then

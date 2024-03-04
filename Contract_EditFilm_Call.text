@@ -1,1 +1,2 @@
+ExecCommand=Contract_Edit_TestClosedPeriod;
 Dialog=Contract_EditFilm_Dlg;TablePart=1;
