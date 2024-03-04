@@ -2,7 +2,7 @@ Caption=Обновления из пакетов;
 DataReadOnly=1;
 Query=select * from DCL_UPDATE_PACKAGES order by UPDATE_DATE;
 Style=2;
-TablePart=Title=Состав;SQL=select * from DCL_PACKAGE_SCRIPTS where PACKAGE_ID=:PU_ID order by SCRIPT_NAME;ReadOnly=1;Navigator=0;Columns=SCRIPT_NAME/Скрипт;
+TablePart=Title=Состав;SQL=select * from DCL_PACKAGE_SCRIPTS where PACKAGE_ID=:PU_ID order by SCRIPT_NAME;ReadOnly=1;Navigator=0;Columns=SCRIPT_NAME/Скрипт,SCRIPT_TYPE/Тип элемента;
 
 [Fields]
 5
