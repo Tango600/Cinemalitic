@@ -22,7 +22,7 @@ KPP
 OGRN
 ОКПО\InputBox=VariableName=BD_OKPO;Width=120;MaxLength=8;
 OKPO
-ОКТМО\InputBox=VariableName=BD_OKTMO;Width=90;MaxLength=8;
+ОКТМО\InputBox=VariableName=BD_OKTMO;Width=90;MaxLength=11;
 OKTMO
 ОКВЕД\InputBox=VariableName=BD_OKVEDS;Width=180;MaxLength=50;
 OKVEDS
