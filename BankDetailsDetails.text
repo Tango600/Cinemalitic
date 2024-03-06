@@ -3,8 +3,8 @@ ReadOnly=1;
 Query=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;
 UpdateTable=BANKS;KeyFields=ID;
 Style=2;
-CommandButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
-CommandButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
+CommandButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;Host=1;
+CommandButton=Label=Добавить;CommandName=BankDetail_Add_Scr;Host=1;
 CommandButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
 CommandButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);AutoSize=1;
 [Fields]

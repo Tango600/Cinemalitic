@@ -6,8 +6,8 @@ CommandButton=Label=Записать;CommandName=Theatres_Edit_Scr;
 
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=&CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;NoDataField=1;Columns=BANK_ACCOUNT=120/Расч.Казн. счёт,SHORT_NAME/Короткое наименование,OGRN=80/ОГРН,OKVEDS=90/ОКВЕД,BANK_NAME/Банк;ReadOnly=1;
 
-TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;
-TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;
+TablePartToolButton=Label=Редактировать;CommandName=BankDetailsDetails_Edit_Dlg_Call;AutoSize=1;Host=1;
+TablePartToolButton=Label=Добавить;CommandName=BankDetail_Add_Scr;Host=1;
 TablePartToolButton=Label=Удалить;CommandName=BankDetail_Delete_Title_Scr;
 TablePartToolButton=Label=Приоритетный;CommandName=BankDetail_SetDefault_Scr;Hint=Сделать по умолчанию (приоритетным);AutoSize=1;
 

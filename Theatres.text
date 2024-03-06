@@ -6,14 +6,17 @@ Query=select * from THEATERS t left join CITYES c on t.CITY_ID=c.CTY_ID left joi
 ReadOnly=1;
 UpdateTable=THEATERS;KeyFields=CINEMA_ID;
 Navigator=0;Buttons=First,Last,Post,Insert,Cancel,Refresh;
-CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;
-CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;
+
+CommandButton=Label=Добавить;CommandName=Theatres_Add_Scr;Host=1;
+CommandButton=Label=Изменить;CommandName=Theatres_Call_Edit_Scr;Host=1;
 
 TablePart=Title=Реквезиты;SQL=select * from V_BANKDETAILS where PARTNER_ID=:CINEMA_ID;DependField=PARTNER_ID;VariableName=CINEMA_ID;Navigator=0;Columns=SHORT_NAME=120/Краткое наименование,DIRECTOR=100/Директор,PHONE=80/Телефон,UR_ADDRESS=130/Юр.адрес,REAL_ADDRESS=130/Факт.адрес,VATIN/ИНН,OGRN/ОГРН,KPP/КПП,OKPO/ОКПО,OKTMO/ОКТМО,BANK_NAME=120/Банк,BANK_ACCOUNT/Расч.(Казн.) счёт,FACECOUNT/Лицевой счёт,DEFAULT_FLG/По умолч.;ReadOnly=1;
 
 TablePartToolButton=Label=Карточка КА;CommandName=PartnerCard;
 
 TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=PARTNER_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,DISTR_SHARE=60/Дистрибьютор (%),ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);ReadOnly=1;
+
+Color=clMaroon;Condition=MAX_SEATS=0;
 
 Style=2;
 [Fields]

@@ -5,7 +5,7 @@ ReadOnly=1;
 Navigator=0;
 CommandButton=Label=Записать;CommandName=BankDetailsDetails_Save_Scr;
 [Fields]
-22
+23
 Полное наименование\InputBox=VariableName=BD_FULL_NAME;Width=180;MaxLength=150;
 FULL_NAME
 Короткое наименование\InputBox=VariableName=BD_SHORT_NAME;Width=180;MaxLength=30;
@@ -48,5 +48,7 @@ FACECOUNT
 ID
 Сайт\InputBox=VariableName=BD_WWW;Width=200;MaxLength=40;ContextButton=CommandName=BankDetailsDetails_Context_Button_Scr;
 WWW
-Дата\ReadOnly=1;Disabled=1;
+Дата послед. изм.\ReadOnly=1;Disabled=1;Width=100;
 ACTUAL_DATE
+Дата создания\ReadOnly=1;Disabled=1;Width=120;
+CREATION_DATE
