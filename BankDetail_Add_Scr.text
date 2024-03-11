@@ -1,3 +1,2 @@
 ExecQuery=delete from MAILS where EMAIL is null;
 ExecQuery=insert into BANK_DETAILS(PARTNER_ID) values(&CINEMA_ID);
-Refresh;
