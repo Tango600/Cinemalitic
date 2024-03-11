@@ -1,4 +1,4 @@
-if &_ISEMPTY_=1 then
+if (&_ISEMPTY_=1) then
 ExecQuery=insert into BANK_DETAILS(PARTNER_ID) values(&CINEMA_ID);
 EndIf
 
