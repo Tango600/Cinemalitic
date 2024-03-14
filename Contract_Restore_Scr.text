@@ -1,6 +1,6 @@
 ExecCommand=Contract_TestClosedPeriod;
 Message=Восстановить контракт?;VariableName=DeleteAnswResult;Flags=YesNo;
 if (&DeleteAnswResult=1) then
-  ExecQuery=update CONTRACTS set DEL = 0, DEL_DATE = null where CONTRACT_ID=:CONTRACT_ID;
+  ExecQuery=update CONTRACTS set DEL = 0, DEL_DATE = null, DEL_REASON = null where CONTRACT_ID=:CONTRACT_ID;
 EndIf
 Dispose=DeleteAnswResult;
