@@ -1,7 +1,12 @@
 ExecCommand=Contract_TestClosedPeriod;
-Declare=vr;
-Message=Удалить договор №:CONTRACT_NUMBER?;Flags=YesNo;VariableName=vr;
-if (&vr=1) then
+Message=Удалить договор №:CONTRACT_NUMBER?;Flags=YesNo;
+if (&_LASTDIALOGRESULT_=1) then
   Message=Причина удаления;Flags=input;VariableName=DelReason;
-  ExecQuery=update CONTRACTS set DEL = 1, DEL_DATE = 'now', DEL_REASON = '&DelReason' where CONTRACT_ID=:CONTRACT_ID;
+  if (&_LASTDIALOGRESULT_=1) then
+    if (&DelReason<>) then
+      ExecQuery=update CONTRACTS set DEL = 1, DEL_DATE = 'now', DEL_REASON = '&DelReason' where CONTRACT_ID=:CONTRACT_ID;
+    Else
+      Message=Заполните комментарий!;
+    EndIf
+  EndIf
 Endif
