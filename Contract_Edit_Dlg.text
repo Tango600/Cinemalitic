@@ -26,7 +26,7 @@ AddStatus=&CONTRACT_ID;
 
 [Fields]
 17
-Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;
+Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;RequirValue=1;
 DDFFFDF
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
@@ -34,7 +34,7 @@ AGREEMENT_DATE
 CONTRACT_TYPE_ID
 Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
 ID
-Кинотеатр\OutBox=SQL=select CINEMA_NAME from THEATERS where CINEMA_ID = &CINEMA_ID;NoDataField=1;ReadOnly=1;
+Кинотеатр\OutBox=SQL=select CINEMA_NAME from THEATERS where CINEMA_ID = &CINEMA_ID;NoDataField=1;ReadOnly=1;RequirValue=1;
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Width=100;NoDataField=1;_Value=&SHAR_DISRT;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
