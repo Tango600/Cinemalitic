@@ -7,7 +7,7 @@ CommandButton=Label=Добавить;CommandName=Contract_Insert_Scr;
 
 [Fields]
 17
-Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;RequirValue=1;
+Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;NoDataField=1;Width=80;
 CONTRACT_NUMBER
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
