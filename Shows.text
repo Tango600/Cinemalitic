@@ -12,7 +12,7 @@ Query=select * from v_shows s where s.SHOW_DATE between '&SBegDate' and '&SEndDa
 
 ContextFilter=Label=Кинотеатр;FilterField=CINEMA_NAME;FilterMode=Partial;
 //ContextFilter=Label=Фильм;FilterField=FILM_NAME;FilterMode=Partial;
-DBFilter=Label=Фильмы;SQL=select ID_FILM, FILM_NAME from FILMS order by FILM_NAME;List=FILM_NAME;Key=ID_FILM;FilterField=FILM_ID_S;
+DBFilter=Label=Фильмы;SQL=select ID_FILM, FILM_NAME from FILMS order by FILM_NAME;List=FILM_NAME;Key=ID_FILM;FilterField=FILM_ID_S;FilterMode=partial;
 
 
 ComboFilter=Label=Не состоявшиеся;List=-1/Все,0/Не состоявшиеся;FilterField=WATCHERS;
