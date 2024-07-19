@@ -12,8 +12,8 @@ Calendar=Label=Дата конца;ParamName=CEndDate;DefaultValue=&CEndDate;ReO
 
 ContextFilter=Label=№;FilterField=CONTRACT_NUMBER;Width=30;
 DBFilter=Label=Тип доп.соглашения;SQL=select ID, CONTRACT_TYPE from contract_types;List=CONTRACT_TYPE;Key=ID;FilterField=CONTRACT_TYPE_ID;Width=250;
-DBFilter=Label=Дистрибутор;SQL=select -1 ID, '<>' DISTR_NAME from RDB$DATABASE union all select ID, DISTR_NAME from (select ID, DISTR_NAME from DISTRIBUTOR order by DISTR_NAME);List=DISTR_NAME;Key=ID;FilterField=DISTR_ID;Width=200;
-DBFilter=Label=Кинотеатр;SQL=select -1 CINEMA_ID, '<>' CINEMA_NAME from RDB$DATABASE union all select CINEMA_ID, CINEMA_NAME from (select CINEMA_ID, CINEMA_NAME from THEATERS order by CINEMA_NAME);List=CINEMA_NAME;Key=CINEMA_ID;FilterField=c.CINEMA_ID;
+DBFilter=Label=Дистрибутор;SQL=select ID, DISTR_NAME from DISTRIBUTOR order by DISTR_NAME;List=DISTR_NAME;Key=ID;FilterField=DISTR_ID;Width=200;
+DBFilter=Label=Кинотеатр;SQL=select CINEMA_ID, CINEMA_NAME from THEATERS order by CINEMA_NAME;List=CINEMA_NAME;Key=CINEMA_ID;FilterField=c.CINEMA_ID;
 ContextFilter=Label=Фильм;VariableName=FILMNAMEF;
 
 
