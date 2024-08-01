@@ -2,11 +2,13 @@ ExecQuery=execute procedure ADD_CONTRACT('&MIN_TICKET_PRICE', '&SHAR_DEMONSTRATO
 
 Declare=LastContractID;
 SetValue=LastContractID;SQL=select max(CONTRACT_ID) from CONTRACTS;
-SetValue=CEndDate;SQL=select max(AGREEMENT_DATE) from CONTRACTS;
 
 CloseDialog;
 Refresh;
 
-GotoKey=&LastContractID;KeyField=CONTRACT_ID;
-
-ExecCommand=Contract_Edit_Scr;
+if (&_ISEMPTY_=1) then
+  Message=Созданный вами документ находится за пределом периода дат указанного в журнале. Для отображения документа измените значение периода дат;
+Else
+  GotoKey=&LastContractID;KeyField=CONTRACT_ID;
+  ExecCommand=Contract_Edit_Scr;
+EndIf
