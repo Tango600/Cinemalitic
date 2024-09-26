@@ -1,7 +1,9 @@
-Caption=Примечание к файлу;
+Caption=Примечание к файлу №:ID_FILE;
+Declare=NoteId=:ID_FILE;
 Style=0;
-Navigator=1;Buttons=Post;
+Navigator=0;
+CommandButton=Label=Записать;CommandName=FileNote_Write;Width=110;Host=0;
 [Fields]
 1
-Примечание\Width=300;
+Примечание\Editbox=Width=300;NoDataField=0;VariableName=Note1;
 TITLE
