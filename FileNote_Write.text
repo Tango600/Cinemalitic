@@ -1,1 +1,2 @@
 ExecQuery=update FILES set TITLE='&Note1' where ID_FILE=&NoteId;
+CloseDialog;
