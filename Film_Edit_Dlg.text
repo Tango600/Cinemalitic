@@ -21,7 +21,7 @@ KENCF
 NDJFGG
 Дата релиза\DateBox=NoDataField=1;VariableName=RELEASE_DATE;_Value=&RELEASE_DATE;
 KLFNJ
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=&LIMIT;NoDataField=1;Width=80;RequirValue=1;
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=&LIMIT;NoDataField=1;Width=80;RequirValue=1;Format=digit;
 IDFDF
 Хронометраж (мин.)\InputBox=VariableName=DURATION;_Value=&DURATION;NoDataField=1;_ValueIfNull=0;Width=80;RequirValue=1;
 LFDHFGG
