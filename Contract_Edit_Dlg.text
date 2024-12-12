@@ -26,7 +26,7 @@ AddStatus=&CONTRACT_ID;
 
 [Fields]
 17
-Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;RequirValue=1;
+Номер контракта\InputBox=VariableName=CONTRACT_NUMBER;_Value=&CONTRACT_NUMBER;NoDataField=1;Width=80;RequiredValue=1;
 DDFFFDF
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE

@@ -13,19 +13,19 @@ TablePartToolButton=Label=Удалить;CommandName=Film_Country_Delete_Scr;
 AddStatus=:ID_FILM;
 [Fields]
 10
-Номер ПУ\InputBox=VariableName=PU_NUM;_Value=&PU_NUM;NoDataField=1;Width=80;RequirValue=1;
+Номер ПУ\InputBox=VariableName=PU_NUM;_Value=&PU_NUM;NoDataField=1;Width=80;RequiredValue=1;
 GHFGHF
-Название\InputBox=VariableName=FILM_NAME;_Value=&FILM_NAME;NoDataField=1;RequirValue=1;
+Название\InputBox=VariableName=FILM_NAME;_Value=&FILM_NAME;NoDataField=1;RequiredValue=1;
 KENCF
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;NoDataField=1;VariableName=DISTR_ID;KeyValue=&DISTR_ID;RequirValue=1;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;NoDataField=1;VariableName=DISTR_ID;KeyValue=&DISTR_ID;RequiredValue=1;
 NDJFGG
 Дата релиза\DateBox=NoDataField=1;VariableName=RELEASE_DATE;_Value=&RELEASE_DATE;
 KLFNJ
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=&LIMIT;NoDataField=1;Width=80;RequirValue=1;Format=digit;
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=&LIMIT;NoDataField=1;Width=80;RequiredValue=1;Format=digit;
 IDFDF
-Хронометраж (мин.)\InputBox=VariableName=DURATION;_Value=&DURATION;NoDataField=1;_ValueIfNull=0;Width=80;RequirValue=1;
+Хронометраж (мин.)\InputBox=VariableName=DURATION;_Value=&DURATION;NoDataField=1;_ValueIfNull=0;Width=80;RequiredValue=1;
 LFDHFGG
-Год\InputBox=VariableName=RELICE_YEAR;_Value=&RELICE_YEAR;NoDataField=1;Width=80;RequirValue=1;
+Год\InputBox=VariableName=RELICE_YEAR;_Value=&RELICE_YEAR;NoDataField=1;Width=80;RequiredValue=1;
 LDFDDFGGV
 Отечественный\CheckBox=;NoDataField=1;VariableName=DOMESTIC;_Value=&DOMESTIC;
 OMESTIC

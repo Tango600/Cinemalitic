@@ -11,11 +11,11 @@ CommandButton=Label=Добавить;CommandName=Contract_Insert_Scr;
 CONTRACT_NUMBER
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
-Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;KeyValue=&CONTRACT_TYPE_ID;NoDataField=1;RequirValue=1;
+Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;KeyValue=&CONTRACT_TYPE_ID;NoDataField=1;RequiredValue=1;
 CONTRACT_TYPE_ID
-Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;RequirValue=1;
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;RequiredValue=1;
 GGGG
-Кинотеатр\Lookup=SQL=select * from THEATERS order by CINEMA_NAME;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;RequirValue=1;
+Кинотеатр\Lookup=SQL=select * from THEATERS order by CINEMA_NAME;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;KeyValue=&CINEMA_ID;RequiredValue=1;
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
@@ -31,7 +31,7 @@ SHAR_DISTR_RUB
 FIXED_PRICE
 Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_TICKET_PRICE;
 MIN_TICKET_PRICE
-Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;KeyValue=&MEDIA_TYPE_ID;RequirValue=1;
+Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;KeyValue=&MEDIA_TYPE_ID;RequiredValue=1;
 MEDIA_TYPE_ID
 2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;NoDataField=1;_Value=&SHOW_FORMAT_2D;
 SHOW_FORMAT_2D

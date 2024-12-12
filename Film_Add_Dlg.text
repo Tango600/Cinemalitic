@@ -6,19 +6,19 @@ Navigator=0;
 CommandButton=Label=Записать;CommandName=Film_Insert_Scr;
 [Fields]
 10
-Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;Width=120;MaxLength=10;RequirValue=1;
+Номер ПУ\InputBox=VariableName=PU_NUM;NoDataField=1;Width=120;MaxLength=10;RequiredValue=1;
 PU_NUM
-Название\InputBox=VariableName=FILM_NAME;NoDataField=1;MaxLength=120;RequirValue=1;
+Название\InputBox=VariableName=FILM_NAME;NoDataField=1;MaxLength=120;RequiredValue=1;
 FILM_NAME
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;RequirValue=1;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;RequiredValue=1;
 GGGG
 Дата релиза\DateBox=VariableName=RELEASE_DATE;NoDataField=1;_Value=&_DATE_;
 RELEASE_DATE
-Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;Format=Digit;NoDataField=1;RequirValue=1;
+Возр. огр.\InputBox=VariableName=LIMIT;_Value=18;Width=40;Format=Digit;NoDataField=1;RequiredValue=1;
 DDD
-Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;Format=Digit;RequirValue=1;
+Хронометраж (мин.)\InputBox=VariableName=DURATION;NoDataField=1;Width=40;Format=Digit;RequiredValue=1;
 DURATION
-Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;Format=Digit;RequirValue=1;
+Год\InputBox=VariableName=RELICE_YEAR;NoDataField=1;Width=60;Format=Digit;RequiredValue=1;
 RELICE_YEAR
 Отечественный\CheckBox=VariableName=DOMESTIC;NoDataField=1;
 FFFF
