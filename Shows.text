@@ -24,7 +24,7 @@ SummQuery=count(s.show_date), sum(s.watchers), cast(sum(s.cash) as numeric(15, 2
 ///CommandButton=Label=Отчёты;CommandName=Shows_Call_ReportDialog_Scr;
 CommandButton=Label=Excel;CommandName=ShowsToSheet;
 [Fields]
-8
+9
 Дата
 SHOW_DATE
 Время
@@ -41,3 +41,5 @@ LAST_UPDATE
 FILM_NAME
 Файл
 FILEN_NAME
+Эффективность %
+EFFECTIVITY

@@ -22,6 +22,8 @@ UpdateTable=FILMS;KeyFields=id_film;
 
 Color=clGreen;Condition=NO_COMERCE=1;
 
+CommandButton=Label=Найти в КП;CommandName=FilmFind;
+
 CommandButton=Label=Удалить;CommandName=Film_Delete_Scr;
 
 [Fields]
