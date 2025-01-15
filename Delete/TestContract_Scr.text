@@ -1,0 +1,4 @@
+CloseDialog;
+Refresh;
+
+ExecCommand=Contract_Edit_Scr;
