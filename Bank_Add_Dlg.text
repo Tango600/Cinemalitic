@@ -1,0 +1,14 @@
+Caption=Банки (добавление);
+Style=0;
+Navigator=1;Buttons=Post,Cancel;
+NoButtonsPanel;
+[Fields]
+4
+Название\Width=400;MaxLength=100;
+BANK_NAME
+БИК\Width=75;MaxLength=9;
+BIC
+Кор.счёт\Width=130;MaxLength=20;
+CORRESP_ACC
+Наименование получателя\Width=350;MaxLength=100;
+PAYEE_NAME

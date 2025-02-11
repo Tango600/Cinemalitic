@@ -1,0 +1,10 @@
+Caption=Города;
+Style=0;
+NoButtonsPanel;
+Navigator=1;Buttons=Post,Cancel;
+[Fields]
+2
+Название;Width=180;MaxLength=40;
+CITY_NAME
+Население
+POPULATION

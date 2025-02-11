@@ -1,10 +1,12 @@
 Caption=Города;
 Style=2;
 NoButtonsPanel;
-Query=select * from CITYES;
+Query=select * from CITYES order by CITY_NAME;
+CommandButton=Label=Добавить;CommandName=City_Add_Call;
+CommandButton=Label=Изменить;CommandName=City_Edit_Call;
 [Fields]
 2
-Название;Width=180;
+Название;Width=180;MaxLength=40;
 CITY_NAME
 Население
 POPULATION

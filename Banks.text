@@ -2,8 +2,11 @@ Caption=Банки;
 AddNotAllowOperation=Edit;
 AddNotAllowOperation=Insert;
 Query=select * from BANKS;
-NoButtonsPanel;
+ReadOnly=1;
 Style=2;
+CommandButton=Label=Добавить;CommandName=Bank_Add_Call;Host=1;
+CommandButton=Label=Изменить;CommandName=Bank_Edit_Call;Host=1;
+//CommandButton=Label=Удалить;CommandName=Bank_Del_Scr;
 [Fields]
 4
 Название
