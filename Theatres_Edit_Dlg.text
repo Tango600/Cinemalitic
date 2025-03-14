@@ -25,5 +25,5 @@ CINEMA_ID
 CINEMA_NAME
 Количество мест\EditBox=VariableName=MAX_SEATS;NoDataField=1;_Value=&MAX_SEATS;
 MAX_SEATS
-Город\Lookup=SQL=select * from CITYES order by CITY_NAME;Key=CTY_ID;List=CITY_NAME;VariableName=CITY_ID;KeyValue=:CITY_ID;NoDataField=1;
+Город\Lookup=SQL=select * from CITYES order by CITY_NAME;Key=CTY_ID;List=CITY_NAME;VariableName=CITY_ID;_Value=:CITY_ID;NoDataField=1;
 CITY_ID

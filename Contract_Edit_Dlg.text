@@ -30,9 +30,9 @@ AddStatus=&CONTRACT_ID;
 DDFFFDF
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
-Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;NoDataField=1;KeyValue=&CONTRACT_TYPE_ID;
+Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;NoDataField=1;_Value=&CONTRACT_TYPE_ID;
 CONTRACT_TYPE_ID
-Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;KeyValue=&DISTR;
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;_Value=&DISTR;
 ID
 Кинотеатр\OutBox=SQL=select CINEMA_NAME from THEATERS where CINEMA_ID = iif('&CINEMA_ID'='', -1, '&CINEMA_ID');NoDataField=1;ReadOnly=1;Disabled=1;
 CINEMA_ID
@@ -50,7 +50,7 @@ SHAR_DISTR_RUB
 FIXED_PRICE
 Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Width=100;Format=Digit;NoDataField=1;_Value=&MIN_TICKET_PRICE;
 MIN_TICKET_PRICE
-Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;Width=140;NoDataField=1;KeyValue=&MEDIA_TYPE_ID;
+Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;Width=140;NoDataField=1;_Value=&MEDIA_TYPE_ID;
 MEDIA_TYPE_ID
 2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;NoDataField=1;_Value=&SHOW_FORMAT_2D;
 SHOW_FORMAT_2D

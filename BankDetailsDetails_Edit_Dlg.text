@@ -38,7 +38,7 @@ ORDER_BLANK_NAME
 IS_DELEGATOR
 Гл. Бухгалтер\InputBox=VariableName=BD_FIFNANSIST;Width=200;MaxLength=40;
 SENIOR_FINANCEIST
-Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;KeyValue=&T_Bank_ID;
+Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;_Value=&T_Bank_ID;
 BANK_ID
 Расч. счёт (Казначейский счёт)\InputBox=Width=140;VariableName=BD_BANK_ACCOUNT;MaxLength=20;
 BANK_ACCOUNT

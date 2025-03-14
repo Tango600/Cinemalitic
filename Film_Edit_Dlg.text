@@ -17,7 +17,7 @@ AddStatus=:ID_FILM;
 GHFGHF
 Название\InputBox=VariableName=FILM_NAME;_Value=&FILM_NAME;NoDataField=1;RequiredValue=1;
 KENCF
-Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;NoDataField=1;VariableName=DISTR_ID;KeyValue=&DISTR_ID;RequiredValue=1;
+Прокатчик\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;NoDataField=1;VariableName=DISTR_ID;_Value=&DISTR_ID;RequiredValue=1;
 NDJFGG
 Дата релиза\DateBox=NoDataField=1;VariableName=RELEASE_DATE;_Value=&RELEASE_DATE;
 KLFNJ
