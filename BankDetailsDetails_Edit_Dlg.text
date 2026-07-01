@@ -34,8 +34,8 @@ DIRECTOR
 DIRECTOR_GENITIVE
 Руководитель на основании\InputBox=VariableName=BD_ORDER_BLANK_NAME;Width=200;MaxLength=100;
 ORDER_BLANK_NAME
-Исп.обязанности\CheckBox=VariableName=BD_IS_DELEGATOR;NoDataField=1;_Value=:IS_DELEGATOR;
-IS_DELEGATOR
+Должность\Lookup=SQL=select * from POSTS;Key=ID_POST;List=POST_NAME;VariableName=BD_POST_ID;NoDataField=1;_Value=&T_Post_ID;
+POST_ID
 Гл. Бухгалтер\InputBox=VariableName=BD_FIFNANSIST;Width=200;MaxLength=40;
 SENIOR_FINANCEIST
 Банк\Lookup=SQL=select * from BANKS;Key=ID;List=BANK_NAME;VariableName=BD_BANK_ID;NoDataField=1;_Value=&T_Bank_ID;

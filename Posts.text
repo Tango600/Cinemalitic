@@ -1,0 +1,9 @@
+Caption=Должности;
+Navigator=1;Buttons=Insert,Edit,Cancel,Post;
+Query=select * from Posts;
+[Fields]
+2
+Наименование
+POST_NAME
+Генитив
+POST_NAME_GENITIVE

@@ -16,12 +16,12 @@
 ОКПО: :OKPO
 ОКТМО: :OKTMO
 ОКВЕДы: :OKVEDS
+Должность: :POST_NAME
 Директор: :DIRECTOR
 Директор (род. падеже): :DIRECTOR_GENITIVE
 Гл. бухгалтер: :SENIOR_FINANCEIST
 Телефоны: :PHONE
 Web страница: :WWW
-Признак Исп. обязанности: :IS_DELEGATOR
 E-mail: :MAIL
 По умолчанию: :DEFAULT_FLG
 [END BODY]
