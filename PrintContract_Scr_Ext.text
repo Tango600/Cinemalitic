@@ -1,16 +1,17 @@
 ExecCommand=SetOutPath;
+Declare=officeType=mso;
 
 if &CONTRACT_TYPE_ID=1 then
 //Коммерческий
-ReportOfficeText=Template=CommerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE1 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;FileName=&OutPath\&cn - &FilmName - ДС;OneDoc=1;
+ReportOfficeText=Template=CommerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE1 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=&officeType;FileName=&OutPath\&cn - &FilmName - ДС;OneDoc=1;
 EndIf
 if &CONTRACT_TYPE_ID=2 then
 //Некоммерческий
-ReportOfficeText=Template=NoneComerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;FileName=&OutPath\&cn - Некоммерческий - ДС;OneDoc=1;
+ReportOfficeText=Template=NoneComerceAgreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=&officeType;FileName=&OutPath\&cn - Некоммерческий - ДС;OneDoc=1;
 EndIf
 if &CONTRACT_TYPE_ID=3 then
 //Сотрудничество
-ReportOfficeText=Template=CooperationAreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.PARTNER_NAME PARTNER_NAME2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=mso;FileName=&OutPath\&cn - ДогСотрудничества - ДС;OneDoc=1;
+ReportOfficeText=Template=CooperationAreement.docx;SQL=select p.*, p.GENERAL_CONTRACT_NUM GENERAL_CONTRACT_NUM2, p.PARTNER_NAME PARTNER_NAME2, p.GENERAL_CONTRACT_DATE GENERAL_CONTRACT_DATE3, p.AGREEMENT_DATE AGREEMENT_DATE2 from GET_AGEEMENT_DATA(&CONTRACT_ID) p;OfficeType=&officeType;FileName=&OutPath\&cn - ДогСотрудничества - ДС;OneDoc=1;
 EndIf
 
 Exit;

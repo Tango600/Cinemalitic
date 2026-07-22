@@ -1,6 +1,6 @@
 Caption=Глобальные параметры редактирование;
 Modal=1;
-Navigator=1;Buttons=Edit,Insert,Post;
+Navigator=1;Buttons=Cancel,Insert,Post;
 Style=0;
 [Fields]
 3
