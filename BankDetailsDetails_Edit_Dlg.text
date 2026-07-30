@@ -20,7 +20,7 @@ VATIN
 KPP
 ОГРН\InputBox=VariableName=BD_OGRN;Width=120;MaxLength=13;
 OGRN
-ОКПО\InputBox=VariableName=BD_OKPO;Width=120;MaxLength=8;
+ОКПО\InputBox=VariableName=BD_OKPO;Width=120;MaxLength=10;
 OKPO
 ОКТМО\InputBox=VariableName=BD_OKTMO;Width=90;MaxLength=11;
 OKTMO
