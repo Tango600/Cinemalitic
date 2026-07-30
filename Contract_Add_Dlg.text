@@ -11,11 +11,11 @@ CommandButton=Label=Добавить;CommandName=Contract_Insert_Scr;
 CONTRACT_NUMBER
 Дата доп. соглашения\DateBox=VariableName=AGREEMENT_DATE;NoDataField=1;_Value=&AGREEMENT_DATE;
 AGREEMENT_DATE
-Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;_Value=&CONTRACT_TYPE_ID;NoDataField=1;RequiredValue=1;
+Тип договора\Lookup=SQL=select * from CONTRACT_TYPES;Key=ID;List=CONTRACT_TYPE;VariableName=CONTRACT_TYPE_ID;NoDataField=1;RequiredValue=1;
 CONTRACT_TYPE_ID
-Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;_Value=&DISTR;RequiredValue=1;
+Дистрибьютор\Lookup=SQL=select * from DISTRIBUTOR order by DISTR_NAME;Key=ID;List=DISTR_NAME;VariableName=DISTR;NoDataField=1;RequiredValue=1;
 GGGG
-Кинотеатр\Lookup=SQL=select * from THEATERS order by CINEMA_NAME;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;_Value=&CINEMA_ID;RequiredValue=1;
+Кинотеатр\Lookup=SQL=select * from THEATERS order by CINEMA_NAME;Key=CINEMA_ID;List=CINEMA_NAME;VariableName=CINEMA_ID;NoDataField=1;RequiredValue=1;
 CINEMA_ID
 Доля дистрибьютора (%)\InputBox=VariableName=SHAR_DISRT;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DISRT;
 SHAR_DISRT
@@ -23,21 +23,21 @@ SHAR_DISRT
 SHAR_KK
 Доля демонстратора (%)\InputBox=VariableName=SHAR_DEMONSTRATOR;Format=Digit;NoDataField=1;Width=100;ComponentName=Edit_SHAR_DEMONSTRATOR;
 SHAR_DEMONSTRATOR
-Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_SHARE;
+Минимальная гарантия (₽)\InputBox=VariableName=MIN_SHARE;Format=Digit;NoDataField=1;Width=100;
 MIN_SHARE
-Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;Format=Digit;NoDataField=1;Width=100;_Value=&SHAR_RUB;
+Доля дистрибьютора (₽)\InputBox=VariableName=SHAR_RUB;Format=Digit;NoDataField=1;Width=100;
 SHAR_DISTR_RUB
-Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&FIXED_PRICE;
+Фиксированная стоимость (₽)\InputBox=VariableName=FIXED_PRICE;Format=Digit;NoDataField=1;Width=100;
 FIXED_PRICE
-Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Format=Digit;NoDataField=1;Width=100;_Value=&MIN_TICKET_PRICE;
+Цена билета (₽)\InputBox=VariableName=MIN_TICKET_PRICE;Format=Digit;NoDataField=1;Width=100;
 MIN_TICKET_PRICE
-Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;_Value=&MEDIA_TYPE_ID;RequiredValue=1;
+Тип носителя\Lookup=SQL=select * from MEDIA_TYPE;Key=MED_ID;List=MEDIA_NAME;VariableName=MEDIA_TYPE_ID;NoDataField=1;Width=140;RequiredValue=1;
 MEDIA_TYPE_ID
-2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;NoDataField=1;_Value=&SHOW_FORMAT_2D;
+2D\SimplyCheckBox=VariableName=SHOW_FORMAT_2D;NoDataField=1;
 SHOW_FORMAT_2D
-3D\SimplyCheckBox=VariableName=SHOW_FORMAT_3D;NoDataField=1;_Value=&SHOW_FORMAT_3D;
+3D\SimplyCheckBox=VariableName=SHOW_FORMAT_3D;NoDataField=1;
 SHOW_FORMAT_3D
-Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;NoDataField=1;_Value=&BEGIN_DEMONSTRATION;
+Начало демонстрации\DateBox=VariableName=BEGIN_DEMONSTRATION;NoDataField=1;
 BEGIN_DEMONSTRATION
-Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;NoDataField=1;_Value=&END_DEMONSTRATION;
+Окончание демонстрации\DateBox=VariableName=END_DEMONSTRATION;NoDataField=1;
 END_DEMONSTRATION
