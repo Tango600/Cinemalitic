@@ -16,7 +16,8 @@ TablePartToolButton=Label=Карточка КА;CommandName=PartnerCard;
 
 TablePart=Title=Ген.договор;SQL=select * from GENERAL_CONTRACT where PARTNER_ID=:CINEMA_ID order by CONTRACT_DATE;DependField=PARTNER_ID;VariableName=CONTRACT_ID;Navigator=0;Columns=GENERAL_NUM=70/№,CONTRACT_DATE=100/Дата заключения,START_DATE=100/Дата начала,ROLLER_SHARE=60/Прокатчик (%),DEMONSTRATOR_SHARE=60/Демонстратор (%);ReadOnly=1;
 
-Color=clMaroon;Condition=MAX_SEATS=0;
+Color=clMaroon;Condition=MAX_SEATS=0&DEMONSTRATOR=0;
+Color=$005500;Condition=DEMONSTRATOR=1;
 
 Style=2;
 [Fields]
