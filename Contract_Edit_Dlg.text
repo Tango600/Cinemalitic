@@ -17,8 +17,8 @@ TablePartToolButton=Label=Вкл. в выдачу;CommandName=Contract_FilmInclu
 
 TablePart=SQL=select * from WEEKS where CONTRACT_ID=iif(''='&CONTRACT_ID', -1, '&CONTRACT_ID') order by WEEK_NUM;DependField=CONTRACT_ID;VariableName=CONTRACT_ID;Columns=WEEK_NUM=70/№ недели,SEANSES_COUNT=80/Сеансов;Title=Количество сеансов;Navigator=1;NavigatorButtons=Post,Insert,Delete;NoDataField=1;
 
-CommandButton=Label=Печать договора;CommandName=PrintContract_Scr;Width=110;AutoSize=1;
-CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr;Width=135;AutoSize=1;
+CommandButton=Label=Печать договора;CommandName=PrintContract_Scr_Run;AutoSize=1;
+CommandButton=Label=Печать Приложения 2;CommandName=PrintContractAppendix2_Scr_Run;AutoSize=1;
 
 CommandButton=Label=Установить %;CommandName=Contracts_RateFromGeneral;AutoSize=1;
 
